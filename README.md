@@ -17,7 +17,6 @@ Olá, sou Gabriel Araujo, Engenheiro de Software Full-Stack entusiasta em UX. Co
 :zap: MongoDB
 :zap: HTML5
 :zap: CSS3
-:zap: Figma
 :zap: Docker
 
 
