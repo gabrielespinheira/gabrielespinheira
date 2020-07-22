@@ -1,16 +1,32 @@
-### Hi there 👋
+### 👋 Hi there 
 
-<!--
-**ogabrielaraujo/ogabrielaraujo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Olá, sou Gabriel Araujo, Engenheiro de Software Full-Stack entusiasta em UX. Com mais de 6 anos de experiência trabalhando com agências de marketing, SAAS e Startups Tech.
 
-Here are some ideas to get you started:
+### 🌎 Rio de Janeiro, Brasil
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 👽 Tecnologias
+
+:zap: ReactJs
+:zap: NodeJs
+:zap: Typescript
+:zap: PHP
+:zap: Laravel
+:zap: WordPress
+:zap: MySQL
+:zap: PostgreSQL
+:zap: MongoDB
+:zap: HTML5
+:zap: CSS3
+:zap: Figma
+:zap: Docker
+
+
+### 💬 Contato
+
+<a href="https://www.linkedin.com/in/ogabrielaraujo/" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/linkedin-circled.png"/>
+</a>
+
+<a href="https://t.me/ogabrielaraujo" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/telegram-app.png"/>
+</a>
