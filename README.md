@@ -2,8 +2,6 @@
 
 Olá, sou Gabriel Araujo, Engenheiro de Software Full-Stack entusiasta em UX. Com mais de 6 anos de experiência trabalhando com agências de marketing, SAAS e Startups Tech.
 
-### 🌎 Rio de Janeiro, Brasil
-
 ### 👽 Tecnologias
 
 :zap: ReactJs
