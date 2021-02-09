@@ -1,0 +1,296 @@
+/***** mockup *****/
+
+.mockup {
+  width: 650px;
+  height: 970px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transform: scale(0.8);
+}
+
+.scene3D {
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.phone {
+  width: 375px;
+  height: 812px;
+  margin: 50px auto 0;
+  animation: rotatephone 20s infinite ease-in-out;
+}
+
+/***** animation *****/
+
+@keyframes rotatephone {
+  0% {
+    transform: rotateX(2deg) rotateY(96deg) rotateZ(0);
+  }
+  10% {
+    transform: rotateX(10deg) rotateY(40deg) rotateZ(-10deg);
+  }
+  25% {
+    transform: rotateX(15deg) rotateY(20deg) rotateZ(-10deg);
+  }
+  50% {
+    transform: rotateX(10deg) rotateY(390deg) rotateZ(-10deg);
+  }
+  70% {
+    transform: rotateX(15deg) rotateY(390deg) rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateX(2deg) rotateY(96deg) rotateZ(0);
+  }
+}
+
+/***** front *****/
+
+.front {
+  transform-origin: 0 0 0;
+  transform: translate3D(0, 0, 1px) scale3D(1, 1, 0.01);
+}
+
+.screen {
+  position: absolute;
+  transform-origin: 0 0 0;
+  left: 50%;
+  overflow: hidden;
+  transform: translateX(-50%) translateZ(20px);
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  width: 350px;
+  height: 787px;
+  border-radius: 22px;
+  top: 12px;
+
+  &:after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.9);
+    transform: translateZ(1px);
+  }
+}
+
+.screen_notch {
+  position: absolute;
+  transform-origin: 0 0 0;
+  z-index: 2;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 30px;
+  background: linear-gradient(to right, #131313 0%, #2c2c2c 100%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.front_full {
+  position: absolute;
+  transform-origin: 0 0 0;
+  width: 375px;
+  height: 812px;
+  background: #131313;
+  background: linear-gradient(to right, #131313 0%, #2c2c2c 100%);
+  border-radius: 25px;
+  border: none;
+}
+
+/***** middle *****/
+
+.middle {
+  transform-style: preserve-3d;
+}
+
+.middle_top {
+  position: absolute;
+  transform-origin: 0 0 0;
+  width: 335px;
+  height: 30px;
+  background: #b6b6b6;
+  transform: translate(20px) rotateX(-90deg);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    width: 16px;
+    background: #a3a3a3;
+    background: linear-gradient(to right, #a3a3a3 0%, #b6b6b6 100%);
+    transform: translateZ(3px) rotateY(22.5deg);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: -15px;
+    width: 16px;
+    background: #b6b6b6;
+    background: linear-gradient(to right, #b6b6b6 0%, #a3a3a3 100%);
+    transform: translateZ(3px) rotateY(-22.5deg);
+  }
+}
+
+.middle_right {
+  position: absolute;
+  transform-origin: 0 0 0;
+  width: 772px;
+  height: 30px;
+  background: #a3a3a3;
+  background: linear-gradient(to right, #a3a3a3 0%, #d6d6d6 10%, #a3a3a3 15%, #808080 100%);
+  transform: translate(375px, 20px) rotateY(-90deg) rotateZ(90deg);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: -15px;
+    width: 16px;
+    background: #808080;
+    background: linear-gradient(to right, #808080 0%, #636363 100%);
+    transform: translateZ(3px) rotateY(-22.5deg);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    width: 16px;
+    background: #a3a3a3;
+    background: linear-gradient(to right, #a3a3a3 0%, #b6b6b6 100%);
+    transform: translateZ(3px) rotateY(22.5deg);
+  }
+}
+
+.middle_bottom {
+  position: absolute;
+  transform-origin: 0 0 0;
+  width: 335px;
+  height: 30px;
+  background: #6f6f6f;
+  background: linear-gradient(to right, #6f6f6f 0%, #636363 100%);
+  box-shadow: inset 0 1px 0 #363636;
+  transform: translate(20px, 812px) rotateX(-90deg);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 16px;
+    left: auto;
+    right: -15px;
+    background: #636363;
+    transform: translateZ(-3px) rotateY(22.5deg);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    width: 16px;
+    background: #a3a3a3;
+    background: linear-gradient(to right, #a3a3a3 0%, #b6b6b6 100%);
+    transform: translateZ(3px) rotateY(22.5deg);
+
+    background: #6f6f6f;
+    transform: translateZ(-3px) rotateY(-22.5deg);
+  }
+}
+
+.middle_left {
+  position: absolute;
+  transform-origin: 0 0 0;
+  width: 772px;
+  height: 30px;
+  background: #a3a3a3;
+  background: linear-gradient(to right, #a3a3a3 0%, #d6d6d6 10%, #a3a3a3 15%, #808080 100%);
+  transform: translate(0, 20px) rotateY(-90deg) rotateZ(90deg);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    width: 16px;
+    transform: translateZ(-3px) rotateY(-22.5deg);
+    background: #a3a3a3;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 16px;
+    transform: translateZ(-3px) rotateY(22.5deg);
+    left: auto;
+    right: -15px;
+    background: #808080;
+    background: linear-gradient(to right, #808080 0%, #6f6f6f 100%);
+  }
+}
+
+.middle_front {
+  position: absolute;
+  transform-origin: 0 0 0;
+  width: 375px;
+  height: 812px;
+  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+  border-radius: 20px;
+}
+
+
+.middle_back {
+  width: 375px;
+  height: 812px;
+  border-radius: 20px;
+  position: absolute;
+  transform-origin: 0 0 0;
+  background: #a3a3a3;
+  background: linear-gradient(to bottom, #a3a3a3 0%, #808080 100%);
+  transform: translate3D(0, 0, -30px);
+}
+
+/***** back *****/
+
+.back {
+  position: absolute;
+  transform-origin: 0 0 0;
+  transform: translate3D(2.38px, 2.38px, -30.1px) scale3D(0.98126, 0.99048, 0.167);
+}
+
+.back_front {
+  border: none;
+  width: 375px;
+  height: 812px;
+  border-radius: 25px;
+  position: absolute;
+  transform-origin: 0 0 0;
+  background: linear-gradient(to bottom, #a3a3a3 15%, #d6d6d6 50%, #a3a3a3 75%, #808080 100%);
+}
+
