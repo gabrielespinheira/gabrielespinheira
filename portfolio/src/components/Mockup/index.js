@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './style.module.scss'
 
 const Mockup = () => {
@@ -8,7 +9,7 @@ const Mockup = () => {
           <div className={styles.front}>
             <div className={styles.screen}>
               <div className={styles.screen_notch}></div>
-              <img
+              <Image
                 src="/app1.png"
                 id="placeholder"
                 width="350"

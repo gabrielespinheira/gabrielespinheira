@@ -36,7 +36,7 @@ class MyDocument extends Document {
             name="keywords"
             content="desenvolvedor, programador, engenheiro de software, front end, back end, full stack, ux, design, devops, ti, tecnologia, php, javascript, node, wordpress"
           />
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="robots" content="index, follow" />
           <meta property="og:locale" content="pt_BR" />
           <meta name="author" content="Gabriel Araujo" />
