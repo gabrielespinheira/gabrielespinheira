@@ -7,12 +7,11 @@ export default function Home() {
     <>
       <Head>
         <title>Gabriel Araujo</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/32.png" />
       </Head>
 
       <Container>
         <Mockup />
-
         <ContentInfo />
       </Container>
     </>
