@@ -19,6 +19,7 @@ const ContentInfo = () => {
           href="https://www.linkedin.com/in/ogabrielaraujo/"
           target="_blank"
           title="LinkedIn"
+          rel="noreferrer"
         >
           <FiLinkedin />
         </a>
@@ -26,10 +27,16 @@ const ContentInfo = () => {
           href="https://github.com/ogabrielaraujo"
           target="_blank"
           title="GitHub"
+          rel="noreferrer"
         >
           <FiGithub />
         </a>
-        <a href="mailto:gabriiel66@gmail.com" target="_blank" title="E-mail">
+        <a
+          href="mailto:gabriiel66@gmail.com"
+          target="_blank"
+          title="E-mail"
+          rel="noreferrer"
+        >
           <FiAtSign />
         </a>
       </div>
