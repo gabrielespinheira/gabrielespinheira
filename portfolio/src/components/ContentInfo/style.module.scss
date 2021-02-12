@@ -1,4 +1,5 @@
 .content_info {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-left: 30px;
@@ -22,30 +23,6 @@
     font-size: 20px;
     margin-top: 14px;
     line-height: 30px;
-  }
-
-  div {
-    display: flex;
-    margin-top: 42px;
-    grid-gap: 15px;
-
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      font-size: 27px;
-      transition: all .3s ease-in-out;
-
-      &:hover {
-        color: #0071e3;
-        transition: all .3s ease-in-out;
-      }
-    }
-
-    a:first-child {
-      padding-left: 0;
-    }
   }
 
   button {
@@ -74,10 +51,6 @@
     margin-top: 20px;
     margin-left: 0;
     margin-bottom: 70px;
-
-    div {
-      justify-content: center;
-    }
   }
 
   @media (max-width: 650px) {
@@ -91,5 +64,104 @@
     h2 {
       font-size: 28px;
     }
+  }
+}
+
+.social {
+  display: flex;
+  margin-top: 42px;
+  grid-gap: 15px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 27px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: #0071e3;
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  a:first-child {
+    padding-left: 0;
+  }
+
+  @media (max-width: 990px) {
+    justify-content: center;
+  }
+}
+
+.contact {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  background: #f2f2f2;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 5;
+
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  div {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: #000;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      color: #797979;
+      transition: all .5s ease-in-out;
+    }
+  }
+
+  h3 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  input, textarea {
+    color: #1d1d1f;
+    border: 1px solid #d2d2d7;
+    font-size: 17px;
+    line-height: 1.23536;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 320px;
+    transition: all .5s ease-in-out;
+
+    &:focus {
+      border-color: #1d1d1f;
+      transition: all .5s ease-in-out;
+    }
+  }
+
+  textarea {
+    resize: none;
+    outline: none;
+    height: 120px;
+  }
+
+  button {
+    margin-top: 10px;
   }
 }
