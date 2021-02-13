@@ -22,6 +22,11 @@
     flex-direction: column;
   }
 
+  label {
+    width: 100%;
+    text-align: center;
+  }
+
   div {
     position: absolute;
     right: 20px;

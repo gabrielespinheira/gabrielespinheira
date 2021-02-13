@@ -72,37 +72,43 @@ const Contact = ({ isActive, setIsActive }) => {
       <h3>Entrar em contato</h3>
 
       <form onSubmit={handleContact}>
-        <input
-          type="text"
-          name="nome"
-          placeholder="Nome"
-          value={name}
-          onChange={(e) => {
-            setName(e.target.value)
-          }}
-          required
-        />
+        <label htmlFor="nome">
+          <input
+            type="text"
+            name="nome"
+            placeholder="Nome"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value)
+            }}
+            required
+          />
+        </label>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="E-mail"
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value)
-          }}
-          required
-        />
+        <label htmlFor="email">
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value)
+            }}
+            required
+          />
+        </label>
 
-        <textarea
-          name="mensagem"
-          placeholder="Mensagem"
-          value={message}
-          onChange={(e) => {
-            setMessage(e.target.value)
-          }}
-          required
-        ></textarea>
+        <label htmlFor="mensagem">
+          <textarea
+            name="mensagem"
+            placeholder="Mensagem"
+            value={message}
+            onChange={(e) => {
+              setMessage(e.target.value)
+            }}
+            required
+          ></textarea>
+        </label>
 
         <motion.button
           whileHover={{ scale: 1.02 }}

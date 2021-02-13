@@ -15,10 +15,11 @@ const ContentInfo = () => {
       <h2>Engenheiro de Software</h2>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar
-        tincidunt ligula et mattis. Sed sit amet ex ut ligula commodo viverra
-        non vulputate metus. Cras ac tempor sapien. Vivamus tristique quam sed
-        sapien imperdiet, a venenatis ex fringilla. Nunc vel lectus nisl.{' '}
+        Olá, me chamo Gabriel, sou engenheiro de software e entusiasta por
+        design, com mais de 6 anos de experiência no mercado, trabalhando em
+        diversos projetos atuando da concepção até a entrega.
+        <br />
+        Entre em contato e vamos conversar!
       </p>
 
       <div className={styles.social}>

@@ -23,6 +23,7 @@
     font-size: 20px;
     margin-top: 14px;
     line-height: 30px;
+    text-align: justify;
   }
 
   button {
@@ -51,6 +52,10 @@
     margin-top: 20px;
     margin-left: 0;
     margin-bottom: 70px;
+
+    p {
+      text-align: center;
+    }
   }
 
   @media (max-width: 650px) {

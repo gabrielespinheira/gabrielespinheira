@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Gabriel Araujo</title>
+        <title>Gabriel Araujo - Engenheiro de Software</title>
         <link rel="icon" href="/favicon/32.png" />
       </Head>
 
