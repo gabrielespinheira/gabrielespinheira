@@ -53,10 +53,7 @@ class MyDocument extends Document {
           />
           <meta property="og:url" content="https://ogabrielaraujo.com.br/" />
           <meta property="og:site_name" content="Gabriel Araujo" />
-          <meta
-            property="og:image"
-            content="https://ogabrielaraujo.com.br/content/uploads/2020/04/thumbnail.jpg"
-          />
+          <meta property="og:image" content="/thumbnail.jpg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="1200" />
           <meta name="twitter:card" content="summary_large_image" />
@@ -68,10 +65,7 @@ class MyDocument extends Document {
             name="twitter:description"
             content="Olá, me chamo Gabriel, sou engenheiro de software e entusiasta por design, com mais de 6 anos de experiência no mercado, trabalhando em diversos projetos atuando da concepção até a entrega."
           />
-          <meta
-            name="twitter:image"
-            content="https://ogabrielaraujo.com.br/content/uploads/2020/04/thumbnail.jpg"
-          />
+          <meta name="twitter:image" content="/thumbnail.jpg" />
         </Head>
         <body>
           <Main />
