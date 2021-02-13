@@ -76,6 +76,7 @@ const Contact = ({ isActive, setIsActive }) => {
           <input
             type="text"
             name="nome"
+            id="nome"
             placeholder="Nome"
             value={name}
             onChange={(e) => {
@@ -89,6 +90,7 @@ const Contact = ({ isActive, setIsActive }) => {
           <input
             type="email"
             name="email"
+            id="email"
             placeholder="E-mail"
             value={email}
             onChange={(e) => {
@@ -102,6 +104,7 @@ const Contact = ({ isActive, setIsActive }) => {
           <textarea
             name="mensagem"
             placeholder="Mensagem"
+            id="mensagem"
             value={message}
             onChange={(e) => {
               setMessage(e.target.value)
