@@ -1,20 +1,29 @@
-👋 Olá, me chamo [Gabriel Araujo](https://ogabrielaraujo.com.br/), sou engenheiro de software e entusiasta por design, com mais de 6 anos de experiência no mercado, trabalhando em diversos projetos atuando da concepção até a entrega.
+👋 Hi, I'm Gabriel Araujo
 
-### Sobre mim
+### About me
 
-- 📚 Graduação - Ciência da Computação
-- 🏠 Rio de Janeiro
-- 🚀 Engenheiro de Software na XP Inc.
+- 🎉 25 yo
+- 💥 Developer since 2014
+- 🏠 Rio de Janeiro, Brazil
+- 🚀 Software Engineer at XP Inc.
+- 📚 Computer Science Bachelor
+- 💫 UX/UI Design Enthusiast
+- 💙 Clean Code Lover
+- 🔥 Early Adopter
+- 🔫 Self Taught
 
-### 📌 Stack Atual
 
-- HTML5 + CSS3
-- Javascript = ReactJs + NodeJs
+### 📌 Main Stack
+
+- Javascript = React/NextJS + NodeJs
 - PHP = Laravel + WordPress
 - DB = MySQL + PostgreSQL + MongoDB
+- Cloud = Amazon Web Services
+- Services = Figma + Firebase + Heroku
 
-### 💬 Contato
+### 💬 Get in touch
 
+- [Portfolio](https://ogabrielaraujo.com.br/)
 - [LinkedIn](https://www.linkedin.com/in/ogabrielaraujo/)
-- [E-mail](mailto:gabriiel66@gmail.com)
+- [Email](mailto:gabriiel66@gmail.com)
 - [Telegram](https://t.me/ogabrielaraujo)
