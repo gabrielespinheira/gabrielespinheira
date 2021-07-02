@@ -6,7 +6,7 @@
 - 💥 Developer since 2014
 - 🏠 Rio de Janeiro, Brazil
 - 🚀 Software Engineer at XP Inc.
-- 📚 Computer Science Bachelor
+- 📚 Computer Science Graduated
 - 💫 UX/UI Design Enthusiast
 - 💙 Clean Code Lover
 - 🔥 Early Adopter
