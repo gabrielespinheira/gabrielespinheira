@@ -1,14 +1,19 @@
 import Link from 'next/link'
 
-export default () => {
+import data from 'data.json'
+import { Styled } from './styles'
+
+const Footer = () => {
   return (
-    <footer>
-      <Link href="https://github.com/ogabrielaraujo/ogabrielaraujo">
-        source code
-      </Link>
-      <Link href="https://github.com/ogabrielaraujo">github</Link>
-      <Link href="https://www.linkedin.com/in/ogabrielaraujo/">linkedin</Link>
-      <Link href="mailto:gabriiel66@gmail.com">email</Link>
-    </footer>
+    <Styled>
+      <div className="container">
+        <Link href={data.links.source_code}>source code</Link>
+        <Link href={data.links.github}>github</Link>
+        <Link href={data.links.linkedin}>linkedin</Link>
+        <Link href={`mailto:${data.links.email}`}>email</Link>
+      </div>
+    </Styled>
   )
 }
+
+export default Footer

@@ -1,18 +1,44 @@
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { FiMoon, FiSun } from 'react-icons/fi'
 
-export default () => {
+import data from 'data.json'
+import { Styled } from './styles'
+import Button from 'components/atoms/Button'
+
+const Header = () => {
+  const [theme, setTheme] = useState(null)
+
+  useEffect(() => {
+    if (process.browser) {
+      setTheme(document.documentElement.getAttribute('data-theme'))
+    }
+  }, [])
+
+  const handleChangeTheme = () => {
+    document.documentElement.setAttribute(
+      'data-theme',
+      theme === 'light' ? 'dark' : 'light'
+    )
+    setTheme(theme === 'light' ? 'dark' : 'light')
+  }
+
   return (
-    <header>
-      <ul className="menu">
-        <Link href="/">Home</Link>
-        <Link href="/about">About me</Link>
-        <Link href="/contact">Contact</Link>
-      </ul>
+    <Styled>
+      <div className="container">
+        <div className="logo">
+          <Link href="/">{data.name}</Link>
+        </div>
 
-      <div className="options">
-        <div className="language">English</div>
-        <div className="mode">Dark mode</div>
+        <div className="options">
+          <Button className="language">English</Button>
+          <Button className="theme" onClick={handleChangeTheme}>
+            {theme === 'light' ? <FiMoon size={24} /> : <FiSun size={24} />}
+          </Button>
+        </div>
       </div>
-    </header>
+    </Styled>
   )
 }
+
+export default Header
