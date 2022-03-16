@@ -6,7 +6,7 @@ Over the past years, I have been working for technology companies, from startups
 
 I'm always looking forward to the next challenge.
 
-  - 🎉 25 yo
+  - 🎉 26 yo
   - 💥 Developer since 2014
   - 🏠 From Rio de Janeiro, Brazil
   - 🚀 Working as Software Engineer at XP Inc.
