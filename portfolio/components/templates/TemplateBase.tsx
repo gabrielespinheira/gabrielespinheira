@@ -1,12 +1,14 @@
-import { Head, Header, Footer } from 'components'
+import { Head, Header, Navbar } from 'components'
 
-export default ({ children }) => {
+const TemplateBase = ({ children }) => {
   return (
     <>
       <Head />
       <Header />
       {children}
-      <Footer />
+      <Navbar />
     </>
   )
 }
+
+export default TemplateBase
