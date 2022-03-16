@@ -1,36 +1,26 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'SF Pro Display';
-    src: url('/fonts/SFProDisplay-Thin.otf');
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
+  :root {
+    --primary: #0070F3;
+    --radius: 12px;
+    --font: 'Open Sans', sans-serif;
+    --white: #FFFFFE;
+    --black: #050406;
   }
 
-  @font-face {
-    font-family: 'SF Pro Display';
-    src: url('/fonts/SFProDisplay-Regular.otf');
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
+  [data-theme="dark"] {
+    --text: #EFEFEF;
+    --bg: #050406;
+    --shape: #202020;
+    --bgTransp: rgba(32, 32, 32, 0.3);
   }
 
-  @font-face {
-    font-family: 'SF Pro Display';
-    src: url('/fonts/SFProDisplay-Medium.otf');
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'SF Pro Display';
-    src: url('/fonts/SFProDisplay-Bold.otf');
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
+  [data-theme="light"] {
+    --text: #3A4553;
+    --bg: #FFFFFE;
+    --shape: #ECECEC;
+    --bgTransp: rgba(32, 32, 32, 0.10);
   }
 
   *,
@@ -46,41 +36,36 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: inherit;
+    color: var(--text);
     text-decoration: none;
-    transition: color .4s;
 
     &:hover {
-      color: #0070f3;
-      transition: color .4s;
+      color: inherit;
     }
   }
 
   body {
-    font-family: 'SF Pro Display', sans-serif;
-    color: #16161a;
-    background: #fffffe;
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
   }
 
   button,
   input,
-  textarea {
+  textarea,
+  a,
+  p {
     outline: none;
-  }
-
-  h1 {
-    font-size: 56px;
-    font-weight: 500;
-  }
-
-  h2 {
-    font-size: 32px;
-    font-weight: 500;
+    font-family: var(--font);
   }
 
   .container {
     width: 100%;
-    max-width: 1250px;
+    max-width: 1410px;
     margin: 0 auto;
     padding: 20px;
   }
