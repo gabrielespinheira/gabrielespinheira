@@ -1,18 +1,41 @@
 import type { NextPage } from 'next'
-import { TemplateBase } from 'components'
+import Image from 'next/image'
+
+import { Button, TemplateBase } from 'components'
+import data from 'data.json'
+import { Styled } from './styles'
 
 const Home: NextPage = () => {
   return (
     <TemplateBase>
-      <h1>Gabriel Araujo</h1>
-      <h2>Software Engineer</h2>
-      <p>
-        Over the past years, I have been working for technology companies, from
-        startups to big companies, which is fundamental for my development in
-        different aspects. Moreover, I continued studying and participating in
-        technology events, lectures, workshops and bootcamps.{' '}
-      </p>
-      <strong>I'm always looking forward to the next challenge.</strong>
+      <Styled>
+        <div className="container">
+          <div className="presenter">
+            <div className="infos">
+              <h1>
+                {data.home.title} <strong>{data.name}</strong>
+              </h1>
+              <h2>{data.home.subtitle}</h2>
+              <p>{data.home.description}</p>
+              <strong>{data.home.quote}</strong>
+
+              <div className="actions">
+                <Button primary>Resume</Button>
+              </div>
+            </div>
+
+            <div className="thumb">
+              <Image
+                src="/avatar.png"
+                width={497}
+                height={525}
+                alt={data.name}
+                quality={100}
+              />
+            </div>
+          </div>
+        </div>
+      </Styled>
     </TemplateBase>
   )
 }
