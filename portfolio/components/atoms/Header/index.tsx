@@ -31,7 +31,7 @@ const Header = () => {
         </div>
 
         <div className="options">
-          <Button className="language">English</Button>
+          {/* <Button className="language">English</Button> */}
           <Button className="theme" onClick={handleChangeTheme}>
             {theme === 'light' ? <FiMoon size={24} /> : <FiSun size={24} />}
           </Button>

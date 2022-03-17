@@ -9,15 +9,18 @@ export const Styled = styled.nav`
   gap: 8px;
   background: var(--bgTransp);
   backdrop-filter: blur(30px);
-  padding: 0 19px;
+  padding: 0 22px;
   border-radius: 25px;
+  overflow: hidden;
 
   a {
     display: flex;
     padding: 19px 12px;
+    transition: all 0.5s;
 
     &:hover {
-      background: var(--shape);
+      background: var(--primary);
+      transition: all 0.5s;
     }
   }
 `

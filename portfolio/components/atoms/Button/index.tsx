@@ -1,3 +1,4 @@
+import { ButtonHTMLAttributes, ReactElement } from 'react'
 import { StyledButton } from './styles'
 
 interface IButton {
@@ -5,7 +6,11 @@ interface IButton {
   primary?: boolean
 }
 
-const Button = ({ children, primary, ...props }) => {
+const Button = ({
+  children,
+  primary,
+  ...props
+}: IButton & ButtonHTMLAttributes<IButton>) => {
   return (
     <StyledButton {...props} primary={primary}>
       {children}

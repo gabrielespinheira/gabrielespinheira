@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
   [data-theme="dark"] {
     --text: #EFEFEF;
     --bg: #050406;
-    --shape: #202020;
-    --bgTransp: rgba(32, 32, 32, 0.3);
+    --shape: #1A1A1A;
+    --bgTransp: rgba(75, 75, 75, 0.3);
   }
 
   [data-theme="light"] {
@@ -67,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     max-width: 1410px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
   }
 `
 
