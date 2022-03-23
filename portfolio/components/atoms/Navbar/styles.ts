@@ -20,6 +20,7 @@ export const Styled = styled.nav`
 
     &:hover {
       background: var(--primary);
+      color: var(--white);
       transition: all 0.5s;
     }
   }
