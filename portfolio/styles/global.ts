@@ -60,8 +60,8 @@ const GlobalStyle = createGlobalStyle`
   textarea,
   a,
   p {
-    outline: none;
     font-family: var(--font);
+    outline: none;
   }
 
   .container {
@@ -72,14 +72,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body .__react_component_tooltip.show {
-    background: var(--bgTransp);
-    border: 1px solid var(--shape);
-    border-radius: 4px;
+    background: var(--primary);
     color: var(--text);
     font-family: var(--font);
+    border: none;
+    border-radius: 4px;
     font-weight: bold;
     font-size: 14px;
     margin-top: -5px;
+    opacity: 1;
   }
 `
 
