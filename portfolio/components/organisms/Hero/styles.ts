@@ -39,7 +39,7 @@ export const Styled = styled.main`
     p {
       font-size: 22px;
       line-height: 34px;
-      font-weight: 300;
+      font-weight: 400;
     }
 
     strong {
