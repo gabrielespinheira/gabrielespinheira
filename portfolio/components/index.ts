@@ -1,11 +1,25 @@
-// Atoms
+// ATOMS
 import Head from 'components/atoms/Head'
-import Header from 'components/atoms/Header'
-import Footer from 'components/atoms/Footer'
 import Button from 'components/atoms/Button'
-import Navbar from './atoms/Navbar'
+import Image from 'components/atoms/Image'
 
-// Templates
+export { Head, Button, Image }
+
+// MOLECULES
+import Header from 'components/molecules/Header'
+import Footer from 'components/molecules/Footer'
+import Navbar from 'components/molecules/Navbar'
+
+export { Header, Footer, Navbar }
+
+// ORGANISMS
+import Hero from 'components/organisms/Hero'
+import AboutMe from 'components/organisms/AboutMe'
+import Experience from 'components/organisms/Experience'
+
+export { Hero, AboutMe, Experience }
+
+// TEMPLATES
 import TemplateBase from 'components/templates/TemplateBase'
 
-export { Head, Header, Footer, Button, Navbar, TemplateBase }
+export { TemplateBase }

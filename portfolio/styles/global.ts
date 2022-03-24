@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     --font: 'Open Sans', sans-serif;
     --white: #FFFFFE;
     --black: #050406;
+    --navyBlue: #3A4553;
   }
 
   [data-theme="dark"] {
@@ -68,6 +69,17 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1410px;
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  body .__react_component_tooltip.show {
+    background: var(--bgTransp);
+    border: 1px solid var(--shape);
+    border-radius: 4px;
+    color: var(--text);
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: -5px;
   }
 `
 

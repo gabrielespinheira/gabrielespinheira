@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const Styled = styled.main`
-  .presenter {
+  margin-bottom: 170px;
+
+  .hero {
     background: url(/wallpaper.png) no-repeat center center;
     background-size: cover;
     border-radius: 30px;
@@ -9,9 +11,9 @@ export const Styled = styled.main`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 60px;
+    padding: 100px 60px;
 
-    .infos {
+    .content {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -50,8 +52,8 @@ export const Styled = styled.main`
       width: 185px;
     }
 
-    .thumb {
-      border-radius: 0 50px 0 50px;
+    img {
+      border-radius: 8px 50px 8px 50px;
       overflow: hidden;
     }
   }
