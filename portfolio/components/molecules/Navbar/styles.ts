@@ -11,7 +11,6 @@ export const Styled = styled.nav`
   backdrop-filter: blur(30px);
   padding: 0 22px;
   border-radius: 25px;
-  overflow: hidden;
 
   a {
     display: flex;
