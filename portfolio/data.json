@@ -6,12 +6,28 @@
     "description": "Over the past years, I have been working for technology companies, from startups to big companies, which is fundamental for my development in different aspects. Moreover, I continued studying and participating in technology events, lectures, workshops and bootcamps.",
     "quote": "I'm always looking forward to the next challenge."
   },
-  "links": {
-    "linkedin": "https://www.linkedin.com/in/ogabrielaraujo/",
-    "github": "https://github.com/ogabrielaraujo",
-    "source_code": "https://github.com/ogabrielaraujo/ogabrielaraujo",
-    "email": "gabriiel66@gmail.com"
-  },
+  "links": [
+    {
+      "name": "Resume",
+      "url": "/resume.pdf"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:gabriiel66@gmail.com"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/ogabrielaraujo/"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/ogabrielaraujo"
+    },
+    {
+      "name": "Source Code",
+      "url": "https://github.com/ogabrielaraujo/ogabrielaraujo"
+    }
+  ],
   "jobs": [
     {
       "company": "XP Inc",
