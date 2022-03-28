@@ -1,23 +1,8 @@
 import Link from 'next/link'
-import {
-  FiCode,
-  FiFileText,
-  FiGithub,
-  FiLinkedin,
-  FiMail,
-} from 'react-icons/fi'
 import { Styled } from './styles'
 
 import data from 'data.json'
-import { Button } from 'components'
-
-const Icons = {
-  Resume: FiFileText,
-  Email: FiMail,
-  LinkedIn: FiLinkedin,
-  GitHub: FiGithub,
-  'Source Code': FiCode,
-}
+import { Button, Icons } from 'components'
 
 const Contact = () => {
   return (
