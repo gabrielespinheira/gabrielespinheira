@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 
 interface IStyled {
   primary?: boolean
+  ghost?: boolean
 }
 
 export const StyledButton = styled.button<IStyled>`
@@ -19,6 +20,7 @@ export const StyledButton = styled.button<IStyled>`
   line-height: 20px;
   cursor: pointer;
   transition: all 0.5s;
+  gap: 16px;
 
   ${(props) => {
     if (props.primary) {
@@ -32,6 +34,26 @@ export const StyledButton = styled.button<IStyled>`
 
         &:hover {
           background: var(--primary);
+          color: var(--white);
+          transition: all 0.5s;
+        }
+      `
+    }
+  }}
+
+  ${(props) => {
+    if (props.ghost) {
+      return css`
+        background: transparent;
+        border: 3px solid transparent;
+        color: var(--text);
+        font-weight: 400;
+        font-size: 18px;
+        transition: all 0.5s;
+
+        &:hover {
+          background: var(--primary);
+          border-color: var(--primary);
           color: var(--white);
           transition: all 0.5s;
         }

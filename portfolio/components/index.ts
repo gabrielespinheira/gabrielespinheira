@@ -17,8 +17,9 @@ export { Header, Footer, Navbar }
 import Hero from 'components/organisms/Hero'
 import AboutMe from 'components/organisms/AboutMe'
 import Experience from 'components/organisms/Experience'
+import Contact from 'components/organisms/Contact'
 
-export { Hero, AboutMe, Experience }
+export { Hero, AboutMe, Experience, Contact }
 
 // TEMPLATES
 import TemplateBase from 'components/templates/TemplateBase'

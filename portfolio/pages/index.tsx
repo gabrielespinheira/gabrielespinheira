@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 
-import { TemplateBase, Hero, AboutMe, Experience } from 'components'
+import { TemplateBase, Hero, AboutMe, Experience, Contact } from 'components'
 
 const Home: NextPage = () => {
   return (
@@ -8,6 +8,7 @@ const Home: NextPage = () => {
       <Hero />
       <AboutMe />
       <Experience />
+      <Contact />
     </TemplateBase>
   )
 }

@@ -4,6 +4,7 @@ import { StyledButton } from './styles'
 interface IButton {
   children: any
   primary?: boolean
+  ghost?: boolean
 }
 
 const Button = ({
