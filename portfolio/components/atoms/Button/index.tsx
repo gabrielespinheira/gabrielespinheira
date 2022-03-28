@@ -3,17 +3,17 @@ import { StyledButton } from './styles'
 
 interface IButton {
   children: any
-  primary?: boolean
+  outline?: boolean
   ghost?: boolean
 }
 
 const Button = ({
   children,
-  primary,
+  outline,
   ...props
 }: IButton & ButtonHTMLAttributes<IButton>) => {
   return (
-    <StyledButton {...props} primary={primary}>
+    <StyledButton {...props} outline={outline}>
       {children}
     </StyledButton>
   )

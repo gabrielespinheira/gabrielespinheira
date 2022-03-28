@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 interface IStyled {
-  primary?: boolean
+  outline?: boolean
   ghost?: boolean
 }
 
@@ -23,10 +23,10 @@ export const StyledButton = styled.button<IStyled>`
   gap: 16px;
 
   ${(props) => {
-    if (props.primary) {
+    if (props.outline) {
       return css`
         background: transparent;
-        border: 3px solid var(--primary);
+        border: 2px solid var(--primary);
         color: var(--primary);
         font-weight: 400;
         font-size: 18px;
