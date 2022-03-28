@@ -47,9 +47,16 @@ export const Styled = styled.main`
       font-weight: 600;
     }
 
-    button {
+    .actions {
+      display: flex;
+      flex-direction: row;
+      gap: 18px;
       margin-top: 42px;
-      width: 185px;
+    }
+
+    button {
+      padding-left: 18px;
+      padding-right: 18px;
     }
 
     img {

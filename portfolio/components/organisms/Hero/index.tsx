@@ -1,7 +1,8 @@
 import { Styled } from './styles'
 
 import data from 'data.json'
-import { Button, Image } from 'components'
+import { Button, Image, Icons } from 'components'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -17,7 +18,22 @@ const Hero = () => {
             <strong>{data.home.quote}</strong>
 
             <div className="actions">
-              <Button primary>Resume</Button>
+              {data &&
+                data.links.map((link, index) => {
+                  const TargetComponent = Icons[link.name]
+
+                  if (link.name !== 'Source Code')
+                    return (
+                      <Link href={link.url} key={index}>
+                        <a>
+                          <Button outline>
+                            <TargetComponent size={20} />
+                            {link.name}
+                          </Button>
+                        </a>
+                      </Link>
+                    )
+                })}
             </div>
           </div>
 
