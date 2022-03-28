@@ -3,6 +3,7 @@ import ReactTooltip from 'react-tooltip'
 import {
   FiHome,
   FiLayers,
+  FiMail,
   FiMessageCircle,
   FiPackage,
   FiUser,
@@ -27,14 +28,19 @@ const Navbar = () => {
           <FiPackage size={24} />
         </a>
       </Link>
-      <Link href="/">
+      {/* <Link href="/">
         <a data-tip data-for="cases">
           <FiLayers size={24} />
         </a>
-      </Link>
+      </Link> */}
       <Link href="/">
         <a data-tip data-for="contact">
           <FiMessageCircle size={24} />
+        </a>
+      </Link>
+      <Link href="mailto:gabriiel66@gmail.com">
+        <a data-tip data-for="mail">
+          <FiMail size={24} />
         </a>
       </Link>
 
@@ -56,6 +62,10 @@ const Navbar = () => {
 
       <ReactTooltip id="contact" effect="solid">
         Contact
+      </ReactTooltip>
+
+      <ReactTooltip id="mail" effect="solid">
+        Email
       </ReactTooltip>
     </Styled>
   )
