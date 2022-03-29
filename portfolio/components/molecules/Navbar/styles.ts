@@ -15,6 +15,7 @@ export const Styled = styled.nav`
   a {
     display: flex;
     padding: 19px 12px;
+    cursor: pointer;
     transition: all 0.5s;
 
     &:hover {

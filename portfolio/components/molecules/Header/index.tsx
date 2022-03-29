@@ -24,7 +24,7 @@ const Header = () => {
   }
 
   return (
-    <Styled>
+    <Styled id="header">
       <div className="container">
         <div className="logo">
           <Link href="/">{data.name}</Link>

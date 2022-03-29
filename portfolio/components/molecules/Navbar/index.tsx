@@ -1,5 +1,6 @@
-import Link from 'next/link'
+import NextLink from 'next/link'
 import ReactTooltip from 'react-tooltip'
+import { Link } from 'react-scroll'
 import {
   FiHome,
   FiLayers,
@@ -13,36 +14,34 @@ import { Styled } from './styles'
 const Navbar = () => {
   return (
     <Styled>
-      <Link href="/">
-        <a data-tip data-for="home">
-          <FiHome size={24} />
-        </a>
+      <Link to="header" smooth={true} data-tip data-for="home">
+        <FiHome size={24} />
       </Link>
-      <Link href="/">
-        <a data-tip data-for="about">
-          <FiUser size={24} />
-        </a>
+      <Link to="aboutme" smooth={true} offset={-40} data-tip data-for="about">
+        <FiUser size={24} />
       </Link>
-      <Link href="/">
-        <a data-tip data-for="experience">
-          <FiPackage size={24} />
-        </a>
+      <Link
+        to="experience"
+        smooth={true}
+        offset={-40}
+        data-tip
+        data-for="experience"
+      >
+        <FiPackage size={24} />
       </Link>
       {/* <Link href="/">
         <a data-tip data-for="cases">
           <FiLayers size={24} />
         </a>
       </Link> */}
-      <Link href="/">
-        <a data-tip data-for="contact">
-          <FiMessageCircle size={24} />
-        </a>
+      <Link to="contact" smooth={true} data-tip data-for="contact">
+        <FiMessageCircle size={24} />
       </Link>
-      <Link href="mailto:gabriiel66@gmail.com">
-        <a data-tip data-for="mail">
+      <NextLink href="mailto:gabriiel66@gmail.com">
+        <a data-tip data-for="mail" target="_blank">
           <FiMail size={24} />
         </a>
-      </Link>
+      </NextLink>
 
       <ReactTooltip id="home" effect="solid">
         Home
