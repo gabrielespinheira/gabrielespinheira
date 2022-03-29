@@ -9,8 +9,10 @@ const Hero = () => {
   return (
     <Styled>
       <div className="container">
-        <Squircle radius={50}>
+        <Squircle radius={50} style={{ position: 'relative' }}>
           <div className="hero" id="hero">
+            <div className="bubble"></div>
+
             <div className="content">
               <h1>
                 {data.home.title} <strong>{data.name}</strong>

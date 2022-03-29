@@ -62,4 +62,36 @@ export const Styled = styled.main`
       overflow: hidden;
     }
   }
+
+  @keyframes bubble {
+    0% {
+      top: -20%;
+      right: -20%;
+    }
+    50% {
+      top: 70%;
+      right: 80%;
+    }
+    100% {
+      top: -20%;
+      right: -20%;
+    }
+  }
+
+  .bubble {
+    position: absolute;
+    z-index: -1;
+    background: var(--primary);
+    filter: blur(100px);
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    animation-name: bubble;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+
+    [data-theme='light'] & {
+      opacity: 0.6;
+    }
+  }
 `
