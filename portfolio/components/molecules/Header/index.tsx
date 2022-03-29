@@ -30,7 +30,7 @@ const Header = () => {
   const [theme, setTheme] = useState(null)
 
   useEffect(() => {
-    if (process.browser) {
+    if (typeof window !== 'undefined') {
       setTheme(document.documentElement.getAttribute('data-theme'))
     }
   }, [])

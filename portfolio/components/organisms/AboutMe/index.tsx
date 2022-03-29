@@ -1,4 +1,3 @@
-import ReactTooltip from 'react-tooltip'
 import { Squircle } from 'react-ios-corners'
 import { motion } from 'framer-motion'
 import {
@@ -134,94 +133,48 @@ const AboutMe = () => {
           <div className="container">
             <div>
               <SiJavascript size={70} data-tip data-for="javascript" />
-              <ReactTooltip id="javascript" effect="solid">
-                Javascript
-              </ReactTooltip>
             </div>
             <div>
               <SiTypescript size={70} data-tip data-for="typescript" />
-              <ReactTooltip id="typescript" effect="solid">
-                Typescript
-              </ReactTooltip>
             </div>
             <div>
               <SiReact size={70} data-tip data-for="react" />
-              <ReactTooltip id="react" effect="solid">
-                ReactJS
-              </ReactTooltip>
             </div>
             <div>
               <SiNextdotjs size={70} data-tip data-for="next" />
-              <ReactTooltip id="next" effect="solid">
-                NextJS
-              </ReactTooltip>
             </div>
             <div>
               <SiNodedotjs size={70} data-tip data-for="node" />
-              <ReactTooltip id="node" effect="solid">
-                NodeJS
-              </ReactTooltip>
             </div>
             <div>
               <SiExpress size={70} data-tip data-for="express" />
-              <ReactTooltip id="express" effect="solid">
-                ExpressJS
-              </ReactTooltip>
             </div>
-
             <div>
               <SiMysql size={70} data-tip data-for="mysql" />
-              <ReactTooltip id="mysql" effect="solid">
-                MySQL
-              </ReactTooltip>
             </div>
             <div>
               <SiPostgresql size={70} data-tip data-for="postgresql" />
-              <ReactTooltip id="postgresql" effect="solid">
-                PostgreSQL
-              </ReactTooltip>
             </div>
             <div>
               <SiMongodb size={70} data-tip data-for="mongodb" />
-              <ReactTooltip id="mongodb" effect="solid">
-                MongoDB
-              </ReactTooltip>
             </div>
             <div>
               <SiPrisma size={70} data-tip data-for="prisma" />
-              <ReactTooltip id="prisma" effect="solid">
-                Prisma
-              </ReactTooltip>
             </div>
             <div>
               <SiJest size={70} data-tip data-for="jest" />
-              <ReactTooltip id="jest" effect="solid">
-                Jest
-              </ReactTooltip>
             </div>
             <div>
               <SiDocker size={70} data-tip data-for="docker" />
-              <ReactTooltip id="docker" effect="solid">
-                Docker
-              </ReactTooltip>
             </div>
             <div>
               <SiAmazonaws size={70} data-tip data-for="aws" />
-              <ReactTooltip id="aws" effect="solid">
-                AWS
-              </ReactTooltip>
             </div>
             <div>
               <SiDigitalocean size={70} data-tip data-for="digitalocean" />
-              <ReactTooltip id="digitalocean" effect="solid">
-                DigitalOcean
-              </ReactTooltip>
             </div>
             <div>
               <SiHeroku size={70} data-tip data-for="heroku" />
-              <ReactTooltip id="heroku" effect="solid">
-                Heroku
-              </ReactTooltip>
             </div>
           </div>
         </div>

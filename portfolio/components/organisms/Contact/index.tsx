@@ -25,7 +25,7 @@ const Contact = () => {
       <Styled>
         <div className="contact" id="contact">
           <div className="container">
-            <h2>Let’s connect</h2>
+            <h2>Get in touch</h2>
 
             <div className="social">
               {data &&
