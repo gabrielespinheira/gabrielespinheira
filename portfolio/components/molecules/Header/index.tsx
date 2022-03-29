@@ -27,19 +27,27 @@ const Animation = ({ children }) => {
 }
 
 const Header = () => {
-  const [theme, setTheme] = useState(null)
+  const [theme, setTheme] = useState<string>('dark')
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      setTheme(document.documentElement.getAttribute('data-theme'))
+      const colorScheme = window.matchMedia('(prefers-color-scheme: dark)')
+      const mode = colorScheme.matches ? 'dark' : 'light'
+      setTheme(mode)
+
+      colorScheme.addEventListener('change', function (evt) {
+        const mode = evt.matches ? 'dark' : 'light'
+        setTheme(mode)
+      })
     }
   }, [])
 
+  useEffect(() => {
+    if (typeof theme !== 'undefined')
+      document.documentElement.setAttribute('data-theme', theme)
+  }, [theme])
+
   const handleChangeTheme = () => {
-    document.documentElement.setAttribute(
-      'data-theme',
-      theme === 'light' ? 'dark' : 'light'
-    )
     setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
