@@ -13,7 +13,6 @@ export const StyledButton = styled.button<IStyled>`
   background: var(--shape);
   color: var(--text);
   border: none;
-  border-radius: var(--radius);
   font-size: 18px;
   font-weight: 600;
   padding: 0 13px;

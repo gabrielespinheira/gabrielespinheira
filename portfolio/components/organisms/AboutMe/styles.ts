@@ -14,10 +14,6 @@ export const Styled = styled.main`
     .thumb {
       width: 100%;
       max-width: 446px;
-
-      img {
-        border-radius: 50px 8px 50px 8px;
-      }
     }
 
     .content {

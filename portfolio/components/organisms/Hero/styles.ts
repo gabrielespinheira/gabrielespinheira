@@ -6,7 +6,6 @@ export const Styled = styled.main`
   .hero {
     background: url(/wallpaper.png) no-repeat center center;
     background-size: cover;
-    border-radius: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,7 +59,6 @@ export const Styled = styled.main`
     }
 
     img {
-      border-radius: 8px 50px 8px 50px;
       overflow: hidden;
     }
   }

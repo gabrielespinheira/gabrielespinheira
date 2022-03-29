@@ -1,4 +1,6 @@
-import { ButtonHTMLAttributes, ReactElement } from 'react'
+import { ButtonHTMLAttributes } from 'react'
+import { Squircle } from 'react-ios-corners'
+
 import { StyledButton } from './styles'
 
 interface IButton {
@@ -12,7 +14,11 @@ const Button = ({
   children,
   ...props
 }: IButton & ButtonHTMLAttributes<IButton>) => {
-  return <StyledButton {...props}>{children}</StyledButton>
+  return (
+    <Squircle radius={20}>
+      <StyledButton {...props}>{children}</StyledButton>
+    </Squircle>
+  )
 }
 
 export default Button

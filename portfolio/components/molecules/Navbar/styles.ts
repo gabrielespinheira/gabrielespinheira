@@ -5,16 +5,16 @@ export const Styled = styled.nav`
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  background: var(--bgTransp);
-  backdrop-filter: blur(30px);
-  padding: 0 22px;
-  border-radius: 25px;
+
+  & > div {
+    display: flex;
+    background: var(--bgTransp);
+    backdrop-filter: blur(30px);
+  }
 
   a {
     display: flex;
-    padding: 19px 12px;
+    padding: 19px 20px;
     cursor: pointer;
     transition: all 0.5s;
 

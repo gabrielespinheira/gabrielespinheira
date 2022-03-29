@@ -1,4 +1,5 @@
-import { Styled } from './styles'
+import ReactTooltip from 'react-tooltip'
+import { Squircle } from 'react-ios-corners'
 import {
   SiAmazonaws,
   SiDigitalocean,
@@ -14,12 +15,10 @@ import {
   SiPostgresql,
   SiPrisma,
   SiReact,
-  SiServerless,
-  SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si'
-import ReactTooltip from 'react-tooltip'
 
+import { Styled } from './styles'
 import data from 'data.json'
 import { Image } from 'components'
 
@@ -29,13 +28,15 @@ const AboutMe = () => {
       <div className="container">
         <div className="aboutme" id="aboutme">
           <div className="thumb">
-            <Image
-              src="/setup.png"
-              width={446}
-              height={487}
-              alt={data.name}
-              quality={100}
-            />
+            <Squircle radius={40} style={{ height: 487 }}>
+              <Image
+                src="/setup.png"
+                width={446}
+                height={487}
+                alt={data.name}
+                quality={100}
+              />
+            </Squircle>
           </div>
 
           <div className="content">

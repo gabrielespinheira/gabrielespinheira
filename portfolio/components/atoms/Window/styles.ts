@@ -5,13 +5,16 @@ export const Styled = styled.main`
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
-  background: var(--shape);
-  border-radius: var(--radius);
   color: var(--text);
-  overflow: hidden;
-  padding: 16px;
+
+  & > div {
+    padding: 16px;
+    background: var(--shape);
+  }
 
   .details {
+    margin-top: 20px;
+    margin-left: 20px;
     position: relative;
     height: 12px;
     display: flex;
