@@ -2,6 +2,7 @@ import NextLink from 'next/link'
 import ReactTooltip from 'react-tooltip'
 import { Squircle } from 'react-ios-corners'
 import { Link } from 'react-scroll'
+import { motion } from 'framer-motion'
 import {
   FiHome,
   FiLayers,
@@ -13,64 +14,91 @@ import {
 
 import { Styled } from './styles'
 
+const Animation = ({ children }) => {
+  const variants = {
+    hidden: { bottom: -100, left: '50%', transform: 'translateX(-50%)' },
+    visible: { bottom: 40 },
+  }
+
+  return (
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      transition={{ duration: 0.6, delay: 0.9 }}
+      style={{ position: 'fixed' }}
+    >
+      {children}
+    </motion.div>
+  )
+}
+
 const Navbar = () => {
   return (
-    <Styled>
-      <Squircle radius={25}>
-        <Link to="header" smooth={true} data-tip data-for="home">
-          <FiHome size={24} />
-        </Link>
-        <Link to="aboutme" smooth={true} offset={-75} data-tip data-for="about">
-          <FiUser size={24} />
-        </Link>
-        <Link
-          to="experience"
-          smooth={true}
-          offset={-40}
-          data-tip
-          data-for="experience"
-        >
-          <FiPackage size={24} />
-        </Link>
-        {/* <Link href="/">
+    <Animation>
+      <Styled>
+        <Squircle radius={25}>
+          <Link to="header" smooth={true} data-tip data-for="home">
+            <FiHome size={24} />
+          </Link>
+          <Link
+            to="aboutme"
+            smooth={true}
+            offset={-75}
+            data-tip
+            data-for="about"
+          >
+            <FiUser size={24} />
+          </Link>
+          <Link
+            to="experience"
+            smooth={true}
+            offset={-40}
+            data-tip
+            data-for="experience"
+          >
+            <FiPackage size={24} />
+          </Link>
+          {/* <Link href="/">
         <a data-tip data-for="cases">
           <FiLayers size={24} />
         </a>
       </Link> */}
-        <Link to="contact" smooth={true} data-tip data-for="contact">
-          <FiMessageCircle size={24} />
-        </Link>
-        <NextLink href="mailto:gabriiel66@gmail.com">
-          <a data-tip data-for="mail" target="_blank">
-            <FiMail size={24} />
-          </a>
-        </NextLink>
+          <Link to="contact" smooth={true} data-tip data-for="contact">
+            <FiMessageCircle size={24} />
+          </Link>
+          <NextLink href="mailto:gabriiel66@gmail.com">
+            <a data-tip data-for="mail" target="_blank">
+              <FiMail size={24} />
+            </a>
+          </NextLink>
 
-        <ReactTooltip id="home" effect="solid">
-          Home
-        </ReactTooltip>
+          <ReactTooltip id="home" effect="solid">
+            Home
+          </ReactTooltip>
 
-        <ReactTooltip id="about" effect="solid">
-          About me
-        </ReactTooltip>
+          <ReactTooltip id="about" effect="solid">
+            About me
+          </ReactTooltip>
 
-        <ReactTooltip id="experience" effect="solid">
-          Experience
-        </ReactTooltip>
+          <ReactTooltip id="experience" effect="solid">
+            Experience
+          </ReactTooltip>
 
-        <ReactTooltip id="cases" effect="solid">
-          Cases
-        </ReactTooltip>
+          <ReactTooltip id="cases" effect="solid">
+            Cases
+          </ReactTooltip>
 
-        <ReactTooltip id="contact" effect="solid">
-          Contact
-        </ReactTooltip>
+          <ReactTooltip id="contact" effect="solid">
+            Contact
+          </ReactTooltip>
 
-        <ReactTooltip id="mail" effect="solid">
-          Email
-        </ReactTooltip>
-      </Squircle>
-    </Styled>
+          <ReactTooltip id="mail" effect="solid">
+            Email
+          </ReactTooltip>
+        </Squircle>
+      </Styled>
+    </Animation>
   )
 }
 
