@@ -25,8 +25,8 @@ const Hero = () => {
                   if (link.name !== 'Source Code')
                     return (
                       <Link href={link.url} key={index}>
-                        <a>
-                          <Button outline>
+                        <a target="_blank">
+                          <Button hover>
                             <TargetComponent size={20} />
                             {link.name}
                           </Button>

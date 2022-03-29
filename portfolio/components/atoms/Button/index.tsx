@@ -3,20 +3,16 @@ import { StyledButton } from './styles'
 
 interface IButton {
   children: any
+  hover?: boolean
   outline?: boolean
   ghost?: boolean
 }
 
 const Button = ({
   children,
-  outline,
   ...props
 }: IButton & ButtonHTMLAttributes<IButton>) => {
-  return (
-    <StyledButton {...props} outline={outline}>
-      {children}
-    </StyledButton>
-  )
+  return <StyledButton {...props}>{children}</StyledButton>
 }
 
 export default Button
