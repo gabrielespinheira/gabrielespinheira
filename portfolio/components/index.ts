@@ -9,10 +9,9 @@ export { Head, Button, Image, Window, Icons }
 
 // MOLECULES
 import Header from 'components/molecules/Header'
-import Footer from 'components/molecules/Footer'
 import Navbar from 'components/molecules/Navbar'
 
-export { Header, Footer, Navbar }
+export { Header, Navbar }
 
 // ORGANISMS
 import Hero from 'components/organisms/Hero'
