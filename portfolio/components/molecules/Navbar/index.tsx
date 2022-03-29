@@ -20,7 +20,7 @@ const Navbar = () => {
         <Link to="header" smooth={true} data-tip data-for="home">
           <FiHome size={24} />
         </Link>
-        <Link to="aboutme" smooth={true} offset={-40} data-tip data-for="about">
+        <Link to="aboutme" smooth={true} offset={-75} data-tip data-for="about">
           <FiUser size={24} />
         </Link>
         <Link
