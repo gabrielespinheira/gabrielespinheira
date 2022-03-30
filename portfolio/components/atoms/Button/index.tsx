@@ -15,7 +15,7 @@ const Button = ({
   ...props
 }: IButton & ButtonHTMLAttributes<IButton>) => {
   return (
-    <Squircle radius={20}>
+    <Squircle radius={15}>
       <StyledButton {...props}>{children}</StyledButton>
     </Squircle>
   )
