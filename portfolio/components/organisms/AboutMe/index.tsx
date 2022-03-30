@@ -132,49 +132,64 @@ const AboutMe = () => {
         <div className="techs">
           <div className="container">
             <div>
-              <SiJavascript size={70} data-tip data-for="javascript" />
+              <SiJavascript size={70} />
+              <span>Javascript</span>
             </div>
             <div>
-              <SiTypescript size={70} data-tip data-for="typescript" />
+              <SiTypescript size={70} />
+              <span>Typescript</span>
             </div>
             <div>
-              <SiReact size={70} data-tip data-for="react" />
+              <SiReact size={70} />
+              <span>ReactJS</span>
             </div>
             <div>
-              <SiNextdotjs size={70} data-tip data-for="next" />
+              <SiNextdotjs size={70} />
+              <span>NextJS</span>
             </div>
             <div>
-              <SiNodedotjs size={70} data-tip data-for="node" />
+              <SiNodedotjs size={70} />
+              <span>NodeJS</span>
             </div>
             <div>
-              <SiExpress size={70} data-tip data-for="express" />
+              <SiExpress size={70} />
+              <span>ExpressJS</span>
             </div>
             <div>
-              <SiMysql size={70} data-tip data-for="mysql" />
+              <SiMysql size={70} />
+              <span>MySQL</span>
             </div>
             <div>
-              <SiPostgresql size={70} data-tip data-for="postgresql" />
+              <SiPostgresql size={70} />
+              <span>PostgreSQL</span>
             </div>
             <div>
-              <SiMongodb size={70} data-tip data-for="mongodb" />
+              <SiMongodb size={70} />
+              <span>MongoDB</span>
             </div>
             <div>
-              <SiPrisma size={70} data-tip data-for="prisma" />
+              <SiPrisma size={70} />
+              <span>Prisma</span>
             </div>
             <div>
-              <SiJest size={70} data-tip data-for="jest" />
+              <SiJest size={70} />
+              <span>Jest</span>
             </div>
             <div>
-              <SiDocker size={70} data-tip data-for="docker" />
+              <SiDocker size={70} />
+              <span>Docker</span>
             </div>
             <div>
-              <SiAmazonaws size={70} data-tip data-for="aws" />
+              <SiAmazonaws size={70} />
+              <span>AWS</span>
             </div>
             <div>
-              <SiDigitalocean size={70} data-tip data-for="digitalocean" />
+              <SiDigitalocean size={70} />
+              <span>DigitalOcean</span>
             </div>
             <div>
-              <SiHeroku size={70} data-tip data-for="heroku" />
+              <SiHeroku size={70} />
+              <span>Heroku</span>
             </div>
           </div>
         </div>

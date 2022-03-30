@@ -46,12 +46,23 @@ export const Styled = styled.main`
       padding: 0 20px;
 
       div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
         flex-basis: calc(100% / 8 - 32px);
         outline: none;
 
         & > svg {
           color: var(--navyBlue);
           outline: none;
+        }
+
+        span {
+          font-size: 16px;
+          font-weight: 500;
+          color: var(--navyBlue);
         }
       }
     }
