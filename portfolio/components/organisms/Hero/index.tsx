@@ -17,7 +17,7 @@ const Animation = ({ children }) => {
       initial="hidden"
       animate="visible"
       variants={variants}
-      transition={{ duration: 0.6, delay: 0.5 }}
+      transition={{ duration: 0.6, delay: 0.3 }}
       style={{ position: 'relative' }}
       viewport={{ once: true }}
     >

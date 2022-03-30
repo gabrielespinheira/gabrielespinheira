@@ -9,7 +9,7 @@ const AnimationTitle = ({ children }) => {
     <motion.div
       initial={{ opacity: 0, bottom: -100 }}
       whileInView={{ opacity: 1, bottom: 0 }}
-      transition={{ duration: 0.7, delay: 0.5 }}
+      transition={{ duration: 0.7, delay: 0.3 }}
       style={{ position: 'relative' }}
       viewport={{ once: true }}
     >
@@ -23,7 +23,7 @@ const AnimationWindow = ({ children }) => {
     <motion.div
       initial={{ opacity: 0, bottom: -100, scale: 0.8 }}
       whileInView={{ opacity: 1, bottom: 0, scale: 1 }}
-      transition={{ duration: 0.7, delay: 0.8 }}
+      transition={{ duration: 0.7, delay: 0.5 }}
       style={{ position: 'relative' }}
       viewport={{ once: true }}
     >

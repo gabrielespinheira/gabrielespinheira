@@ -10,7 +10,7 @@ const Animation = ({ children }) => {
     <motion.div
       initial={{ opacity: 0, bottom: -100 }}
       whileInView={{ opacity: 1, bottom: 0 }}
-      transition={{ duration: 0.7, delay: 0.5 }}
+      transition={{ duration: 0.7, delay: 0.3 }}
       style={{ position: 'relative' }}
       viewport={{ once: true }}
     >

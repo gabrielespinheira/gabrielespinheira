@@ -25,9 +25,9 @@ import { Image } from 'components'
 const AnimationAvatar = ({ children }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, left: -100 }}
-      whileInView={{ opacity: 1, left: 0 }}
-      transition={{ duration: 0.7, delay: 0.5 }}
+      initial={{ opacity: 0, bottom: -90 }}
+      whileInView={{ opacity: 1, bottom: 0 }}
+      transition={{ duration: 0.7, delay: 0.3 }}
       style={{ position: 'relative' }}
       viewport={{ once: true }}
     >
@@ -39,8 +39,8 @@ const AnimationAvatar = ({ children }) => {
 const AnimationAboutText = ({ children }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, right: -100 }}
-      whileInView={{ opacity: 1, right: 0 }}
+      initial={{ opacity: 0, bottom: -90 }}
+      whileInView={{ opacity: 1, bottom: 0 }}
       transition={{ duration: 0.7, delay: 0.5 }}
       style={{ position: 'relative' }}
       viewport={{ once: true }}
@@ -55,7 +55,7 @@ const AnimationTechs = ({ children }) => {
     <motion.div
       initial={{ opacity: 0, bottom: -100 }}
       whileInView={{ opacity: 1, bottom: 0 }}
-      transition={{ duration: 0.7, delay: 0.5 }}
+      transition={{ duration: 0.7, delay: 0.3 }}
       style={{ position: 'relative' }}
       viewport={{ once: true }}
     >
