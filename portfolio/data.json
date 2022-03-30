@@ -1,0 +1,69 @@
+{
+  "name": "Gabriel Araujo",
+  "title": "Software Engineer",
+  "home": {
+    "title": "Hi, my name is",
+    "subtitle": "I'm a Creative Software Engineer",
+    "description": "I've been working with software development since 2014, from startups to big companies in different fields, which was fundamental for my career. Since the beginning, I have worked with Front-end and Back-end, and now I'm using mainly Typescript, NodeJS and ReactJS.",
+    "quote": "I'm always looking forward to the next challenge."
+  },
+  "links": [
+    {
+      "name": "Resume",
+      "url": "/resume.pdf"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:gabriiel66@gmail.com"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/ogabrielaraujo/"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/ogabrielaraujo"
+    },
+    {
+      "name": "Source Code",
+      "url": "https://github.com/ogabrielaraujo/ogabrielaraujo/tree/main/portfolio"
+    }
+  ],
+  "jobs": [
+    {
+      "company": "XP Inc",
+      "obs": "(NASDAQ: XP, B3: XPBR31)",
+      "role": "Software Engineer - Senior | Sep 2020 - current",
+      "location": "100% Remote",
+      "description": "Working as a Software Engineer, in the most recognized investment firms in Brazil. Mainly building solutions like Back-end API architecture and building a scalable and reusable front-end with NextJS, using methodologies like Atomic Design. Using ReactJS, NextJS, Typescript, Serverless, PHP and WordPress."
+    },
+    {
+      "company": "Setta",
+      "obs": "",
+      "role": "Software Engineer - Mid | Nov 2019 - Aug 2020",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "My work was mainly focused on building Proofs of Concept and web services, creating new features, performing A/B tests and user research, in addition to building a technology team culture. Using technologies like ReactJS, NodeJS, React Native, MySQL and WordPress."
+    },
+    {
+      "company": "Shosp",
+      "obs": "",
+      "role": "Software Engineer - Junior | Feb 2019 - Oct 2019",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Building and maintenance of features for a management system for medical clinics, serving clients throughout Brazil. Some of the important results were: implementation of unit and integration tests, participation in the creation of layouts with the design team and suggestion of new technologies and design patterns."
+    },
+    {
+      "company": "Freelancer",
+      "obs": "",
+      "role": "Software Engineer | Oct 2017 - Jan 2019",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Working with clients of different sizes, mainly building websites, portfolios, e-commerces, APIs, management systems and integrations with external services. Working most of my time with Javascript and PHP."
+    },
+    {
+      "company": "Agência Trii",
+      "obs": "",
+      "role": "Software Engineer - Intern | Nov 2015 - Sep 2017",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Digital Marketing Agency, working as a Developer, focused on website construction and sales landing pages, as well as integrations with external services through APIs. Using the best practices of HTML and CSS to ensure the SEO and responsive layout, working in different devices."
+    }
+  ]
+}
