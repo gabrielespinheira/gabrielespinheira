@@ -57,8 +57,10 @@ const Head = ({ title = 'Gabriel Araujo - Software Engineer' }: IHead) => {
       <link rel="apple-touch-icon" sizes="167x167" href="/icons/167x167.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/icons/32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/icons/16x16.png" />
+      <link rel="mask-icon" href="/icons/180x180.png" color="#0070F3" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="theme-color" content="transparent" />
     </NextHead>
   )
 }
