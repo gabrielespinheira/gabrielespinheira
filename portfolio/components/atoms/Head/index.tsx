@@ -60,7 +60,12 @@ const Head = ({ title = 'Gabriel Araujo - Software Engineer' }: IHead) => {
       <link rel="mask-icon" href="/icons/180x180.png" color="#0070F3" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="theme-color" content="currentColor" />
+      <meta name="theme-color" content="#FFFFFE" />
+      <meta
+        name="theme-color"
+        content="#050406"
+        media="(prefers-color-scheme: dark)"
+      />
     </NextHead>
   )
 }
