@@ -71,7 +71,7 @@ const AboutMe = () => {
         <div className="aboutme" id="aboutme">
           <div className="thumb">
             <AnimationAvatar>
-              <Squircle radius={40} style={{ height: 487 }}>
+              <Squircle radius={40}>
                 <Image
                   src="/setup.png"
                   width={446}
@@ -88,9 +88,9 @@ const AboutMe = () => {
               <h2>About me</h2>
 
               <p>
-                My name is Gabriel Araujo, I was born and raised in Rio de
-                Janeiro. I am 26 years old and I am currently working as a
-                Senior Software Engineer.
+                My name is Gabriel Araujo, I am from Rio de Janeiro, Brazil. I
+                am 26 years old and currently working as a Senior Software
+                Engineer.
               </p>
 
               <p>

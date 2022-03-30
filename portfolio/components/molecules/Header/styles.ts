@@ -7,6 +7,7 @@ export const Styled = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
@@ -16,7 +17,13 @@ export const Styled = styled.header`
 
   .options {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 24px;
+  }
+
+  @media (max-width: 330px) {
+    .logo {
+      font-size: 27px;
+    }
   }
 `

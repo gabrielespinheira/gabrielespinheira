@@ -14,9 +14,17 @@ export const Styled = styled.main`
     .thumb {
       width: 100%;
       max-width: 446px;
+
+      & > div > div {
+        display: flex;
+        height: auto;
+        max-height: 487px;
+      }
     }
 
     .content {
+      width: 100%;
+
       h2 {
         font-size: 42px;
         font-weight: bold;
@@ -64,6 +72,43 @@ export const Styled = styled.main`
           font-weight: 500;
           color: var(--navyBlue);
         }
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .aboutme {
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: 899px) {
+    .aboutme {
+      flex-direction: column;
+
+      .content {
+        h2 {
+          text-align: center;
+          font-size: 38px;
+        }
+      }
+
+      .thumb {
+        max-width: 320px;
+      }
+    }
+
+    .techs {
+      .container div {
+        flex-basis: calc(100% / 5 - 32px);
+      }
+    }
+  }
+
+  @media (max-width: 599px) {
+    .techs {
+      .container div {
+        flex-basis: calc(100% / 3 - 32px);
       }
     }
   }

@@ -16,7 +16,7 @@ export const Styled = styled.main`
     .social {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 28px;
@@ -37,6 +37,15 @@ export const Styled = styled.main`
         color: var(--text);
         font-size: 14px;
         text-transform: uppercase;
+      }
+    }
+  }
+
+  @media (max-width: 520px) {
+    .contact {
+      .social {
+        flex-direction: column;
+        gap: 18px;
       }
     }
   }

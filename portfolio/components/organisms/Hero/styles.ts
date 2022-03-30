@@ -58,8 +58,10 @@ export const Styled = styled.main`
       padding-right: 18px;
     }
 
-    img {
-      overflow: hidden;
+    .thumb {
+      & > div {
+        height: 525px;
+      }
     }
   }
 
@@ -92,6 +94,138 @@ export const Styled = styled.main`
 
     [data-theme='light'] & {
       opacity: 0.6;
+    }
+  }
+
+  @media (max-width: 1299px) {
+    .hero {
+      gap: 24px;
+      .thumb {
+        max-width: 400px;
+
+        & > div {
+          height: auto;
+          display: flex;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .hero {
+      h1,
+      h1 strong {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p,
+      strong {
+        font-size: 20px;
+      }
+
+      .actions {
+        margin-top: 32px;
+        gap: 12px;
+
+        button {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 999px) {
+    .hero {
+      justify-content: center;
+      align-items: center;
+      padding: 60px 24px;
+
+      .thumb {
+        max-width: 240px;
+      }
+
+      h1,
+      h1 strong {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      p,
+      strong {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 899px) {
+    .hero {
+      flex-direction: column-reverse;
+      padding: 42px 32px;
+
+      .thumb {
+        max-width: 320px;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+
+      .actions {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 12px;
+
+        & > a {
+          flex-basis: calc(100% / 4 - 12px * 3);
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 659px) {
+    .hero {
+      padding: 32px 24px;
+
+      .actions {
+        & > a {
+          flex-basis: calc(100% / 2 - 12px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 499px) {
+    .hero {
+      h1,
+      h1 strong {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p,
+      strong {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 399px) {
+    .hero .actions > a {
+      flex-basis: 100%;
     }
   }
 `

@@ -19,4 +19,10 @@ export const Styled = styled.nav`
       transition: all 0.5s;
     }
   }
+
+  @media (max-width: 389px) {
+    a {
+      padding: 16px 16px;
+    }
+  }
 `

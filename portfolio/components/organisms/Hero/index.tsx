@@ -64,7 +64,7 @@ const Hero = () => {
               </div>
 
               <div className="thumb">
-                <Squircle radius={40} style={{ height: 525 }}>
+                <Squircle radius={40}>
                   <Image
                     src="/avatar.png"
                     width={497}
