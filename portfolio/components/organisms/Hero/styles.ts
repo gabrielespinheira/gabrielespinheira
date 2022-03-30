@@ -4,7 +4,7 @@ export const Styled = styled.main`
   margin-bottom: 170px;
 
   .hero {
-    background: url(/wallpaper.png) no-repeat center center;
+    background: transparent url(/wallpaper.png) no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -14,6 +14,8 @@ export const Styled = styled.main`
     overflow: hidden;
 
     .content {
+      position: relative;
+      z-index: 9;
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -64,6 +66,9 @@ export const Styled = styled.main`
     }
 
     .thumb {
+      position: relative;
+      z-index: 9;
+
       & > div {
         height: 525px;
       }
@@ -87,9 +92,8 @@ export const Styled = styled.main`
 
   .bubble {
     position: absolute;
-    z-index: -1;
+    z-index: 5;
     background: var(--primary);
-    /* filter: blur(100px); */
     box-shadow: 0 0 140px 220px var(--primary);
     border-radius: 50%;
     overflow: hidden;
@@ -101,6 +105,8 @@ export const Styled = styled.main`
 
     [data-theme='light'] & {
       opacity: 0.6;
+      background: var(--primary);
+      box-shadow: 0 0 140px 220px var(--primary);
     }
   }
 

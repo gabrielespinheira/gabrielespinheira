@@ -7,7 +7,6 @@ const GlobalStyle = createGlobalStyle`
     --font: 'Open Sans', sans-serif;
     --white: #FFFFFE;
     --black: #050406;
-    --navyBlue: #3A4553;
   }
 
   [data-theme="dark"] {
@@ -15,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     --bg: #050406;
     --shape: #1A1A1A;
     --bgTransp: rgba(75, 75, 75, 0.3);
+    --navyBlue: #4a5f79;
   }
 
   [data-theme="light"] {
@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
     --bg: #FFFFFE;
     --shape: #ECECEC;
     --bgTransp: rgba(32, 32, 32, 0.10);
+    --navyBlue: #3A4553;
   }
 
   *,
