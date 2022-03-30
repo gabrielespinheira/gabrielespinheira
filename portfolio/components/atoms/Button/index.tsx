@@ -5,7 +5,6 @@ import { StyledButton } from './styles'
 
 interface IButton {
   children: any
-  hover?: boolean
   outline?: boolean
   ghost?: boolean
 }

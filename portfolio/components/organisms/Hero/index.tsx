@@ -52,7 +52,7 @@ const Hero = () => {
                         return (
                           <Link href={link.url} key={index}>
                             <a target="_blank">
-                              <Button hover>
+                              <Button>
                                 <TargetComponent size={20} />
                                 <span>{link.name}</span>
                               </Button>

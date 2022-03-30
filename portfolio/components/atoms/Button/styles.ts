@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components'
 
 interface IStyled {
-  hover?: boolean
   outline?: boolean
   ghost?: boolean
 }
@@ -23,17 +22,16 @@ export const StyledButton = styled.button<IStyled>`
   gap: 16px;
   width: 100%;
 
-  ${(props) => {
-    if (props.hover) {
-      return css`
-        &:hover {
-          background: var(--primary);
-          color: var(--white);
-          transition: all 0.5s;
-        }
-      `
-    }
-  }}
+  &:hover {
+    background: var(--primary);
+    color: var(--white);
+    transition: all 0.5s;
+  }
+
+  &:focus {
+    background: var(--shape);
+    color: var(--text);
+  }
 
   ${(props) => {
     if (props.outline) {

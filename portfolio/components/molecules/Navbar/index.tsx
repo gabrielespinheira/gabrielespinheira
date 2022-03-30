@@ -15,7 +15,7 @@ import { Styled } from './styles'
 const Animation = ({ children }) => {
   const variants = {
     hidden: { bottom: -100, left: '50%', transform: 'translateX(-50%)' },
-    visible: { bottom: 40 },
+    visible: { bottom: window.innerWidth > 899 ? 30 : 20 },
   }
 
   return (
