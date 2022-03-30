@@ -63,6 +63,11 @@ const Head = ({ title = 'Gabriel Araujo - Software Engineer' }: IHead) => {
       <meta name="theme-color" content="#FFFFFE" />
       <meta
         name="theme-color"
+        content="#FFFFFE"
+        media="(prefers-color-scheme: light)"
+      />
+      <meta
+        name="theme-color"
         content="#050406"
         media="(prefers-color-scheme: dark)"
       />
