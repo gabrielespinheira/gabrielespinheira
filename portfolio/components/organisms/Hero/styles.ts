@@ -271,9 +271,9 @@ export const Styled = styled.main`
     }
   }
 
-  /* @media (max-width: 399px) {
-    .hero .actions > a {
-      flex-basis: 100%;
+  @media (max-width: 420px) {
+    .hero {
+      padding: 32px 15px;
     }
-  } */
+  }
 `

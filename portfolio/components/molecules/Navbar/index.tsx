@@ -13,9 +13,13 @@ import {
 import { Styled } from './styles'
 
 const Animation = ({ children }) => {
-  const variants = {
+  let variants = {
     hidden: { bottom: -100, left: '50%', transform: 'translateX(-50%)' },
-    visible: { bottom: window.innerWidth > 899 ? 30 : 20 },
+    visible: { bottom: 30 },
+  }
+
+  if (typeof window !== 'undefined') {
+    variants.visible.bottom = window.innerWidth > 899 ? 30 : 20
   }
 
   return (

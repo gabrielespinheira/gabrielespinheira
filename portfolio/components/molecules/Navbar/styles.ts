@@ -12,15 +12,28 @@ export const Styled = styled.nav`
     padding: 19px 20px;
     cursor: pointer;
     transition: all 0.5s;
+    background: var(--bgTransp);
+    color: var(--text);
 
     &:hover {
       background: var(--primary);
       color: var(--white);
       transition: all 0.5s;
     }
+
+    @media (max-width: 899px) {
+      &:hover {
+        background: var(--bgTransp);
+        color: var(--text);
+      }
+
+      &:active {
+        background: var(--primary);
+      }
+    }
   }
 
-  @media (max-width: 389px) {
+  @media (max-width: 420px) {
     a {
       padding: 16px 16px;
     }

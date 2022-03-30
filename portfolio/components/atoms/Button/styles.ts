@@ -28,9 +28,16 @@ export const StyledButton = styled.button<IStyled>`
     transition: all 0.5s;
   }
 
-  &:focus {
-    background: var(--shape);
-    color: var(--text);
+  @media (max-width: 899px) {
+    &:hover {
+      background: var(--shape);
+      color: var(--text);
+    }
+
+    &:active {
+      background: var(--primary);
+      color: var(--white);
+    }
   }
 
   ${(props) => {
