@@ -2,7 +2,7 @@
 
 ### About me
 
-Over the past years, I have been working for technology companies, from startups to big companies, which is fundamental for my development in different aspects. Moreover, I continued studying and participating in technology events, lectures, workshops and bootcamps. 
+I've been working with software development since 2014, from startups to big companies in different fields, which was fundamental for my career. Since the beginning, I have worked with Front-end and Back-end, and now I'm using mainly Typescript, NodeJS and ReactJS. 
 
 I'm always looking forward to the next challenge.
 
