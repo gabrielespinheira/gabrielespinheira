@@ -48,4 +48,10 @@ export const Styled = styled.main`
   .inner {
     padding: 42px;
   }
+
+  @media (max-width: 699px) {
+    .inner {
+      padding: 24px;
+    }
+  }
 `

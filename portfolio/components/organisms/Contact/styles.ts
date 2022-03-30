@@ -37,7 +37,26 @@ export const Styled = styled.main`
         color: var(--text);
         font-size: 14px;
         text-transform: uppercase;
+        text-align: center;
       }
+    }
+  }
+
+  @media (max-width: 899px) {
+    .contact {
+      h2 {
+        margin-bottom: 32px;
+      }
+
+      footer {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .contact footer .muted br {
+      display: none;
     }
   }
 
@@ -46,6 +65,13 @@ export const Styled = styled.main`
       .social {
         flex-direction: column;
         gap: 18px;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+
+        a {
+          width: 100%;
+        }
       }
     }
   }

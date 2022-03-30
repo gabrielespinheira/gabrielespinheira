@@ -54,4 +54,32 @@ export const Styled = styled.main`
       }
     }
   }
+
+  @media (max-width: 899px) {
+    .experience {
+      margin-bottom: 80px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .experience .jobs {
+      h3 {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4px;
+        line-height: 18px;
+
+        span {
+          margin-bottom: 4px;
+        }
+      }
+
+      .role,
+      .location,
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
 `

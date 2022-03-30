@@ -46,8 +46,8 @@ const Contact = () => {
 
             <footer>
               <p className="muted">
-                Created and designed by Gabriel Araujo -{' '}
-                {new Date().getFullYear()}
+                Created and designed by <br />
+                Gabriel Araujo - {new Date().getFullYear()}
               </p>
             </footer>
           </div>

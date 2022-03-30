@@ -54,7 +54,7 @@ const Hero = () => {
                             <a target="_blank">
                               <Button hover>
                                 <TargetComponent size={20} />
-                                {link.name}
+                                <span>{link.name}</span>
                               </Button>
                             </a>
                           </Link>

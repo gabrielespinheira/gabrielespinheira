@@ -75,6 +75,26 @@ export const Styled = styled.main`
     }
   }
 
+  .bubble {
+    position: absolute;
+    z-index: 5;
+    background: var(--primary);
+    box-shadow: 0 0 140px 220px var(--primary);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    animation-name: bubble;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+
+    [data-theme='light'] & {
+      opacity: 0.5;
+      background: var(--primary);
+      box-shadow: 0 0 140px 220px var(--primary);
+    }
+  }
+
   @keyframes bubble {
     0% {
       top: 10%;
@@ -90,23 +110,24 @@ export const Styled = styled.main`
     }
   }
 
-  .bubble {
-    position: absolute;
-    z-index: 5;
-    background: var(--primary);
-    box-shadow: 0 0 140px 220px var(--primary);
-    border-radius: 50%;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    animation-name: bubble;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
+  @media (max-width: 899px) {
+    @keyframes bubble {
+      0% {
+        top: 10%;
+        left: 0%;
+      }
+      50% {
+        top: 10%;
+        left: 100%;
+      }
+      100% {
+        top: 10%;
+        left: 0%;
+      }
+    }
 
-    [data-theme='light'] & {
-      opacity: 0.6;
-      background: var(--primary);
-      box-shadow: 0 0 140px 220px var(--primary);
+    .bubble {
+      animation-duration: 3s;
     }
   }
 
@@ -178,6 +199,8 @@ export const Styled = styled.main`
   }
 
   @media (max-width: 899px) {
+    margin-bottom: 100px;
+
     .hero {
       flex-direction: column-reverse;
       padding: 42px 32px;
@@ -210,6 +233,10 @@ export const Styled = styled.main`
     .hero {
       padding: 32px 24px;
 
+      p {
+        font-weight: 500;
+      }
+
       .actions {
         & > a {
           flex-basis: calc(100% / 2 - 12px);
@@ -233,12 +260,20 @@ export const Styled = styled.main`
       strong {
         font-size: 16px;
       }
+
+      .actions > a {
+        flex-basis: calc(100% / 4 - 12px);
+
+        span {
+          display: none;
+        }
+      }
     }
   }
 
-  @media (max-width: 399px) {
+  /* @media (max-width: 399px) {
     .hero .actions > a {
       flex-basis: 100%;
     }
-  }
+  } */
 `

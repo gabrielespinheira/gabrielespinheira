@@ -70,6 +70,10 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1410px;
     margin: 0 auto;
     padding: 0 20px;
+
+    @media (max-width: 899px) {
+      padding: 0 15px;
+    }
   }
 
   body .__react_component_tooltip.show {

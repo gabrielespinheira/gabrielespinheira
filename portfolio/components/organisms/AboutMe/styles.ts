@@ -79,12 +79,21 @@ export const Styled = styled.main`
   @media (max-width: 1199px) {
     .aboutme {
       gap: 24px;
+      align-items: flex-start;
+
+      .thumb {
+        max-width: 340px;
+      }
     }
   }
 
   @media (max-width: 899px) {
+    margin-bottom: 70px;
+
     .aboutme {
       flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
 
       .content {
         h2 {
