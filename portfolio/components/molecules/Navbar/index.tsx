@@ -42,7 +42,7 @@ const Navbar = () => {
           <Link
             to="aboutme"
             smooth={true}
-            offset={-75}
+            offset={-40}
             data-tip
             data-for="about"
           >
@@ -62,7 +62,13 @@ const Navbar = () => {
               <FiLayers size={24} />
             </a>
           </Link> */}
-          <Link to="contact" smooth={true} data-tip data-for="contact">
+          <Link
+            to="contact"
+            smooth={true}
+            offset={-40}
+            data-tip
+            data-for="contact"
+          >
             <FiMessageCircle size={24} />
           </Link>
           <NextLink href="mailto:gabriiel66@gmail.com">

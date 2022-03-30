@@ -13,7 +13,7 @@ export const StyledButton = styled.button<IStyled>`
   background: var(--shape);
   color: var(--text);
   border: none;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   padding: 0 13px;
   height: 50px;
@@ -21,6 +21,7 @@ export const StyledButton = styled.button<IStyled>`
   cursor: pointer;
   transition: all 0.5s;
   gap: 16px;
+  width: 100%;
 
   ${(props) => {
     if (props.hover) {
@@ -57,7 +58,7 @@ export const StyledButton = styled.button<IStyled>`
     if (props.ghost) {
       return css`
         background: transparent;
-        border: 3px solid transparent;
+        border: none;
         color: var(--text);
         font-weight: 400;
         font-size: 18px;
@@ -65,7 +66,6 @@ export const StyledButton = styled.button<IStyled>`
 
         &:hover {
           background: var(--primary);
-          border-color: var(--primary);
           color: var(--white);
           transition: all 0.5s;
         }

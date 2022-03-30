@@ -11,6 +11,7 @@ export const Styled = styled.main`
     align-items: center;
     justify-content: space-between;
     padding: 100px 60px;
+    overflow: hidden;
 
     .content {
       display: flex;
@@ -51,6 +52,10 @@ export const Styled = styled.main`
       flex-direction: row;
       gap: 18px;
       margin-top: 42px;
+
+      a {
+        width: 100%;
+      }
     }
 
     button {
@@ -67,16 +72,16 @@ export const Styled = styled.main`
 
   @keyframes bubble {
     0% {
-      top: -20%;
-      right: -20%;
+      top: 10%;
+      right: 10%;
     }
     50% {
-      top: 70%;
-      right: 80%;
+      top: 80%;
+      right: 90%;
     }
     100% {
-      top: -20%;
-      right: -20%;
+      top: 10%;
+      right: 10%;
     }
   }
 
@@ -84,10 +89,12 @@ export const Styled = styled.main`
     position: absolute;
     z-index: -1;
     background: var(--primary);
-    filter: blur(100px);
+    /* filter: blur(100px); */
+    box-shadow: 0 0 140px 220px var(--primary);
+    border-radius: 50%;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 1px;
+    height: 1px;
     animation-name: bubble;
     animation-iteration-count: infinite;
     animation-duration: 10s;

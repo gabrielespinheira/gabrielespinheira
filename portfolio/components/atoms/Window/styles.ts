@@ -6,9 +6,12 @@ export const Styled = styled.main`
   margin: 0 auto;
   position: relative;
   color: var(--text);
+  padding: 0;
 
   & > div {
-    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background: var(--shape);
   }
 

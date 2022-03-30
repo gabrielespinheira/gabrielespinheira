@@ -34,7 +34,7 @@ const Contact = () => {
                   return (
                     <Link href={link.url} key={index}>
                       <a target="_blank">
-                        <Button ghost className="btn">
+                        <Button hover className="btn">
                           <TargetComponent size={24} />
                           {link.name}
                         </Button>
