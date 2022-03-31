@@ -37,8 +37,6 @@ const Hero = () => {
               <div className="wallpaper">
                 <Image
                   src="/wallpaper.png"
-                  width={1410}
-                  height={730}
                   alt="Background"
                   quality={40}
                   layout="fill"
