@@ -34,6 +34,17 @@ const Hero = () => {
           <Squircle radius={50} style={{ position: 'relative' }}>
             <div className="hero" id="hero">
               <div className="bubble"></div>
+              <div className="wallpaper">
+                <Image
+                  src="/wallpaper.png"
+                  width={1410}
+                  height={730}
+                  alt="Background"
+                  quality={40}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
 
               <div className="content">
                 <h1>
@@ -66,11 +77,11 @@ const Hero = () => {
               <div className="thumb">
                 <Squircle radius={40}>
                   <Image
-                    src="/avatar.png"
-                    width={497}
-                    height={525}
+                    src="/avatar.jpg"
+                    width={496}
+                    height={524}
                     alt={data.name}
-                    quality={100}
+                    quality={90}
                   />
                 </Squircle>
               </div>

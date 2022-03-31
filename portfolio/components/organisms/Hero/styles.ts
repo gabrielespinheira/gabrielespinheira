@@ -4,7 +4,6 @@ export const Styled = styled.main`
   margin-bottom: 170px;
 
   .hero {
-    background: transparent url(/wallpaper.png) no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -12,6 +11,11 @@ export const Styled = styled.main`
     justify-content: space-between;
     padding: 100px 60px;
     overflow: hidden;
+
+    .wallpaper {
+      z-index: -1;
+      overflow: hidden;
+    }
 
     .content {
       position: relative;

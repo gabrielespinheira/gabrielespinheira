@@ -73,11 +73,11 @@ const AboutMe = () => {
             <AnimationAvatar>
               <Squircle radius={40}>
                 <Image
-                  src="/setup.png"
+                  src="/setup.jpg"
                   width={446}
                   height={487}
                   alt={data.name}
-                  quality={100}
+                  quality={90}
                 />
               </Squircle>
             </AnimationAvatar>
