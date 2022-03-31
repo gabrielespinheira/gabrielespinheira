@@ -1,6 +1,6 @@
-👋  Hey, I'm Gabriel Araujo
 
-### About me
+
+## 👋  Hey, I'm Gabriel Araujo
 
 I've been working with software development since 2014, from startups to big companies in different fields, which was fundamental for my career. Since the beginning, I have worked with Front-end and Back-end, and now I'm using mainly Typescript, NodeJS and ReactJS. 
 
