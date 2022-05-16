@@ -9,7 +9,8 @@ I'm always looking forward to the next challenge.
   - 🎉 26 yo
   - 💥 Developer since 2014
   - 🏠 From Rio de Janeiro, Brazil
-  - 🚀 Working as Software Engineer at XP Inc.
+  - 📍 Living in Lisbon, Portugal
+  - 🚀 Working as Senior Software Engineer
   - 👨🏻‍🎓 Bachelor's degree, Computer Science
   - 💫 UX/UI Design Enthusiast
   - 💙 Clean Code Lover
@@ -18,7 +19,7 @@ I'm always looking forward to the next challenge.
   - 📚 Reader
 
 ### Main languages
-  - Javascript / Typescript
+  - Typescript / Javascript
   - PHP
 
 ### Frameworks / Tools
@@ -27,8 +28,6 @@ I'm always looking forward to the next challenge.
   - Express
   - NestJS
   - Serverless
-  - Laravel
-  - WordPress
 
 ### Databases
   - MySQL
@@ -38,16 +37,14 @@ I'm always looking forward to the next challenge.
 
 ### Cloud
   - Docker
-  - AWS (Amazon Web Services)
+  - Amazon Web Services
   - DigitalOcean
   - Heroku
   - Firebase
   - CI/CD Pipelines
 
 ### Studying / Improving
-  - Speak English Fluently
   - Microservices
-  - GraphQL
   - Some new AWS services
 
 ### Get in touch
