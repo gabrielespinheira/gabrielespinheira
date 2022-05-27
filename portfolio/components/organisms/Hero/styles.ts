@@ -88,7 +88,7 @@ export const Styled = styled.main`
     position: absolute;
     z-index: 5;
     background: var(--primary);
-    box-shadow: 0 0 140px 220px var(--primary);
+    box-shadow: 0 0 220px 180px var(--primary);
     border-radius: 50%;
     overflow: hidden;
     width: 1px;
@@ -96,11 +96,12 @@ export const Styled = styled.main`
     animation-name: bubble;
     animation-iteration-count: infinite;
     animation-duration: 10s;
+    opacity: 0.5;
 
     [data-theme='light'] & {
       opacity: 0.5;
       background: var(--primary);
-      box-shadow: 0 0 140px 220px var(--primary);
+      box-shadow: 0 0 220px 180px var(--primary);
     }
   }
 
