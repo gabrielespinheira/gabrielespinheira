@@ -88,40 +88,39 @@ const AboutMe = () => {
               <h2>About me</h2>
 
               <p>
-                My name is Gabriel Araujo, I am from Rio de Janeiro, Brazil. I
-                am 26 years old and currently working as a Senior Software
-                Engineer.
+                Hey! My name is Gabriel Araujo. I'm from Brazil and currently
+                living in Lisbon, Portugal. When I was 16yo, I started to learn
+                software development for fun, just trying to understand how
+                things work.
               </p>
 
               <p>
-                I&apos;ve been working in the technology field since 2014, when
-                I started doing some jobs as a freelancer. Soon after, I started
-                studying programming and have never stopped. Since that time, I
-                have focused more on Software Architecture, Design Patterns and
-                Business, always looking for more efficient ways to solve
-                problems.
+                A few years later, I started my degree in computer science and
+                worked as an intern. I've worked with several projects and
+                companies since 2014. Over the years, I began to focus more on
+                projects using Javascript, where I was able to work with
+                front-end, back-end, and mobile.
               </p>
 
               <p>
-                When I was at school, studying was not what I liked the most.
-                However, I found my own way to learn things and I started
-                studying more and more about the subjects of my interest, like
-                creating softwares even better. After that, my interest for
-                books raised and I have never stopped reading.
+                In addition, I've always been a UX/UI design enthusiast, so in
+                my free time I always enjoyed reading about the subject and
+                being close to the design and creative teams of the companies I
+                worked for.
               </p>
 
               <p>
-                I have always been curious about and how I could improve my
-                knowledge in these areas, therefore in my free time, I read
-                about subjects like science, finance, entrepreneurship and
-                productivity.
+                In the last years of graduation, I started to study more
+                software architecture, design patterns, clean code and
+                scalability, topics that helped me solve several problems
+                efficiently.
               </p>
 
               <p>
-                In 2020 I finished my graduation in Computer Science, which was
-                a course that changed the way I think about several subjects,
-                not only technology, like: Scientific Study, Management and even
-                a little of Mathematics.
+                Recently, I decided to continue my studies and started a
+                postgraduate course in IT. That's when I came to Portugal, to
+                live here for a while. Today I'm looking for: expanding my
+                knowledge and meeting new people and different cultures.
               </p>
             </AnimationAboutText>
           </div>
