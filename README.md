@@ -49,6 +49,6 @@ I'm always looking forward to the next challenge.
 
 ### Get in touch
 
-- [Portfolio](https://ogabrielaraujo.com.br/)
+- [Portfolio](https://gabs.app/)
 - [LinkedIn](https://www.linkedin.com/in/ogabrielaraujo/)
 - [Email](mailto:gabriiel66@gmail.com)
