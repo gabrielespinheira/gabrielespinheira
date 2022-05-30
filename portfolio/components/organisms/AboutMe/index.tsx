@@ -88,23 +88,23 @@ const AboutMe = () => {
               <h2>About me</h2>
 
               <p>
-                Hey! My name is Gabriel Araujo. I'm from Brazil and currently
-                living in Lisbon, Portugal. When I was 16yo, I started to learn
-                software development for fun, just trying to understand how
-                things work.
+                Hey! My name is Gabriel Araujo. I&apos;m from Brazil and
+                currently living in Lisbon, Portugal. When I was 16yo, I started
+                to learn software development for fun, just trying to understand
+                how things work.
               </p>
 
               <p>
                 A few years later, I started my degree in computer science and
-                worked as an intern. I've worked with several projects and
+                worked as an intern. I&apos;ve worked with several projects and
                 companies since 2014. Over the years, I began to focus more on
                 projects using Javascript, where I was able to work with
                 front-end, back-end, and mobile.
               </p>
 
               <p>
-                In addition, I've always been a UX/UI design enthusiast, so in
-                my free time I always enjoyed reading about the subject and
+                In addition, I&apos;ve always been a UX/UI design enthusiast, so
+                in my free time I always enjoyed reading about the subject and
                 being close to the design and creative teams of the companies I
                 worked for.
               </p>
@@ -118,9 +118,9 @@ const AboutMe = () => {
 
               <p>
                 Recently, I decided to continue my studies and started a
-                postgraduate course in IT. That's when I came to Portugal, to
-                live here for a while. Today I'm looking for: expanding my
-                knowledge and meeting new people and different cultures.
+                postgraduate course in IT. That&apos;s when I came to Portugal,
+                to live here for a while. Today I&apos;m looking for: expanding
+                my knowledge and meeting new people and different cultures.
               </p>
             </AnimationAboutText>
           </div>
