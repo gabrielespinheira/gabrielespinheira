@@ -1,6 +1,6 @@
 
 
-## 👋  Hey, I'm Gabriel Araujo
+## 👋  Hey, I'm Gabriel Espinheira
 
 I've been working with software development since 2014, from startups to big companies in different fields, which was fundamental for my career. Since the beginning, I have worked with Front-end and Back-end, and now I'm using mainly Typescript, NodeJS and ReactJS. 
 
@@ -12,43 +12,29 @@ I'm always looking forward to the next challenge.
   - 📍 Living in Lisbon, Portugal
   - 🚀 Working as Senior Software Engineer
   - 👨🏻‍🎓 Bachelor's degree, Computer Science
+  - 👨🏻‍💼 Post Graduation, Digital Technologies for Management
   - 💫 UX/UI Design Enthusiast
   - 💙 Clean Code Lover
   - 🔥 Early Adopter
   - 🔫 Self-taught
   - 📚 Reader
 
-### Main languages
-  - Typescript / Javascript
-  - PHP
+### Skills
 
-### Frameworks / Tools
-  - ReactJS / NextJS
-  - React Native
-  - Express
-  - NestJS
-  - Serverless
+**Back-end:** Typescript, NodeJS, Serverless, ExpressJS, NestJS
 
-### Databases
-  - MySQL
-  - PostgreSQL
-  - MongoDB
-  - Redis
+**Front-end:** ReactJS and NextJS
 
-### Cloud
-  - Docker
-  - Amazon Web Services
-  - DigitalOcean
-  - Heroku
-  - Firebase
-  - CI/CD Pipelines
+**Databases:** PostgreSQL, MySQL, MongoDB, Redis, DynamoDB
 
-### Studying / Improving
-  - Microservices
-  - Some new AWS services
+**Cloud/DevOps:** Docker, AWS, CI/CD, Firebase, Digital Ocean
+
+**Tests:** Unit, Integration and E2E with Jest
+
+**Others:** UX/UI Design Enthusiast, Clean Code and Agile Methodologies
 
 ### Get in touch
 
-- [Portfolio](https://gabs.app/)
+- [Portfolio](https://gabs.app)
 - [LinkedIn](https://www.linkedin.com/in/ogabrielaraujo/)
 - [Email](mailto:gabriiel66@gmail.com)
