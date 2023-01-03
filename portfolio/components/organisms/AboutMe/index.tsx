@@ -1,4 +1,3 @@
-import { Squircle } from 'react-ios-corners'
 import { motion } from 'framer-motion'
 import {
   SiAmazonaws,
@@ -71,7 +70,7 @@ const AboutMe = () => {
         <div className="aboutme" id="aboutme">
           <div className="thumb">
             <AnimationAvatar>
-              <Squircle radius={40}>
+              <>
                 <Image
                   src="/setup.jpg"
                   width={446}
@@ -79,7 +78,7 @@ const AboutMe = () => {
                   alt={data.name}
                   quality={90}
                 />
-              </Squircle>
+              </>
             </AnimationAvatar>
           </div>
 
@@ -88,7 +87,7 @@ const AboutMe = () => {
               <h2>About me</h2>
 
               <p>
-                Hey! My name is Gabriel Araujo. I&apos;m from Brazil and
+                Hey! My name is Gabriel Espinheira. I&apos;m from Brazil and
                 currently living in Lisbon, Portugal. When I was 16yo, I started
                 to learn software development for fun, just trying to understand
                 how things work.

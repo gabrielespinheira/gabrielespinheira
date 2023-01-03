@@ -36,5 +36,5 @@ I'm always looking forward to the next challenge.
 ### Get in touch
 
 - [Portfolio](https://gabs.app)
-- [LinkedIn](https://www.linkedin.com/in/ogabrielaraujo/)
+- [LinkedIn](https://www.linkedin.com/in/gabrielespinheira/)
 - [Email](mailto:gabriiel66@gmail.com)

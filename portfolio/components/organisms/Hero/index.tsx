@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Squircle } from 'react-ios-corners'
 import { motion } from 'framer-motion'
 
 import { Styled } from './styles'
@@ -31,7 +30,7 @@ const Hero = () => {
     <Animation>
       <Styled>
         <div className="container">
-          <Squircle radius={50} style={{ position: 'relative' }}>
+          <div style={{ position: 'relative' }}>
             <div className="hero" id="hero">
               <div className="bubble"></div>
               <div className="wallpaper">
@@ -59,13 +58,11 @@ const Hero = () => {
 
                       if (link.name !== 'Source Code')
                         return (
-                          <Link href={link.url} key={index}>
-                            <a target="_blank">
-                              <Button>
-                                <TargetComponent size={20} />
-                                <span>{link.name}</span>
-                              </Button>
-                            </a>
+                          <Link href={link.url} key={index} target="_blank">
+                            <Button>
+                              <TargetComponent size={20} />
+                              <span>{link.name}</span>
+                            </Button>
                           </Link>
                         )
                     })}
@@ -73,7 +70,7 @@ const Hero = () => {
               </div>
 
               <div className="thumb">
-                <Squircle radius={40}>
+                <>
                   <Image
                     src="/avatar.jpg"
                     width={496}
@@ -81,10 +78,10 @@ const Hero = () => {
                     alt={data.name}
                     quality={90}
                   />
-                </Squircle>
+                </>
               </div>
             </div>
-          </Squircle>
+          </div>
         </div>
       </Styled>
     </Animation>

@@ -1,5 +1,4 @@
 import { ButtonHTMLAttributes } from 'react'
-import { Squircle } from 'react-ios-corners'
 
 import { StyledButton } from './styles'
 
@@ -13,11 +12,7 @@ const Button = ({
   children,
   ...props
 }: IButton & ButtonHTMLAttributes<IButton>) => {
-  return (
-    <Squircle radius={15}>
-      <StyledButton {...props}>{children}</StyledButton>
-    </Squircle>
-  )
+  return <StyledButton {...props}>{children}</StyledButton>
 }
 
 export default Button

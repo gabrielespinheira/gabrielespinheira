@@ -21,6 +21,7 @@ export const StyledButton = styled.button<IStyled>`
   transition: all 0.5s;
   gap: 16px;
   width: 100%;
+  border-radius: 8px;
 
   &:hover {
     background: var(--primary);

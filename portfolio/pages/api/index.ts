@@ -4,9 +4,6 @@ type Data = {
   status: boolean
 }
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ status: true })
+export default function handler(_: NextApiRequest, res: NextApiResponse<Data>) {
+  return res.status(200).json({ status: true })
 }
