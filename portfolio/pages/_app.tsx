@@ -109,7 +109,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
       <GlobalStyle />
 
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="wait" initial={true}>
         <main className={fontFamily.className}>
           <Component {...pageProps} />
         </main>
