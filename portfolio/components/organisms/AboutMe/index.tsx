@@ -21,6 +21,8 @@ import { Styled } from './styles'
 import data from 'data.json'
 import { Image } from 'components'
 
+const tech_icon_size = 60
+
 const AnimationAvatar = ({ children }) => {
   return (
     <motion.div
@@ -70,15 +72,13 @@ const AboutMe = () => {
         <div className="aboutme" id="aboutme">
           <div className="thumb">
             <AnimationAvatar>
-              <>
-                <Image
-                  src="/setup.jpg"
-                  width={446}
-                  height={487}
-                  alt={data.name}
-                  quality={90}
-                />
-              </>
+              <Image
+                src="/setup.jpg"
+                width={446}
+                height={487}
+                alt={data.name}
+                quality={90}
+              />
             </AnimationAvatar>
           </div>
 
@@ -125,63 +125,63 @@ const AboutMe = () => {
         <div className="techs">
           <div className="container">
             <div>
-              <SiJavascript size={70} />
+              <SiJavascript size={tech_icon_size} />
               <span>Javascript</span>
             </div>
             <div>
-              <SiTypescript size={70} />
+              <SiTypescript size={tech_icon_size} />
               <span>Typescript</span>
             </div>
             <div>
-              <SiReact size={70} />
+              <SiReact size={tech_icon_size} />
               <span>ReactJS</span>
             </div>
             <div>
-              <SiNextdotjs size={70} />
+              <SiNextdotjs size={tech_icon_size} />
               <span>NextJS</span>
             </div>
             <div>
-              <SiNodedotjs size={70} />
+              <SiNodedotjs size={tech_icon_size} />
               <span>NodeJS</span>
             </div>
             <div>
-              <SiExpress size={70} />
+              <SiExpress size={tech_icon_size} />
               <span>ExpressJS</span>
             </div>
             <div>
-              <SiMysql size={70} />
+              <SiMysql size={tech_icon_size} />
               <span>MySQL</span>
             </div>
             <div>
-              <SiPostgresql size={70} />
+              <SiPostgresql size={tech_icon_size} />
               <span>PostgreSQL</span>
             </div>
             <div>
-              <SiMongodb size={70} />
+              <SiMongodb size={tech_icon_size} />
               <span>MongoDB</span>
             </div>
             <div>
-              <SiPrisma size={70} />
+              <SiPrisma size={tech_icon_size} />
               <span>Prisma</span>
             </div>
             <div>
-              <SiJest size={70} />
+              <SiJest size={tech_icon_size} />
               <span>Jest</span>
             </div>
             <div>
-              <SiDocker size={70} />
+              <SiDocker size={tech_icon_size} />
               <span>Docker</span>
             </div>
             <div>
-              <SiAmazonaws size={70} />
+              <SiAmazonaws size={tech_icon_size} />
               <span>AWS</span>
             </div>
             <div>
-              <SiDigitalocean size={70} />
+              <SiDigitalocean size={tech_icon_size} />
               <span>DigitalOcean</span>
             </div>
             <div>
-              <SiHeroku size={70} />
+              <SiHeroku size={tech_icon_size} />
               <span>Heroku</span>
             </div>
           </div>

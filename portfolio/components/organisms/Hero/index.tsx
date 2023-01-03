@@ -37,9 +37,12 @@ const Hero = () => {
                 <Image
                   src="/wallpaper.png"
                   alt="Background"
-                  quality={40}
-                  layout="fill"
-                  objectFit="cover"
+                  quality={60}
+                  width={1410}
+                  height={730}
+                  priority={true}
+                  placeholder="blur"
+                  blurDataURL="/wallpaper.png"
                 />
               </div>
 
@@ -70,15 +73,16 @@ const Hero = () => {
               </div>
 
               <div className="thumb">
-                <>
-                  <Image
-                    src="/avatar.jpg"
-                    width={496}
-                    height={524}
-                    alt={data.name}
-                    quality={90}
-                  />
-                </>
+                <Image
+                  src="/avatar.jpg"
+                  width={496}
+                  height={524}
+                  alt={data.name}
+                  title={data.name}
+                  quality={90}
+                  placeholder="blur"
+                  blurDataURL="/avatar.jpg"
+                />
               </div>
             </div>
           </div>

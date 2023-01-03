@@ -15,10 +15,9 @@ export const Styled = styled.main`
       width: 100%;
       max-width: 446px;
 
-      & > div > div {
-        display: flex;
+      img {
+        max-width: 100%;
         height: auto;
-        max-height: 487px;
       }
     }
 

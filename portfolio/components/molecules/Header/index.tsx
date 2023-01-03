@@ -60,7 +60,12 @@ const Header = () => {
           </div>
 
           <div className="options">
-            <Button className="theme" onClick={handleChangeTheme}>
+            <Button
+              className="theme"
+              onClick={handleChangeTheme}
+              name="Toggle theme"
+              title="Toggle theme"
+            >
               {theme === 'light' ? <FiMoon size={24} /> : <FiSun size={24} />}
             </Button>
           </div>

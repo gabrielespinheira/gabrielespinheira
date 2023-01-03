@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   [data-theme="dark"] {
-    --text: #EFEFEF;
+    --text: #E6F1FE;
     --bg: #050406;
     --shape: #1A1A1A;
     --bgTransp: rgba(75, 75, 75, 0.3);
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
 
   [data-theme="light"] {
     --text: #3A4553;
-    --bg: #FFFFFE;
+    --bg: #F8F8F8;
     --shape: #ECECEC;
     --bgTransp: rgba(32, 32, 32, 0.10);
     --navyBlue: #3A4553;

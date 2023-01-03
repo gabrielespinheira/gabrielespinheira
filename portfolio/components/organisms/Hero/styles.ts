@@ -80,8 +80,9 @@ export const Styled = styled.main`
       position: relative;
       z-index: 9;
 
-      & > div {
-        height: 525px;
+      img {
+        max-width: 100%;
+        height: auto;
       }
     }
   }

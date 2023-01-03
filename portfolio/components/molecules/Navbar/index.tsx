@@ -39,7 +39,7 @@ const Navbar = () => {
     <Animation>
       <Styled>
         <div>
-          <Link to="header" smooth={true} data-tip data-for="home">
+          <Link to="header" smooth={true} data-tip data-for="home" name="Home">
             <FiHome size={24} />
           </Link>
           <Link
@@ -48,6 +48,7 @@ const Navbar = () => {
             offset={-40}
             data-tip
             data-for="about"
+            name="About me"
           >
             <FiUser size={24} />
           </Link>
@@ -57,6 +58,7 @@ const Navbar = () => {
             offset={-40}
             data-tip
             data-for="experience"
+            name="Experience"
           >
             <FiPackage size={24} />
           </Link>
@@ -71,13 +73,13 @@ const Navbar = () => {
             offset={-40}
             data-tip
             data-for="contact"
+            name="Contact"
           >
             <FiMessageCircle size={24} />
           </Link>
           <NextLink
+            title="Email"
             href="mailto:gabriiel66@gmail.com"
-            data-tip
-            data-for="mail"
             target="_blank"
           >
             <FiMail size={24} />
