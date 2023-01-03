@@ -13,4 +13,4 @@ This year, I used NextJS, which was really good for performance and good practic
 - [x] CSS Variables
 - [x] Atomic Design
 
-<sub>CREATED AND DESIGNED BY GABRIEL ARAUJO - 2022</sub>
+<sub>CREATED AND DESIGNED BY GABRIEL ESPINHEIRA - 2022</sub>

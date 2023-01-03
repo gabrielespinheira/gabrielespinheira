@@ -4,7 +4,7 @@ interface IHead {
   title?: string
 }
 
-const Head = ({ title = 'Gabriel Araujo - Software Engineer' }: IHead) => {
+const Head = ({ title = 'Gabriel Espinheira - Software Engineer' }: IHead) => {
   return (
     <NextHead>
       <title>{title}</title>

@@ -13,6 +13,7 @@ export const Styled = styled.main`
     display: flex;
     flex-direction: column;
     background: var(--shape);
+    border-radius: 12px;
   }
 
   .details {

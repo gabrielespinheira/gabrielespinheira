@@ -1,4 +1,3 @@
-import { Squircle } from 'react-ios-corners'
 import { motion } from 'framer-motion'
 import {
   SiAmazonaws,
@@ -71,7 +70,7 @@ const AboutMe = () => {
         <div className="aboutme" id="aboutme">
           <div className="thumb">
             <AnimationAvatar>
-              <Squircle radius={40}>
+              <>
                 <Image
                   src="/setup.jpg"
                   width={446}
@@ -79,7 +78,7 @@ const AboutMe = () => {
                   alt={data.name}
                   quality={90}
                 />
-              </Squircle>
+              </>
             </AnimationAvatar>
           </div>
 
@@ -88,39 +87,34 @@ const AboutMe = () => {
               <h2>About me</h2>
 
               <p>
-                Hey! My name is Gabriel Araujo. I&apos;m from Brazil and
-                currently living in Lisbon, Portugal. When I was 16yo, I started
-                to learn software development for fun, just trying to understand
-                how things work.
+                Hi there! My name is Gabriel Espinheira and I&apos;m a Senior
+                Software Engineer working mainly with JavaScript. I have a
+                passion for building innovative solutions and building
+                high-quality software.
               </p>
 
               <p>
-                A few years later, I started my degree in computer science and
-                worked as an intern. I&apos;ve worked with several projects and
-                companies since 2014. Over the years, I began to focus more on
-                projects using Javascript, where I was able to work with
-                front-end, back-end, and mobile.
+                Throughout my career, I have had the opportunity to work on a
+                wide range of projects and have gained expertise in a number of
+                technologies, including Typescript, ReactJS, NodeJS, React
+                Native, and AWS. I&apos;m also a design enthusiast and have a
+                keen eye for aesthetics, which has allowed me to create visually
+                appealing and user-friendly software.
               </p>
 
               <p>
-                In addition, I&apos;ve always been a UX/UI design enthusiast, so
-                in my free time I always enjoyed reading about the subject and
-                being close to the design and creative teams of the companies I
-                worked for.
+                I&apos;m highly skilled in agile development methodologies and
+                have a track record of delivering projects on time and within
+                budget. I&apos;m a strong team player and enjoy collaborating
+                with others to come up with innovative solutions to complex
+                problems.
               </p>
 
               <p>
-                In the last years of graduation, I started to study more
-                software architecture, design patterns, clean code and
-                scalability, topics that helped me solve several problems
-                efficiently.
-              </p>
-
-              <p>
-                Recently, I decided to continue my studies and started a
-                postgraduate course in IT. That&apos;s when I came to Portugal,
-                to live here for a while. Today I&apos;m looking for: expanding
-                my knowledge and meeting new people and different cultures.
+                I&apos;m looking to build aesthetic software interfaces with
+                focus on user experience with scalable architecture and design
+                patterns. If you have a project that you think would be a good
+                fit for my skills and experience, I would love to hear from you!
               </p>
             </AnimationAboutText>
           </div>

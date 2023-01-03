@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: var(--font);
+    // font-family: var(--font);
     color: var(--text);
     background: var(--bg);
   }
@@ -61,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
   textarea,
   a,
   p {
-    font-family: var(--font);
+    // font-family: var(--font);
     outline: none;
   }
 
@@ -79,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
   body .__react_component_tooltip.show {
     background: var(--primary);
     color: var(--text);
-    font-family: var(--font);
+    // font-family: var(--font);
     border: none;
     border-radius: 4px;
     font-weight: bold;

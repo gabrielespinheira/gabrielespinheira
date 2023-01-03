@@ -32,13 +32,11 @@ const Contact = () => {
                 data.links.map((link, index) => {
                   const TargetComponent = Icons[link.name]
                   return (
-                    <Link href={link.url} key={index}>
-                      <a target="_blank">
-                        <Button className="btn">
-                          <TargetComponent size={24} />
-                          {link.name}
-                        </Button>
-                      </a>
+                    <Link href={link.url} key={index} target="_blank">
+                      <Button className="btn">
+                        <TargetComponent size={24} />
+                        {link.name}
+                      </Button>
                     </Link>
                   )
                 })}
@@ -47,7 +45,7 @@ const Contact = () => {
             <footer>
               <p className="muted">
                 Design and Code by <br />
-                Gabriel Araujo - {new Date().getFullYear()}
+                Gabriel Espinheira - {new Date().getFullYear()}
               </p>
             </footer>
           </div>

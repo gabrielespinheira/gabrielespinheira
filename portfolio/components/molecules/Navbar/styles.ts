@@ -5,6 +5,8 @@ export const Styled = styled.nav`
     display: flex;
     background: var(--bgTransp);
     backdrop-filter: blur(30px);
+    border-radius: 12px;
+    overflow: hidden;
   }
 
   a {

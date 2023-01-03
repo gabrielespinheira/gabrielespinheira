@@ -1,5 +1,4 @@
 import NextLink from 'next/link'
-import { Squircle } from 'react-ios-corners'
 import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
 import {
@@ -15,7 +14,7 @@ import { Styled } from './styles'
 const Animation = ({ children }) => {
   let variants = {
     hidden: { bottom: -100, left: '50%', transform: 'translateX(-50%)' },
-    visible: { bottom: 30 },
+    visible: { bottom: 30, left: '50%', transform: 'translateX(-50%)' },
   }
 
   if (typeof window !== 'undefined') {
@@ -39,7 +38,7 @@ const Navbar = () => {
   return (
     <Animation>
       <Styled>
-        <Squircle radius={25}>
+        <div>
           <Link to="header" smooth={true} data-tip data-for="home">
             <FiHome size={24} />
           </Link>
@@ -61,11 +60,11 @@ const Navbar = () => {
           >
             <FiPackage size={24} />
           </Link>
-          {/* <Link href="/">
+          {/* <NextLink href="/">
             <a data-tip data-for="cases">
               <FiLayers size={24} />
             </a>
-          </Link> */}
+          </NextLink> */}
           <Link
             to="contact"
             smooth={true}
@@ -75,12 +74,15 @@ const Navbar = () => {
           >
             <FiMessageCircle size={24} />
           </Link>
-          <NextLink href="mailto:gabriiel66@gmail.com">
-            <a data-tip data-for="mail" target="_blank">
-              <FiMail size={24} />
-            </a>
+          <NextLink
+            href="mailto:gabriiel66@gmail.com"
+            data-tip
+            data-for="mail"
+            target="_blank"
+          >
+            <FiMail size={24} />
           </NextLink>
-        </Squircle>
+        </div>
       </Styled>
     </Animation>
   )

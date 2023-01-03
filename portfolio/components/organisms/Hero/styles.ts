@@ -4,6 +4,7 @@ export const Styled = styled.main`
   margin-bottom: 170px;
 
   .hero {
+    position: relative;
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -11,6 +12,7 @@ export const Styled = styled.main`
     justify-content: space-between;
     padding: 100px 60px;
     overflow: hidden;
+    border-radius: 24px;
 
     .wallpaper {
       position: absolute;
@@ -32,11 +34,11 @@ export const Styled = styled.main`
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 37px;
       font-weight: 600;
 
       strong {
-        font-size: 42px;
+        font-size: 37px;
         font-weight: 600;
         color: var(--primary);
       }
