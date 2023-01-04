@@ -2,9 +2,9 @@
 
 ## 👋  Hey, I'm Gabriel Espinheira
 
-I've been working with software development since 2014, from startups to big companies in different fields, which was fundamental for my career. Since the beginning, I have worked with Front-end and Back-end, and now I'm using mainly Typescript, NodeJS and ReactJS. 
+Hi there! My name is Gabriel Espinheira and I'm a Senior Software Engineer working mainly with JavaScript. I am skilled in a variety of technologies, including Typescript, ReactJS, NodeJS, React Native, and AWS. I'm proficient in agile methods and am a strong team player with a track record of delivering projects on time and within budget. 
 
-I'm always looking forward to the next challenge.
+**I'm looking to build aesthetic software interfaces with focus on user experience with scalable architecture and design patterns. If you have a project that would be a good fit for my skills and experience, I would love to hear from you!**
 
   - 🎉 26 yo
   - 💥 Developer since 2014
