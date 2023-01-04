@@ -52,26 +52,24 @@ const Header = () => {
   }
 
   return (
-    <Animation>
-      <Styled id="header">
-        <div className="container">
-          <div className="logo">
-            <Link href="/">{data.name}</Link>
-          </div>
-
-          <div className="options">
-            <Button
-              className="theme"
-              onClick={handleChangeTheme}
-              name="Toggle theme"
-              title="Toggle theme"
-            >
-              {theme === 'light' ? <FiMoon size={24} /> : <FiSun size={24} />}
-            </Button>
-          </div>
+    <Styled id="header">
+      <div className="container">
+        <div className="logo">
+          <Link href="/">{data.name}</Link>
         </div>
-      </Styled>
-    </Animation>
+
+        <div className="options">
+          <Button
+            className="theme"
+            onClick={handleChangeTheme}
+            name="Toggle theme"
+            title="Toggle theme"
+          >
+            {theme === 'light' ? <FiMoon size={24} /> : <FiSun size={24} />}
+          </Button>
+        </div>
+      </div>
+    </Styled>
   )
 }
 

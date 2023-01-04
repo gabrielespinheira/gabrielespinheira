@@ -36,57 +36,50 @@ const Animation = ({ children }) => {
 
 const Navbar = () => {
   return (
-    <Animation>
-      <Styled>
-        <div>
-          <Link to="header" smooth={true} data-tip data-for="home" name="Home">
-            <FiHome size={24} />
-          </Link>
-          <Link
-            to="aboutme"
-            smooth={true}
-            offset={-40}
-            data-tip
-            data-for="about"
-            name="About me"
-          >
-            <FiUser size={24} />
-          </Link>
-          <Link
-            to="experience"
-            smooth={true}
-            offset={-40}
-            data-tip
-            data-for="experience"
-            name="Experience"
-          >
-            <FiPackage size={24} />
-          </Link>
-          {/* <NextLink href="/">
-            <a data-tip data-for="cases">
-              <FiLayers size={24} />
-            </a>
-          </NextLink> */}
-          <Link
-            to="contact"
-            smooth={true}
-            offset={-40}
-            data-tip
-            data-for="contact"
-            name="Contact"
-          >
-            <FiMessageCircle size={24} />
-          </Link>
-          <NextLink
-            title="Email"
-            href="mailto:gabriiel66@gmail.com"
-            target="_blank"
-          >
-            <FiMail size={24} />
-          </NextLink>
-        </div>
-      </Styled>
-    </Animation>
+    <Styled>
+      <div>
+        <Link to="header" smooth={true} data-tip data-for="home" name="Home">
+          <FiHome size={24} />
+        </Link>
+        <Link
+          to="aboutme"
+          smooth={true}
+          offset={-40}
+          data-tip
+          data-for="about"
+          name="About me"
+        >
+          <FiUser size={24} />
+        </Link>
+        <Link
+          to="experience"
+          smooth={true}
+          offset={-40}
+          data-tip
+          data-for="experience"
+          name="Experience"
+        >
+          <FiPackage size={24} />
+        </Link>
+        <Link
+          to="contact"
+          smooth={true}
+          offset={-40}
+          data-tip
+          data-for="contact"
+          name="Contact"
+        >
+          <FiMessageCircle size={24} />
+        </Link>
+        <NextLink
+          title="Email"
+          href="mailto:gabriiel66@gmail.com"
+          target="_blank"
+        >
+          <FiMail size={24} />
+        </NextLink>
+      </div>
+    </Styled>
   )
 }
 

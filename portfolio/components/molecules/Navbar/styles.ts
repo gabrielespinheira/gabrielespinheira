@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 
 export const Styled = styled.nav`
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+
   & > div {
     display: flex;
     background: var(--bgTransp);

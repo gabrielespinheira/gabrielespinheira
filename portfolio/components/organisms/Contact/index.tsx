@@ -32,7 +32,12 @@ const Contact = () => {
                 data.links.map((link, index) => {
                   const TargetComponent = Icons[link.name]
                   return (
-                    <Link href={link.url} key={index} target="_blank">
+                    <Link
+                      href={link.url}
+                      key={index}
+                      target="_blank"
+                      title={data.name}
+                    >
                       <Button className="btn">
                         <TargetComponent size={24} />
                         {link.name}

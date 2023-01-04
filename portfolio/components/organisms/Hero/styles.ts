@@ -96,10 +96,9 @@ export const Styled = styled.main`
     overflow: hidden;
     width: 1px;
     height: 1px;
-    animation-name: bubble;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
     opacity: 0.5;
+    right: 70px;
+    top: 70px;
 
     [data-theme='light'] & {
       opacity: 0.5;
@@ -163,6 +162,15 @@ export const Styled = styled.main`
       h1,
       h1 strong {
         font-size: 32px;
+      }
+
+      .wallpaper img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
       }
 
       h2 {
@@ -260,6 +268,14 @@ export const Styled = styled.main`
 
   @media (max-width: 499px) {
     .hero {
+      .logo {
+        font-size: 27px;
+      }
+
+      .thumb {
+        max-width: 280px;
+      }
+
       h1,
       h1 strong {
         font-size: 22px;
