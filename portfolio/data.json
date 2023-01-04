@@ -1,6 +1,11 @@
 {
+  "base_url": "https://gabs.app",
   "name": "Gabriel Espinheira",
   "title": "Software Engineer",
+  "full_title": "Gabriel Espinheira - Software Engineer",
+  "thumb": "https://gabs.app/_next/image?url=%2Favatar.jpg&w=640&q=90",
+  "thumb_alt": "https://gabs.app/_next/image?url=%2Fsetup.jpg&w=640&q=90",
+  "keywords": "developer, software engineer, senior software engineer, front end, back end, full stack, design, javascript, typescript, nodejs, reactjs, nextjs",
   "home": {
     "title": "Hi, my name is",
     "subtitle": "I'm a Creative Software Engineer",

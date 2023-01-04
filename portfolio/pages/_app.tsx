@@ -6,6 +6,8 @@ import { AnimatePresence } from 'framer-motion'
 import GlobalStyle from 'styles/global'
 import { fontFamily } from 'styles/fontFamily'
 
+import data from 'data.json'
+
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
@@ -14,52 +16,29 @@ const App = ({ Component, pageProps }: AppProps) => {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
-        <meta
-          name="description"
-          content="I've been working with software development since 2014, from startups to big companies in different fields, which was fundamental for my career. Since the beginning, I have worked with Front-end and Back-end, and now I'm using mainly Javascript, NodeJS and ReactJS."
-        />
-        <meta
-          name="keywords"
-          content="developer, software engineer, senior software engineer, front end, back end, full stack, design, javascript, typescript, nodejs, nextjs"
-        />
+        <meta name="description" content={data.home.description} />
+        <meta name="keywords" content={data.keywords} />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
-        <meta name="author" content="Gabriel Espinheira" />
-        <meta
-          name="application-name"
-          content="Gabriel Espinheira - Software Engineer"
-        />
-        <meta
-          name="apple-mobile-web-app-title"
-          content="Gabriel Espinheira - Software Engineer"
-        />
+        <meta name="author" content={data.name} />
+        <meta name="application-name" content={data.full_title} />
+        <meta name="apple-mobile-web-app-title" content={data.full_title} />
 
         {/* OG Tags */}
         <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Gabriel Espinheira - Software Engineer"
-        />
-        <meta
-          name="og:description"
-          content="I've been working with software development since 2014, from startups to big companies in different fields, which was fundamental for my career. Since the beginning, I have worked with Front-end and Back-end, and now I'm using mainly Javascript, NodeJS and ReactJS."
-        />
-        <meta property="og:url" content="https://gabs.app/" />
-        <meta property="og:site_name" content="Gabriel Espinheira" />
-        <meta property="og:image" content="/thumb.jpg" />
+        <meta property="og:title" content={data.full_title} />
+        <meta name="og:description" content={data.home.description} />
+        <meta property="og:url" content={data.base_url} />
+        <meta property="og:site_name" content={data.name} />
+        <meta property="og:image" content={data.thumb} />
+        <meta property="og:image:alt" content={data.thumb_alt} />
         <meta property="og:image:width" content="500" />
         <meta property="og:image:height" content="500" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Gabriel Espinheira - Software Engineer"
-        />
-        <meta
-          name="twitter:description"
-          content="I've been working with software development since 2014, from startups to big companies in different fields, which was fundamental for my career. Since the beginning, I have worked with Front-end and Back-end, and now I'm using mainly Javascript, NodeJS and ReactJS."
-        />
-        <meta name="twitter:image" content="/thumb.jpg" />
+        <meta name="twitter:title" content={data.full_title} />
+        <meta name="twitter:description" content={data.home.description} />
+        <meta name="twitter:image" content={data.thumb} />
 
         {/* Icons */}
         <link rel="shortcut icon" href="/icons/16x16.png" />
