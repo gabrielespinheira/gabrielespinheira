@@ -36,10 +36,24 @@
   ],
   "jobs": [
     {
+      "company": "LovelyStay",
+      "obs": "",
+      "role": "Software Engineer - Senior | Aug 2022 - current",
+      "location": "Remote / Lisbon",
+      "description": "Working for a real estate investment fund focused on building and maintaining a property management solution, connecting with various external services such as Airbnb and Booking, using mainly NodeJs with Typescript and PostgreSQL."
+    },
+    {
+      "company": "Art2Act",
+      "obs": "",
+      "role": "Software Engineer - Senior | May 2022 - Jul 2022",
+      "location": "Remote",
+      "description": "Building an NFT collaborative subscription platform to connect Artists around the world and Customers using mainly NodeJs, GraphQL, Web3 and AWS Services."
+    },
+    {
       "company": "XP Inc",
       "obs": "(NASDAQ: XP, B3: XPBR31)",
-      "role": "Software Engineer - Senior | Sep 2020 - current",
-      "location": "100% Remote",
+      "role": "Software Engineer - Senior | Sep 2020 - Mar 2022",
+      "location": "Remote / São Paulo, Brazil",
       "description": "Working as a Software Engineer, in the most recognized investment firms in Brazil. Mainly building solutions like Back-end API architecture and building a scalable and reusable front-end with NextJS, using methodologies like Atomic Design. Using ReactJS, NextJS, Typescript, Serverless, PHP and WordPress."
     },
     {
