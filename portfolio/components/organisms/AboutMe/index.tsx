@@ -97,9 +97,9 @@ const AboutMe = () => {
                 Throughout my career, I have had the opportunity to work on a
                 wide range of projects and have gained expertise in a number of
                 technologies, including Typescript, ReactJS, NodeJS, React
-                Native, and AWS. I&apos;m also a design enthusiast and have a
-                keen eye for aesthetics, which has allowed me to create visually
-                appealing and user-friendly software.
+                Native, PHP and AWS. I&apos;m also a design enthusiast and have
+                a keen eye for aesthetics, which has allowed me to create
+                visually appealing and user-friendly software.
               </p>
 
               <p>
