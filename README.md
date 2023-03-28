@@ -1,15 +1,17 @@
 
 
-## 👋  Hey, I'm Gabriel Espinheira
+## 👋  [Hey, I'm Gabriel Espinheira](https://gabs.app)
 
-Hi there! My name is Gabriel Espinheira and I'm a Senior Software Engineer working mainly with JavaScript. I am skilled in a variety of technologies, including Typescript, ReactJS, NodeJS, React Native, and AWS. I'm proficient in agile methods and am a strong team player with a track record of delivering projects on time and within budget. 
+Hi there!
+
+I’m a senior software engineer with a passion for technology and digital products. I first discovered my love for development while playing around with HTML and CSS when I was 16yo. I am dedicated to continuously improving my development skills, and am committed to producing high-quality, efficient and user-centric digital products. I take pride in my ability to understand business objectives and translate them into a seamless and intuitive user experience.
 
 **I'm looking to build aesthetic software interfaces with focus on user experience with scalable architecture and design patterns. If you have a project that would be a good fit for my skills and experience, I would love to hear from you!**
 
-  - 🎉 26 yo
+  - 🎉 27 yo
   - 💥 Developer since 2014
   - 🏠 From Rio de Janeiro, Brazil
-  - 📍 Living in Lisbon, Portugal
+  - 📍 Based in Lisbon, Portugal
   - 🚀 Working as Senior Software Engineer
   - 👨🏻‍🎓 Bachelor's degree, Computer Science
   - 👨🏻‍💼 Post Graduation, Digital Technologies for Management
@@ -21,7 +23,7 @@ Hi there! My name is Gabriel Espinheira and I'm a Senior Software Engineer worki
 
 ### Skills
 
-**Back-end:** Typescript, NodeJS, Serverless, ExpressJS, NestJS
+**Back-end:** Typescript, NodeJS, Serverless, ExpressJS, NestJS, PHP, WordPress
 
 **Front-end:** ReactJS and NextJS
 
