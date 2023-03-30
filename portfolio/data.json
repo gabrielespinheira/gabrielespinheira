@@ -36,9 +36,16 @@
   ],
   "jobs": [
     {
+      "company": "Mollie",
+      "obs": "",
+      "role": "Software Engineer - Senior | Mar 2023 - current",
+      "location": "Remote / Lisbon",
+      "description": "We are Mollie, a finance industry pioneer and one of Europe’s fastest-growing fintechs. We believe that every business has the right to grow, and that drives us to create products that simplify financial services – effortless payments, flexible financing, powerful integrations, and more."
+    },
+    {
       "company": "LovelyStay",
       "obs": "",
-      "role": "Software Engineer - Senior | Aug 2022 - current",
+      "role": "Software Engineer - Senior | Aug 2022 - Fev 2023",
       "location": "Remote / Lisbon",
       "description": "Working for a real estate investment fund focused on building and maintaining a property management solution, connecting with various external services such as Airbnb and Booking, using mainly NodeJs with Typescript and PostgreSQL."
     },
