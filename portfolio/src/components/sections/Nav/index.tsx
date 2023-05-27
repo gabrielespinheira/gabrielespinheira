@@ -95,7 +95,7 @@ export default function Nav() {
         initial={{ top: '-100px' }}
         animate={{ top: '24px' }}
         transition={{ duration: 1, delay: 3 }}
-        className="!fixed left-1/2 z-50 flex w-auto translate-x-[-50%] items-center justify-center gap-2 p-1 text-base font-normal text-neutral-dark dark:text-neutral-light"
+        className="!fixed left-1/2 z-50 flex w-auto translate-x-[-50%] items-center justify-center gap-2 rounded-3xl p-1 text-base font-normal text-neutral-dark dark:text-neutral-light"
       >
         <NavButton label="Home" id="nav-hero" dataId="hero" />
         <NavButton label="About" id="nav-about" dataId="about" />

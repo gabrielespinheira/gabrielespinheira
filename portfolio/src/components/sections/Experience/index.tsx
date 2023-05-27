@@ -1,6 +1,6 @@
 import { RxNotionLogo } from 'react-icons/rx'
 
-import { Glass, Reveal, Shape } from '@/components'
+import { Glass, Heading, Reveal, Shape, Widget } from '@/components'
 
 const colors: any = {
   purple: 'bg-purple-main',
@@ -32,13 +32,15 @@ const Company = ({
         right ? 'end' : 'start'
       }`}
     >
-      <Glass className="w-full max-w-[500px] p-6" dots={true}>
+      <Widget dots={true} size="sidebox">
         {icon}
 
-        <h4 className="mt-2 text-2xl font-semibold">{title}</h4>
+        <Heading tag="h4" className="mt-2">
+          {title}
+        </Heading>
         <div className="text-sm">{role} (Jan 2023 / May 2023)</div>
         <p className="mt-2 leading-[170%]">{text}</p>
-      </Glass>
+      </Widget>
 
       <div
         className={`absolute ${
@@ -71,9 +73,7 @@ export default function Experience() {
       id="experience"
       className="container flex flex-col items-center justify-center pb-24 pt-24"
     >
-      <h2 className="mb-14 text-7xl font-bold tracking-[-0.03em]">
-        Experience
-      </h2>
+      <Heading className="mb-14">Experience</Heading>
 
       <section className="relative flex w-full flex-col items-center justify-center gap-8 pb-24 pt-24">
         <span className="gradient-timeline absolute left-1/2 top-0 h-full w-[1px]"></span>

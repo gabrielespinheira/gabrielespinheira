@@ -15,7 +15,7 @@ export default function Glass({
 } & any) {
   return (
     <motion.div
-      className={`bg-glass relative rounded-3xl text-neutral-dark dark:text-neutral-light ${className}`}
+      className={`bg-glass relative text-neutral-dark dark:text-neutral-light ${className}`}
       {...props}
     >
       {children}

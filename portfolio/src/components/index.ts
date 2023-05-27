@@ -2,8 +2,10 @@
 import Shape from './atoms/Shape'
 import Glass from './atoms/Glass'
 import AppIsometric from './atoms/AppIsometric'
+import Widget from './atoms/Widget'
+import Heading from './atoms/Heading'
 
-export { Shape, Glass, AppIsometric }
+export { Shape, Glass, AppIsometric, Widget, Heading }
 
 // sections
 import Nav from './sections/Nav'

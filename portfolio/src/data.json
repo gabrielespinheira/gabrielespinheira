@@ -37,6 +37,10 @@
     "spotify": {
       "name": "Spotify",
       "url": "https://open.spotify.com/user/gabriiel66"
+    },
+    "resume": {
+      "name": "Resume",
+      "url": "/resume.pdf"
     }
   },
   "experience": [

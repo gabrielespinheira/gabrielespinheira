@@ -1,14 +1,8 @@
-import {
-  FiBook,
-  FiClipboard,
-  FiFile,
-  FiGithub,
-  FiLinkedin,
-  FiSend,
-} from 'react-icons/fi'
+import { FiBook, FiClipboard, FiFile, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi'
 import { RxNotionLogo } from 'react-icons/rx'
 
-import { Shape, Glass, Reveal } from '@/components'
+import { Shape, Glass, Reveal, Widget, Heading } from '@/components'
+import data from '@/data.json'
 
 export default function Contact() {
   return (
@@ -16,15 +10,15 @@ export default function Contact() {
       id="contact"
       className="container relative flex flex-col items-center justify-center pb-8 pt-24"
     >
-      <h2 className="mb-14 text-7xl font-bold tracking-[-0.03em]">Contact</h2>
+      <Heading className="mb-14">Contact</Heading>
 
       <div className="flex w-full flex-row items-start justify-center gap-24">
         <form className="relative mt-[25px] flex w-full max-w-[480px] flex-col gap-6 px-8 py-6">
-          <Glass className="!absolute bottom-0 left-0 right-0 top-0 z-[-1] h-full w-full" />
+          <Glass className="!absolute bottom-0 left-0 right-0 top-0 z-[-1] h-full w-full rounded-3xl" />
 
-          <h3 className="absolute top-[-25px] text-5xl font-semibold tracking-tighter">
+          <Heading tag="h3" className="absolute top-[-25px] !text-5xl">
             Get in touch
-          </h3>
+          </Heading>
 
           <div className="mt-4 flex flex-col">
             <label htmlFor="name" className="mb-2 text-base font-medium">
@@ -69,53 +63,41 @@ export default function Contact() {
         </form>
 
         <div className="flex w-full max-w-[340px] flex-col items-center">
-          <h3 className="w-full text-center text-5xl font-semibold tracking-tighter">
+          <Heading tag="h3" className="w-full text-center !text-5xl">
             See more
-          </h3>
+          </Heading>
 
           <div
             id="social_links"
             className="mt-10 flex flex-row flex-wrap items-center justify-center gap-8"
           >
-            <Glass
-              className="flex h-[180px] w-[150px] flex-col p-4"
-              dots={true}
-            >
-              <FiLinkedin size={32} />
+            <Widget size="module" href={data.links.linkedin.url} target="_blank">
+              <FiLinkedin size={30} />
 
               <p className="mt-2 text-2xl font-semibold">LinkedIn</p>
               <span className="mt-auto text-xl font-medium">Planning</span>
-            </Glass>
+            </Widget>
 
-            <Glass
-              className="flex h-[180px] w-[150px] flex-col p-4"
-              dots={true}
-            >
-              <FiGithub size={32} />
+            <Widget size="module" href={data.links.github.url} target="_blank">
+              <FiGithub size={30} />
 
               <p className="mt-2 text-2xl font-semibold">GitHub</p>
               <span className="mt-auto text-xl font-medium">Planning</span>
-            </Glass>
+            </Widget>
 
-            <Glass
-              className="flex h-[180px] w-[150px] flex-col p-4"
-              dots={true}
-            >
-              <RxNotionLogo size={32} />
+            <Widget size="module" href={data.links.notion.url} target="_blank">
+              <RxNotionLogo size={30} />
 
               <p className="mt-2 text-2xl font-semibold">Notion</p>
               <span className="mt-auto text-xl font-medium">Planning</span>
-            </Glass>
+            </Widget>
 
-            <Glass
-              className="flex h-[180px] w-[150px] flex-col p-4"
-              dots={true}
-            >
-              <FiClipboard size={32} />
+            <Widget size="module" href={data.links.resume.url} target="_blank">
+              <FiClipboard size={30} />
 
               <p className="mt-2 text-2xl font-semibold">Resume</p>
               <span className="mt-auto text-xl font-medium">pdf</span>
-            </Glass>
+            </Widget>
           </div>
         </div>
       </div>
