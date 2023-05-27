@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { RxNotionLogo } from 'react-icons/rx'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { FaSpotify, FaGithub } from 'react-icons/fa'
@@ -7,9 +8,12 @@ import data from '@/data.json'
 import Glass from '../Glass'
 import Image from 'next/image'
 
-const AppIsometric = () => {
+const AppIsometric = ({ ...props }) => {
   return (
-    <div className="relative flex h-[670px] w-full items-center justify-center">
+    <motion.div
+      className="relative flex h-[670px] w-full items-center justify-center"
+      {...props}
+    >
       <div className="isometric widgets z-[99] grid grid-cols-2 grid-rows-2 items-start justify-start gap-6">
         <Link
           href={data.links.github.url}
@@ -96,7 +100,7 @@ const AppIsometric = () => {
       <Glass className="isometric bg-app !absolute z-[3] ml-[-40px] mt-[-128px] h-[560px] w-[320px]" />
       <Glass className="isometric bg-app !absolute z-[2] ml-0 mt-0 h-[560px] w-[320px]" />
       <Glass className="isometric bg-app !absolute z-[1] ml-10 mt-32 h-[560px] w-[320px]" />
-    </div>
+    </motion.div>
   )
 }
 

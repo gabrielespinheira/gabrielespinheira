@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from 'react'
 
 import { Glass } from '@/components'
-import colors from 'tailwindcss/colors'
 
 export default function Nav() {
   const navRef = useRef(null)
@@ -76,11 +75,7 @@ export default function Nav() {
     dataId: string
   } & React.HTMLAttributes<HTMLButtonElement>) => {
     return (
-      <button
-        className="flex"
-        {...props}
-        onClick={() => handleNavClick(dataId)}
-      >
+      <button className="flex" {...props} onClick={() => handleNavClick(dataId)}>
         <span
           className={`px-4 py-2 leading-5 transition-all duration-1000 ease-in-out ${
             active === dataId
@@ -96,7 +91,12 @@ export default function Nav() {
 
   return (
     <nav id="nav">
-      <Glass className="!fixed left-1/2 z-50 flex w-auto translate-x-[-50%] items-center justify-center gap-2  p-1 text-base font-normal text-neutral-dark dark:text-neutral-light">
+      <Glass
+        initial={{ top: '-100px' }}
+        animate={{ top: '24px' }}
+        transition={{ duration: 1, delay: 3 }}
+        className="!fixed left-1/2 z-50 flex w-auto translate-x-[-50%] items-center justify-center gap-2 p-1 text-base font-normal text-neutral-dark dark:text-neutral-light"
+      >
         <NavButton label="Home" id="nav-hero" dataId="hero" />
         <NavButton label="About" id="nav-about" dataId="about" />
         <NavButton label="Stack" id="nav-stack" dataId="stack" />

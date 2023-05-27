@@ -1,6 +1,6 @@
 import { RxNotionLogo } from 'react-icons/rx'
 
-import { Glass, Shape } from '@/components'
+import { Glass, Reveal, Shape } from '@/components'
 
 const colors: any = {
   purple: 'bg-purple-main',
@@ -67,7 +67,7 @@ const Company = ({
 
 export default function Experience() {
   return (
-    <div
+    <Reveal
       id="experience"
       className="container flex flex-col items-center justify-center pb-24 pt-24"
     >
@@ -168,6 +168,6 @@ export default function Experience() {
           icon={<RxNotionLogo size={32} />}
         />
       </section>
-    </div>
+    </Reveal>
   )
 }

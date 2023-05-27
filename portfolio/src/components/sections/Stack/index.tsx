@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
-import { Shape } from '@/components'
+import { Reveal, Shape } from '@/components'
 
 export default function Stack() {
   return (
-    <div
+    <Reveal
       id="stack"
       className="container flex flex-col items-center justify-center pb-24 pt-24"
     >
@@ -74,6 +74,6 @@ export default function Stack() {
 
         <Image src="/assets/temp.svg" alt="Back-end" width={600} height={400} />
       </div>
-    </div>
+    </Reveal>
   )
 }

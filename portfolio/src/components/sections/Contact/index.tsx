@@ -8,11 +8,11 @@ import {
 } from 'react-icons/fi'
 import { RxNotionLogo } from 'react-icons/rx'
 
-import { Shape, Glass } from '@/components'
+import { Shape, Glass, Reveal } from '@/components'
 
 export default function Contact() {
   return (
-    <div
+    <Reveal
       id="contact"
       className="container relative flex flex-col items-center justify-center pb-8 pt-24"
     >
@@ -123,6 +123,6 @@ export default function Contact() {
       <div className="absolute top-0 z-[-1] flex max-h-[680px] max-w-[1200px]">
         <Shape shape="3-stripes" />
       </div>
-    </div>
+    </Reveal>
   )
 }

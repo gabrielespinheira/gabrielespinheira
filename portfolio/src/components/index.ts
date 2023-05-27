@@ -23,3 +23,8 @@ import HeroBottomRight from './vectors/HeroBottomRight'
 import HeroCorner from './vectors/HeroCorner'
 
 export { HeroCenter, HeroTopLeft, HeroBottomRight, HeroCorner }
+
+// motions
+import Reveal from './motions/Reveal'
+
+export { Reveal }

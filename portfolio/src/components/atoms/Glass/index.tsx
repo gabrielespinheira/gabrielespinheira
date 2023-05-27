@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Glass({
   children,
@@ -12,9 +12,9 @@ export default function Glass({
   className?: string
   dots?: boolean
   invertDots?: boolean
-} & React.HTMLAttributes<HTMLDivElement>) {
+} & any) {
   return (
-    <div
+    <motion.div
       className={`bg-glass relative rounded-3xl text-neutral-dark dark:text-neutral-light ${className}`}
       {...props}
     >
@@ -33,6 +33,6 @@ export default function Glass({
           <span className="h-[6px] w-[6px] rounded-full bg-neutral-dark dark:bg-neutral-light"></span>
         </div>
       )}
-    </div>
+    </motion.div>
   )
 }

@@ -1,5 +1,4 @@
 import './globals.css'
-import './animations.css'
 import { Source_Sans_3 } from 'next/font/google'
 
 const font = Source_Sans_3({ subsets: ['latin'] })
@@ -11,11 +10,7 @@ export const metadata = {
   description: data.description,
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={font.className}>{children}</body>
