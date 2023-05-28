@@ -4,8 +4,9 @@ import Glass from './atoms/Glass'
 import AppIsometric from './atoms/AppIsometric'
 import Widget from './atoms/Widget'
 import Heading from './atoms/Heading'
+import TechLogo from './atoms/TechLogo'
 
-export { Shape, Glass, AppIsometric, Widget, Heading }
+export { Shape, Glass, AppIsometric, Widget, Heading, TechLogo }
 
 // sections
 import Nav from './sections/Nav'

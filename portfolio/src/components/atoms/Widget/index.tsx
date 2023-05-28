@@ -3,11 +3,12 @@ import Link from 'next/link'
 import Glass from '../Glass'
 
 type ISize = 'module' | 'horizontalLine' | 'sidebox'
-type IColor = 'glass' | 'white' | 'blue' | 'dark'
+type IColor = 'glass' | 'white' | 'blue' | 'dark' | 'gray'
 
 const BaseWidget = ({
   size,
   color,
+  shadow,
   dots,
   children,
   className,
@@ -15,6 +16,7 @@ const BaseWidget = ({
 }: {
   size?: ISize
   color?: IColor
+  shadow?: boolean
   dots?: boolean
   children?: React.ReactNode
   className?: string
@@ -46,6 +48,14 @@ const BaseWidget = ({
     colorClass = 'widget-dark text-neutral-light'
   }
 
+  if (color === 'gray') {
+    colorClass = 'widget-gray text-neutral-light'
+  }
+
+  if (shadow) {
+    className += ' widget-shadow'
+  }
+
   return (
     <Glass
       dots={dots}
@@ -60,27 +70,32 @@ const BaseWidget = ({
 const Widget = ({
   size = 'module',
   color = 'glass',
+  shadow = false,
   dots = false,
   href,
   target,
   className,
+  linkClassName,
   children,
   ...props
 }: {
   size?: ISize
   color?: IColor
+  shadow?: boolean
   dots?: boolean
   href?: string
   target?: string
+  linkClassName?: string
   className?: string
   children?: React.ReactNode
 }) => {
   if (href) {
     return (
-      <Link href={href} target={target}>
+      <Link href={href} target={target} className={linkClassName}>
         <BaseWidget
           size={size}
           color={color}
+          shadow={shadow}
           dots={dots}
           className={className}
           {...props}
@@ -92,7 +107,14 @@ const Widget = ({
   }
 
   return (
-    <BaseWidget size={size} color={color} dots={dots} className={className} {...props}>
+    <BaseWidget
+      size={size}
+      color={color}
+      shadow={shadow}
+      dots={dots}
+      className={className}
+      {...props}
+    >
       {children}
     </BaseWidget>
   )
