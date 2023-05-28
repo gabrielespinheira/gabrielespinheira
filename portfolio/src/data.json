@@ -43,6 +43,136 @@
       "url": "/resume.pdf"
     }
   },
+  "stack": {
+    "frontEnd": [
+      {
+        "name": "nextjs",
+        "title": "NextJS",
+        "url": "https://nextjs.org"
+      },
+      {
+        "name": "reactjs",
+        "title": "ReactJS",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "tailwindcss",
+        "title": "TailwindCSS",
+        "url": "https://tailwindcss.com"
+      },
+      {
+        "name": "storybook",
+        "title": "Storybook",
+        "url": "https://storybook.js.org"
+      },
+      {
+        "name": "electron",
+        "title": "Electron",
+        "url": "https://www.electronjs.org"
+      },
+      {
+        "name": "expo",
+        "title": "Expo",
+        "url": "https://expo.dev"
+      }
+    ],
+    "backEnd": [
+      {
+        "name": "typescript",
+        "title": "Typescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "express",
+        "title": "Express",
+        "url": "https://expressjs.com"
+      },
+      {
+        "name": "graphql",
+        "title": "GraphQL",
+        "url": "https://graphql.org"
+      },
+      {
+        "name": "prisma",
+        "title": "Prisma",
+        "url": "https://www.prisma.io"
+      },
+      {
+        "name": "serverless",
+        "title": "Serverless",
+        "url": "https://www.serverless.com"
+      },
+      {
+        "name": "php",
+        "title": "PHP",
+        "url": "https://www.php.net"
+      }
+    ],
+    "database": [
+      {
+        "name": "planetscale",
+        "title": "Planetscale",
+        "url": "https://planetscale.com"
+      },
+      {
+        "name": "upstash",
+        "title": "Upstash",
+        "url": "https://upstash.com"
+      },
+      {
+        "name": "mysql",
+        "title": "MySQL",
+        "url": "https://www.mysql.com"
+      },
+      {
+        "name": "postgresql",
+        "title": "PostgreSQL",
+        "url": "https://www.postgresql.org"
+      },
+      {
+        "name": "redis",
+        "title": "Redis",
+        "url": "https://redis.io"
+      },
+      {
+        "name": "mongodb",
+        "title": "MongoDB",
+        "url": "https://www.mongodb.com"
+      }
+    ],
+    "product": [
+      {
+        "name": "figma",
+        "title": "Figma",
+        "url": "https://www.figma.com"
+      },
+      {
+        "name": "notion",
+        "title": "Notion",
+        "url": "https://www.notion.so"
+      },
+      {
+        "name": "aws",
+        "title": "Amazon Web services",
+        "url": "https://aws.amazon.com"
+      },
+      {
+        "name": "github",
+        "title": "GitHub",
+        "url": "https://github.com"
+      },
+      {
+        "name": "firebase",
+        "title": "Google Firebase",
+        "url": "https://firebase.google.com"
+      },
+      {
+        "name": "webflow",
+        "title": "Webflow",
+        "url": "https://webflow.com"
+      }
+    ]
+  },
   "experience": [
     {
       "company": "Mollie",
