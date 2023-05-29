@@ -39,7 +39,7 @@ const Content = () => {
 
 export default function Hero() {
   return (
-    <div id="hero" className="relative min-h-screen">
+    <div id="hero" className="relative h-screen min-h-[800px]">
       <Content />
 
       <div className="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 overflow-hidden blur-[120px]">

@@ -59,7 +59,7 @@ const BaseWidget = ({
   return (
     <Glass
       dots={dots}
-      className={`flex flex-row ${sizeClass} ${colorClass} ${className}`}
+      className={`z-50 flex flex-row ${sizeClass} ${colorClass} ${className}`}
       {...props}
     >
       {children}
@@ -90,8 +90,14 @@ const Widget = ({
   children?: React.ReactNode
 }) => {
   if (href) {
+    if (!linkClassName) linkClassName = ''
+
     return (
-      <Link href={href} target={target} className={linkClassName}>
+      <Link
+        href={href}
+        target={target}
+        className={`block transition-all duration-500 active:scale-95 ${linkClassName}`}
+      >
         <BaseWidget
           size={size}
           color={color}

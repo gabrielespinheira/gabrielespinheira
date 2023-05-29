@@ -74,9 +74,6 @@ const FrontEnd = () => {
       <div className="max-w-[470px]">
         <Heading tag="h3" className="relative mb-3">
           Front-end
-          <div className="absolute left-1/2 top-1/2 z-[-1] flex max-h-[680px] max-w-[1200px] -translate-x-1/2 -translate-y-1/2">
-            <Shape shape="line" fill="#5B23FC" />
-          </div>
         </Heading>
         <p className="text-lg leading-[170%]">
           Hi there! My name is Gabriel Espinheira and I&apos;m a Senior Software Engineer
@@ -101,9 +98,6 @@ const BackEnd = () => {
       <div className="max-w-[470px]">
         <Heading tag="h3" className="relative mb-3">
           Back-end
-          <div className="absolute left-1/2 top-1/2 z-[-1] flex max-h-[680px] max-w-[1200px] -translate-x-1/2 -translate-y-1/2">
-            <Shape shape="line" fill="#FE4444" />
-          </div>
         </Heading>
         <p className="text-lg leading-[170%]">
           Hi there! My name is Gabriel Espinheira and I&apos;m a Senior Software Engineer
@@ -124,9 +118,6 @@ const Database = () => {
       <div className="max-w-[470px]">
         <Heading tag="h3" className="relative mb-3">
           Database
-          <div className="absolute left-1/2 top-1/2 z-[-1] flex max-h-[680px] max-w-[1200px] -translate-x-1/2 -translate-y-1/2">
-            <Shape shape="line" fill="#61DAFB" />
-          </div>
         </Heading>
         <p className="text-lg leading-[170%]">
           Hi there! My name is Gabriel Espinheira and I&apos;m a Senior Software Engineer
@@ -146,12 +137,10 @@ const Product = () => {
       id="stack-product"
       className="flex flex-row items-center justify-center gap-8 py-8"
     >
+      <LogoShowcase techs={data.stack.product} />
       <div className="max-w-[470px]">
         <Heading tag="h3" className="relative mb-3">
           Product
-          <div className="absolute left-1/2 top-1/2 z-[-1] flex max-h-[680px] max-w-[1200px] -translate-x-1/2 -translate-y-1/2">
-            <Shape shape="line" fill="#61DAFB" />
-          </div>
         </Heading>
         <p className="text-lg leading-[170%]">
           Hi there! My name is Gabriel Espinheira and I&apos;m a Senior Software Engineer
@@ -159,8 +148,6 @@ const Product = () => {
           solutions and building high-quality software.
         </p>
       </div>
-
-      <LogoShowcase techs={data.stack.product} />
     </div>
   )
 }

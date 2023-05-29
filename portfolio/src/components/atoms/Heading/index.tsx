@@ -2,11 +2,12 @@ const Heading = ({
   tag = 'h2',
   className,
   children,
+  ...props
 }: {
   children: React.ReactNode
   className?: string
   tag?: string
-}) => {
+} & React.HTMLAttributes<HTMLHeadingElement>) => {
   const Element: any = tag
   let headingClass = ''
 
@@ -22,7 +23,11 @@ const Heading = ({
     headingClass = 'text-2xl font-semibold'
   }
 
-  return <Element className={`${headingClass} ${className}`}>{children}</Element>
+  return (
+    <Element className={`inline-block ${headingClass} ${className}`} {...props}>
+      {children}
+    </Element>
+  )
 }
 
 export default Heading

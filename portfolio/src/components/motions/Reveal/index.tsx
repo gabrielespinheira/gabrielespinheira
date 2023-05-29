@@ -18,6 +18,7 @@ const Reveal = ({ children, ...props }: { children: React.ReactNode } & any) => 
         ref={ref}
         style={{ opacity, y, scale }}
         viewport={{ once: false, amount: 0.3 }}
+        className="relative z-[50]"
         {...props}
       >
         {children}
