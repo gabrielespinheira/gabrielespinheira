@@ -33,7 +33,7 @@ export default function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                className="rounded-xl bg-neutral-light p-3 shadow-lg outline-none dark:bg-neutral-200"
+                className="rounded-xl border border-neutral-light bg-neutral-light p-3 shadow-lg outline-none transition-all focus:border focus:border-purple-main dark:bg-neutral-200"
               />
             </div>
 
@@ -45,7 +45,7 @@ export default function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                className="rounded-xl border bg-neutral-light p-3 shadow-lg outline-none dark:bg-neutral-200"
+                className="rounded-xl border border-neutral-light bg-neutral-light p-3 shadow-lg outline-none transition-all focus:border focus:border-purple-main dark:bg-neutral-200"
               />
             </div>
 
@@ -55,7 +55,7 @@ export default function Contact() {
               </label>
               <textarea
                 id="text"
-                className="h-36 rounded-xl bg-neutral-light p-3 shadow-lg outline-none dark:bg-neutral-200"
+                className="boder h-36 resize-none rounded-xl border-neutral-light bg-neutral-light p-3 shadow-lg outline-none transition-all focus:border focus:border-purple-main dark:bg-neutral-200"
               />
             </div>
 
@@ -79,14 +79,26 @@ export default function Contact() {
               id="social_links"
               className="mt-10 flex flex-row flex-wrap items-center justify-center gap-8"
             >
-              <Widget shadow size="module" href={data.links.linkedin.url} target="_blank">
+              <Widget
+                color="blue"
+                shadow
+                size="module"
+                href={data.links.linkedin.url}
+                target="_blank"
+              >
                 <FiLinkedin size={30} />
 
                 <p className="mt-2 text-2xl font-semibold">LinkedIn</p>
                 <span className="mt-auto text-xl font-medium">Planning</span>
               </Widget>
 
-              <Widget shadow size="module" href={data.links.github.url} target="_blank">
+              <Widget
+                color="dark"
+                shadow
+                size="module"
+                href={data.links.github.url}
+                target="_blank"
+              >
                 <FiGithub size={30} />
 
                 <p className="mt-2 text-2xl font-semibold">GitHub</p>
@@ -100,7 +112,13 @@ export default function Contact() {
                 <span className="mt-auto text-xl font-medium">Planning</span>
               </Widget>
 
-              <Widget shadow size="module" href={data.links.resume.url} target="_blank">
+              <Widget
+                color="purple"
+                shadow
+                size="module"
+                href={data.links.resume.url}
+                target="_blank"
+              >
                 <FiClipboard size={30} />
 
                 <p className="mt-2 text-2xl font-semibold">Resume</p>

@@ -76,9 +76,10 @@ const FrontEnd = () => {
           Front-end
         </Heading>
         <p className="text-lg leading-[170%]">
-          Hi there! My name is Gabriel Espinheira and I&apos;m a Senior Software Engineer
-          working mainly with JavaScript. I have a passion for building innovative
-          solutions and building high-quality software.
+          An experienced front-end developer with a keen eye for aesthetics, I specialize
+          in crafting pixel-perfect designs and seamless user experiences. With a strong
+          foundation in UX/UI design and a focus on user research, I strive to create
+          interfaces that delight users and drive engagement.
         </p>
       </div>
 
@@ -100,9 +101,10 @@ const BackEnd = () => {
           Back-end
         </Heading>
         <p className="text-lg leading-[170%]">
-          Hi there! My name is Gabriel Espinheira and I&apos;m a Senior Software Engineer
-          working mainly with JavaScript. I have a passion for building innovative
-          solutions and building high-quality software.
+          As a back-end engineer, I prioritize performance, security, and scalability. I
+          apply design patterns, write clean and maintainable code, and architect
+          efficient systems. With a focus on automated testing, I ensure reliability and
+          deliver high-quality software.
         </p>
       </div>
     </div>
@@ -120,9 +122,11 @@ const Database = () => {
           Database
         </Heading>
         <p className="text-lg leading-[170%]">
-          Hi there! My name is Gabriel Espinheira and I&apos;m a Senior Software Engineer
-          working mainly with JavaScript. I have a passion for building innovative
-          solutions and building high-quality software.
+          As a database enthusiast, I stay at the forefront of new technologies and
+          advancements. With expertise in SQL and NoSQL databases, I design robust and
+          scalable solutions. Leveraging serverless architectures, I ensure seamless
+          scalability and cost efficiency. My focus on data quality enables future
+          analysis and insights.
         </p>
       </div>
 
@@ -143,9 +147,11 @@ const Product = () => {
           Product
         </Heading>
         <p className="text-lg leading-[170%]">
-          Hi there! My name is Gabriel Espinheira and I&apos;m a Senior Software Engineer
-          working mainly with JavaScript. I have a passion for building innovative
-          solutions and building high-quality software.
+          Working from concept to launch in the full lifecycle of product development.
+          Continuous delivery and iterative development to accomplish exceptional
+          experiences. Implementing design systems for consistency and scalability, while
+          optimizing SEO, marketing performance and data-driven mindset to focus on
+          impactful results.
         </p>
       </div>
     </div>
