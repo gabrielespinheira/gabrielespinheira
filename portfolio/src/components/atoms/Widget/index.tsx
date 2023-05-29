@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Glass from '../Glass'
 
 type ISize = 'module' | 'horizontalLine' | 'sidebox'
-type IColor = 'glass' | 'white' | 'blue' | 'dark' | 'gray'
+type IColor = 'glass' | 'white' | 'blue' | 'dark' | 'gray' | 'red' | 'purple'
 
 const BaseWidget = ({
   size,
@@ -52,6 +52,14 @@ const BaseWidget = ({
     colorClass = 'widget-gray text-neutral-light'
   }
 
+  if (color === 'red') {
+    colorClass = 'widget-red text-neutral-light'
+  }
+
+  if (color === 'purple') {
+    colorClass = 'widget-purple text-neutral-light'
+  }
+
   if (shadow) {
     className += ' widget-shadow'
   }
@@ -96,7 +104,7 @@ const Widget = ({
       <Link
         href={href}
         target={target}
-        className={`block transition-all duration-500 active:scale-95 ${linkClassName}`}
+        className={`flex transition-all duration-500 hover:scale-105 active:scale-95 ${linkClassName}`}
       >
         <BaseWidget
           size={size}
