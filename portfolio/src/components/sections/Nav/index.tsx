@@ -92,10 +92,10 @@ export default function Nav() {
   return (
     <nav id="nav">
       <Glass
-        initial={{ top: '-100px' }}
-        animate={{ top: '24px' }}
-        transition={{ duration: 1, delay: 3 }}
-        className="!fixed left-1/2 z-50 flex w-auto translate-x-[-50%] items-center justify-center gap-2 rounded-3xl p-1 text-base font-normal text-neutral-dark dark:text-neutral-light"
+        initial={{ scale: 0.8, x: '-50%', y: '-100px' }}
+        animate={{ scale: 1, x: '-50%', y: '24px' }}
+        transition={{ duration: 0.8, delay: 2 }}
+        className="!fixed left-1/2 z-50 flex w-auto items-center justify-center gap-2 rounded-3xl p-1 text-base font-normal text-neutral-dark dark:text-neutral-light"
       >
         <NavButton label="Home" id="nav-hero" dataId="hero" />
         <NavButton label="About" id="nav-about" dataId="about" />

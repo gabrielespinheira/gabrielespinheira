@@ -1,4 +1,4 @@
-import { Heading, Reveal, Shape, TechLogo, Widget } from '@/components'
+import { Heading, Reveal, Shape, Slide, TechLogo, Widget } from '@/components'
 
 import data from '@/data.json'
 
@@ -35,17 +35,23 @@ const LogoShowcase = ({
         {techs &&
           techs.map(
             (tech: { name: string; title: string; url: string }, index: number) => (
-              <Widget
-                href={tech.url}
-                target="_blank"
+              <Slide
                 key={index}
-                color="white"
-                shadow={true}
-                linkClassName="flex justify-center items-center"
-                className="flex h-[148px] w-[124px] items-center justify-center justify-self-center"
+                direction="top"
+                delay={`${index * 0.2}s`}
+                distance="40px"
               >
-                <TechLogo tech={tech.name} title={tech.title} />
-              </Widget>
+                <Widget
+                  href={tech.url}
+                  target="_blank"
+                  color="white"
+                  shadow={true}
+                  linkClassName="flex justify-center items-center"
+                  className="z-[5] flex h-[148px] w-[124px] items-center justify-center justify-self-center"
+                >
+                  <TechLogo tech={tech.name} title={tech.title} />
+                </Widget>
+              </Slide>
             )
           )}
       </div>

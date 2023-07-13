@@ -30,5 +30,6 @@ export { HeroCenter, HeroTopLeft, HeroBottomRight, HeroCorner }
 // motions
 import Reveal from './motions/Reveal'
 import Cursor from './motions/Cursor'
+import Slide from './motions/Slide'
 
-export { Reveal, Cursor }
+export { Reveal, Cursor, Slide }

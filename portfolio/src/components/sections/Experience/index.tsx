@@ -1,6 +1,6 @@
 import { RxNotionLogo } from 'react-icons/rx'
 
-import { Heading, Reveal, Widget } from '@/components'
+import { Heading, Reveal, Slide, Widget } from '@/components'
 
 const colors: any = {
   purple: 'bg-purple-main',
@@ -155,32 +155,40 @@ const Company = ({
   let colorClasses = colors[color]
 
   return (
+    // <Slide
+    //         direction="left"
+    //         delay="0.5s"
+    //         distance="50px"
+    //         className="relative flex w-full"
+    //       ></Slide>
     <div
       className={`relative flex w-full flex-row items-start justify-${
         right ? 'end' : 'start'
       }`}
     >
-      <Widget dots={true} size="sidebox">
-        {icon}
+      <Slide direction={right ? 'right' : 'left'} delay="0s">
+        <Widget dots={true} size="sidebox">
+          {icon}
 
-        <Heading tag="h4" className="mt-2">
-          {title}
-        </Heading>
-        <div className="text-sm">
-          {role} ({time})
-        </div>
-        <ul className="mt-2 leading-[170%]">
-          {bullets &&
-            bullets.map((bullet, index) => (
-              <li key={index} className={`relative pl-6 leading-normal`}>
-                <span
-                  className={`absolute left-0 top-[6px] h-2.5 w-2.5 rounded-full ${colorClasses}`}
-                ></span>
-                {bullet}
-              </li>
-            ))}
-        </ul>
-      </Widget>
+          <Heading tag="h4" className="mt-2">
+            {title}
+          </Heading>
+          <div className="text-sm">
+            {role} ({time})
+          </div>
+          <ul className="mt-2 leading-[170%]">
+            {bullets &&
+              bullets.map((bullet, index) => (
+                <li key={index} className={`relative pl-6 leading-normal`}>
+                  <span
+                    className={`absolute left-0 top-[6px] h-2.5 w-2.5 rounded-full ${colorClasses}`}
+                  ></span>
+                  {bullet}
+                </li>
+              ))}
+          </ul>
+        </Widget>
+      </Slide>
 
       {right ? (
         <div className="absolute left-1/2 top-1/2 h-[1px] w-16 -translate-y-1/2 bg-gradient-to-r from-neutral-dark via-transparent via-90% to-transparent dark:from-neutral-light">

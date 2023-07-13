@@ -1,7 +1,7 @@
 import { FiBook, FiClipboard, FiFile, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi'
 import { RxNotionLogo } from 'react-icons/rx'
 
-import { Shape, Glass, Reveal, Widget, Heading } from '@/components'
+import { Shape, Glass, Reveal, Widget, Heading, Slide } from '@/components'
 import data from '@/data.json'
 
 export default function Contact() {
@@ -79,51 +79,59 @@ export default function Contact() {
               id="social_links"
               className="mt-10 flex flex-row flex-wrap items-center justify-center gap-8"
             >
-              <Widget
-                color="blue"
-                shadow
-                size="module"
-                href={data.links.linkedin.url}
-                target="_blank"
-              >
-                <FiLinkedin size={30} />
+              <Slide direction="top" delay="0s" distance="50px">
+                <Widget
+                  color="blue"
+                  shadow
+                  size="module"
+                  href={data.links.linkedin.url}
+                  target="_blank"
+                >
+                  <FiLinkedin size={30} />
 
-                <p className="mt-2 text-2xl font-semibold">LinkedIn</p>
-                <span className="mt-auto text-xl font-medium">Planning</span>
-              </Widget>
+                  <p className="mt-2 text-2xl font-semibold">LinkedIn</p>
+                  <span className="mt-auto text-xl font-medium">Planning</span>
+                </Widget>
+              </Slide>
 
-              <Widget
-                color="dark"
-                shadow
-                size="module"
-                href={data.links.github.url}
-                target="_blank"
-              >
-                <FiGithub size={30} />
+              <Slide direction="top" delay="0.3s" distance="50px">
+                <Widget
+                  color="dark"
+                  shadow
+                  size="module"
+                  href={data.links.github.url}
+                  target="_blank"
+                >
+                  <FiGithub size={30} />
 
-                <p className="mt-2 text-2xl font-semibold">GitHub</p>
-                <span className="mt-auto text-xl font-medium">Planning</span>
-              </Widget>
+                  <p className="mt-2 text-2xl font-semibold">GitHub</p>
+                  <span className="mt-auto text-xl font-medium">Planning</span>
+                </Widget>
+              </Slide>
 
-              <Widget shadow size="module" href={data.links.notion.url} target="_blank">
-                <RxNotionLogo size={30} />
+              <Slide direction="top" delay="0.6s" distance="50px">
+                <Widget shadow size="module" href={data.links.notion.url} target="_blank">
+                  <RxNotionLogo size={30} />
 
-                <p className="mt-2 text-2xl font-semibold">Notion</p>
-                <span className="mt-auto text-xl font-medium">Planning</span>
-              </Widget>
+                  <p className="mt-2 text-2xl font-semibold">Notion</p>
+                  <span className="mt-auto text-xl font-medium">Planning</span>
+                </Widget>
+              </Slide>
 
-              <Widget
-                color="purple"
-                shadow
-                size="module"
-                href={data.links.resume.url}
-                target="_blank"
-              >
-                <FiClipboard size={30} />
+              <Slide direction="top" delay="0.9s" distance="50px">
+                <Widget
+                  color="purple"
+                  shadow
+                  size="module"
+                  href={data.links.resume.url}
+                  target="_blank"
+                >
+                  <FiClipboard size={30} />
 
-                <p className="mt-2 text-2xl font-semibold">Resume</p>
-                <span className="mt-auto text-xl font-medium">pdf</span>
-              </Widget>
+                  <p className="mt-2 text-2xl font-semibold">Resume</p>
+                  <span className="mt-auto text-xl font-medium">pdf</span>
+                </Widget>
+              </Slide>
             </div>
           </div>
         </div>
