@@ -21,8 +21,9 @@ const AppIsometric = ({ ...props }) => {
           delay="3.4s"
           distance="50px"
           className="!absolute right-[-50px] top-[-90px]"
+          once
         >
-          <Widget size="horizontalLine" color="white">
+          <Widget size="horizontalLine">
             <div className="flex flex-row">
               <FaGithub size={30} />
               <Image
@@ -36,13 +37,13 @@ const AppIsometric = ({ ...props }) => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-medium leading-none">842 contributions</span>
-              <span className="text-sm leading-none text-purple-main">87% commits</span>
+              <span className="text-sm leading-none text-purple">87% commits</span>
             </div>
           </Widget>
         </Slide>
 
-        <Slide direction="top" delay="3.6s" distance="50px">
-          <Widget color="white" href={data.links.notion.url} target="_blank">
+        <Slide direction="top" delay="3.6s" distance="50px" once>
+          <Widget href={data.links.notion.url} target="_blank">
             <RxNotionLogo size={30} />
 
             <p className="mt-2 text-2xl font-medium">Notion</p>
@@ -50,7 +51,7 @@ const AppIsometric = ({ ...props }) => {
           </Widget>
         </Slide>
 
-        <Slide direction="top" delay="3.8s" distance="50px">
+        <Slide direction="top" delay="3.8s" distance="50px" once>
           <Widget color="blue" href={data.links.linkedin.url} target="_blank">
             <FiLinkedin size={30} />
 
@@ -59,7 +60,7 @@ const AppIsometric = ({ ...props }) => {
           </Widget>
         </Slide>
 
-        <Slide direction="top" delay="4.0s" distance="50px">
+        <Slide direction="top" delay="4.0s" distance="50px" once>
           <Widget color="dark" href={data.links.spotify.url} target="_blank">
             <FaSpotify size={30} color="#1ED760" />
 
@@ -72,8 +73,8 @@ const AppIsometric = ({ ...props }) => {
           </Widget>
         </Slide>
 
-        <Slide direction="top" delay="4.2s" distance="50px">
-          <Widget color="white" href={data.links.github.url} target="_blank">
+        <Slide direction="top" delay="4.2s" distance="50px" once>
+          <Widget href={data.links.github.url} target="_blank">
             <FiGithub size={30} />
 
             <p className="mt-2 text-2xl font-medium">GitHub</p>
@@ -82,13 +83,13 @@ const AppIsometric = ({ ...props }) => {
         </Slide>
       </div>
 
-      <Slide direction="top" delay="3.3s" distance="50px" className="absolute">
+      <Slide direction="top" delay="3.3s" distance="50px" className="absolute" once>
         <Glass className="isometric bg-app z-[3] ml-[-40px] mt-[-128px] h-[560px] w-[320px] rounded-3xl" />
       </Slide>
-      <Slide direction="top" delay="3.2s" distance="50px" className="absolute">
+      <Slide direction="top" delay="3.2s" distance="50px" className="absolute" once>
         <Glass className="isometric bg-app z-[2] ml-0 mt-0 h-[560px] w-[320px] rounded-3xl" />
       </Slide>
-      <Slide direction="top" delay="3.1s" distance="50px" className="absolute">
+      <Slide direction="top" delay="3.1s" distance="50px" className="absolute" once>
         <Glass className="isometric bg-app z-[1] ml-10 mt-32 h-[560px] w-[320px] rounded-3xl" />
       </Slide>
     </div>

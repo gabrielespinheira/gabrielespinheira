@@ -24,7 +24,7 @@ export default function About() {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-semibold leading-6">Getting 1% better</span>
-                <span className="text-[15px] font-semibold leading-4 text-purple-main">
+                <span className="text-[15px] font-semibold leading-4 text-purple">
                   everyday
                 </span>
               </div>
@@ -58,7 +58,7 @@ export default function About() {
                 <span className="text-xl font-semibold leading-6">
                   Working <span className="line-through">anywhere</span>
                 </span>
-                <span className="text-[15px] font-semibold leading-4 text-purple-main">
+                <span className="text-[15px] font-semibold leading-4 text-purple">
                   everywhere
                 </span>
               </div>

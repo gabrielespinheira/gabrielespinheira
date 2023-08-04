@@ -40,7 +40,7 @@ const Cursor = () => {
           opacity,
           mixBlendMode: 'lighten',
         }}
-        className={`pointer-events-none fixed z-[40] h-96 w-96 rounded-full bg-purple-main blur-3xl`}
+        className={`pointer-events-none fixed z-[40] h-96 w-96 rounded-full bg-purple blur-3xl`}
       />
     </>
   )

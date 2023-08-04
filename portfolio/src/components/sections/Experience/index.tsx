@@ -1,14 +1,15 @@
 import { RxNotionLogo } from 'react-icons/rx'
 
 import { Heading, Reveal, Slide, Widget } from '@/components'
+import Shapes from '@/components/atoms/Shape'
 
 const colors: any = {
-  purple: 'bg-purple-main',
-  red: 'bg-red-main',
-  blue: 'bg-blue-main',
-  cyan: 'bg-cyan-main',
-  green: 'bg-green-main',
-  orange: 'bg-orange-main',
+  purple: 'bg-purple',
+  red: 'bg-red',
+  blue: 'bg-blue',
+  cyan: 'bg-cyan',
+  green: 'bg-green',
+  orange: 'bg-orange',
 }
 
 export default function Experience() {
@@ -155,12 +156,6 @@ const Company = ({
   let colorClasses = colors[color]
 
   return (
-    // <Slide
-    //         direction="left"
-    //         delay="0.5s"
-    //         distance="50px"
-    //         className="relative flex w-full"
-    //       ></Slide>
     <div
       className={`relative flex w-full flex-row items-start justify-${
         right ? 'end' : 'start'
@@ -173,6 +168,7 @@ const Company = ({
           <Heading tag="h4" className="mt-2">
             {title}
           </Heading>
+
           <div className="text-sm">
             {role} ({time})
           </div>
@@ -189,6 +185,12 @@ const Company = ({
           </ul>
         </Widget>
       </Slide>
+
+      <Shapes
+        className={`absolute ${
+          right ? 'right-[-50px]' : 'left-[-50px]'
+        } top-[-35px] z-[-1] blur-xl`}
+      />
 
       {right ? (
         <div className="absolute left-1/2 top-1/2 h-[1px] w-16 -translate-y-1/2 bg-gradient-to-r from-neutral-dark via-transparent via-90% to-transparent dark:from-neutral-light">

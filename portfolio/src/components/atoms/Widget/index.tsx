@@ -3,13 +3,13 @@ import Link from 'next/link'
 import Glass from '../Glass'
 
 type ISize = 'module' | 'horizontalLine' | 'sidebox'
-type IColor = 'glass' | 'white' | 'blue' | 'dark' | 'gray' | 'red' | 'purple'
+type IColor = 'glass' | 'white' | 'blue' | 'dark' | 'gray' | 'red' | 'purple' | 'app'
 
 const BaseWidget = ({
-  size,
-  color,
-  shadow,
-  dots,
+  size = 'module',
+  color = 'glass',
+  shadow = false,
+  dots = false,
   children,
   className,
   ...props
@@ -60,9 +60,15 @@ const BaseWidget = ({
     colorClass = 'widget-purple text-neutral-light'
   }
 
+  if (color === 'app') {
+    colorClass = 'bg-app text-neutral-light'
+  }
+
   if (shadow) {
     className += ' widget-shadow'
   }
+
+  if (!className) className = ''
 
   return (
     <Glass

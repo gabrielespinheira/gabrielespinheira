@@ -5,11 +5,12 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         purple: {
-          main: '#7357ff',
+          DEFAULT: '#7357ff',
           50: '#f3f2ff',
           100: '#e9e8ff',
           200: '#d5d4ff',
@@ -23,7 +24,7 @@ module.exports = {
           950: '#200b6a',
         },
         blue: {
-          main: '#2871ff',
+          DEFAULT: '#2871ff',
           50: '#eef5ff',
           100: '#d9e8ff',
           200: '#bcd8ff',
@@ -37,7 +38,7 @@ module.exports = {
           950: '#142057',
         },
         pink: {
-          main: '#f83bfc',
+          DEFAULT: '#f83bfc',
           50: '#fff3ff',
           100: '#fee6ff',
           200: '#fdccff',
@@ -51,7 +52,7 @@ module.exports = {
           950: '#540050',
         },
         red: {
-          main: '#fe4444',
+          DEFAULT: '#fe4444',
           50: '#fff1f1',
           100: '#ffe0e0',
           200: '#ffc5c5',
@@ -65,7 +66,7 @@ module.exports = {
           950: '#4a0505',
         },
         cyan: {
-          main: '#61dafb',
+          DEFAULT: '#61dafb',
           50: '#ecfcff',
           100: '#cef6ff',
           200: '#a4ebfd',
@@ -79,7 +80,7 @@ module.exports = {
           950: '#072d45',
         },
         green: {
-          main: '#97ee5b',
+          DEFAULT: '#97ee5b',
           50: '#f2fee7',
           100: '#e1fbcc',
           200: '#c4f79f',
@@ -93,7 +94,7 @@ module.exports = {
           950: '#112d06',
         },
         orange: {
-          main: '#fdae52',
+          DEFAULT: '#fdae52',
           50: '#fff9ed',
           100: '#fff1d5',
           200: '#ffdfa9',

@@ -1,4 +1,5 @@
 import { Heading, Reveal, Shape, Slide, TechLogo, Widget } from '@/components'
+import Shapes from '@/components/atoms/Shape'
 
 import data from '@/data.json'
 
@@ -77,10 +78,13 @@ const FrontEnd = () => {
       id="stack-front-end"
       className="flex w-full flex-row items-center justify-between gap-8 py-8"
     >
-      <div className="max-w-[470px]">
+      <div className="relative max-w-[470px]">
         <Heading tag="h3" className="relative mb-3">
           Front-end
         </Heading>
+
+        <Shapes className="absolute left-0 top-0 z-[-1] blur-xl" />
+
         <p className="text-lg leading-[170%]">
           An experienced front-end developer with a keen eye for aesthetics, I specialize
           in crafting pixel-perfect designs and seamless user experiences. With a strong
@@ -102,10 +106,13 @@ const BackEnd = () => {
     >
       <LogoShowcase techs={data.stack.backEnd} />
 
-      <div className="max-w-[470px]">
+      <div className="relative max-w-[470px]">
         <Heading tag="h3" className="relative mb-3">
           Back-end
         </Heading>
+
+        <Shapes className="absolute left-0 top-0 z-[-1] blur-xl" />
+
         <p className="text-lg leading-[170%]">
           As a back-end engineer, I prioritize performance, security, and scalability. I
           apply design patterns, write clean and maintainable code, and architect
@@ -123,10 +130,13 @@ const Database = () => {
       id="stack-database"
       className="flex flex-row items-center justify-center gap-8 py-8"
     >
-      <div className="max-w-[470px]">
+      <div className="relative max-w-[470px]">
         <Heading tag="h3" className="relative mb-3">
           Database
         </Heading>
+
+        <Shapes className="absolute left-0 top-0 z-[-1] blur-xl" />
+
         <p className="text-lg leading-[170%]">
           As a database enthusiast, I stay at the forefront of new technologies and
           advancements. With expertise in SQL and NoSQL databases, I design robust and
@@ -148,10 +158,13 @@ const Product = () => {
       className="flex flex-row items-center justify-center gap-8 py-8"
     >
       <LogoShowcase techs={data.stack.product} />
-      <div className="max-w-[470px]">
+      <div className="relative max-w-[470px]">
         <Heading tag="h3" className="relative mb-3">
           Product
         </Heading>
+
+        <Shapes className="absolute left-0 top-0 z-[-1] blur-xl" />
+
         <p className="text-lg leading-[170%]">
           Working from concept to launch in the full lifecycle of product development.
           Continuous delivery and iterative development to accomplish exceptional

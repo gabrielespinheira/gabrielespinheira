@@ -1,10 +1,11 @@
 import { useRef } from 'react'
-import { motion, useScroll, useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 
 const Slide = ({
   delay = '0.3s',
   direction = 'left',
   distance = '200px',
+  once = false,
   children,
   ...props
 }: {
@@ -15,7 +16,7 @@ const Slide = ({
 } & any) => {
   const ref = useRef<HTMLDivElement>(null)
 
-  const isInView = useInView(ref, { once: false })
+  const isInView = useInView(ref, { once })
 
   let translate = `translateX(-${distance})`
 

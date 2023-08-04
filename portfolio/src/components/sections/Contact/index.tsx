@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { FiBook, FiClipboard, FiFile, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi'
 import { RxNotionLogo } from 'react-icons/rx'
 
@@ -5,8 +6,28 @@ import { Shape, Glass, Reveal, Widget, Heading, Slide } from '@/components'
 import data from '@/data.json'
 
 export default function Contact() {
-  const handleSubmit = (e: any) => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [text, setText] = useState('')
+
+  const handleSubmit = async (e: any) => {
     e.preventDefault()
+
+    const resp = await fetch('/api/email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        text,
+      }),
+    })
+
+    const response = await resp.json()
+
+    console.log('🔥', response)
   }
 
   return (
@@ -30,10 +51,15 @@ export default function Contact() {
                 Name
               </label>
               <input
+                required
                 type="text"
                 id="name"
                 name="name"
-                className="rounded-xl border border-neutral-light bg-neutral-light p-3 shadow-lg outline-none transition-all focus:border focus:border-purple-main dark:bg-neutral-200"
+                className="rounded-xl border border-neutral-light bg-neutral-light p-3 shadow-lg outline-none transition-all focus:border focus:border-purple dark:text-neutral-dark"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value)
+                }}
               />
             </div>
 
@@ -42,27 +68,39 @@ export default function Contact() {
                 Email
               </label>
               <input
+                required
                 type="email"
                 id="email"
                 name="email"
-                className="rounded-xl border border-neutral-light bg-neutral-light p-3 shadow-lg outline-none transition-all focus:border focus:border-purple-main dark:bg-neutral-200"
+                className="rounded-xl border border-neutral-light bg-neutral-light p-3 shadow-lg outline-none transition-all focus:border focus:border-purple dark:text-neutral-dark"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value)
+                }}
               />
             </div>
 
             <div className="flex flex-col">
               <label htmlFor="text" className="mb-2 text-base font-medium">
-                How can I help you?
+                What can I do to make things easier for you?
               </label>
               <textarea
+                required
                 id="text"
-                className="boder h-36 resize-none rounded-xl border-neutral-light bg-neutral-light p-3 shadow-lg outline-none transition-all focus:border focus:border-purple-main dark:bg-neutral-200"
+                className="h-36 resize-none rounded-xl border border-neutral-light bg-neutral-light p-3 shadow-lg outline-none transition-all focus:border focus:border-purple dark:text-neutral-dark"
+                value={text}
+                minLength={3}
+                maxLength={300}
+                onChange={(e) => {
+                  setText(e.target.value)
+                }}
               />
             </div>
 
             <div className="flex">
               <button
                 onClick={handleSubmit}
-                className="flex flex-row items-center justify-center gap-3 rounded-xl bg-purple-main px-8 py-2.5 text-base font-semibold tracking-[0.01em] text-neutral-light transition hover:bg-purple-700 active:scale-95"
+                className="flex flex-row items-center justify-center gap-3 rounded-xl bg-purple px-8 py-2.5 text-base font-semibold tracking-[0.01em] text-neutral-light transition hover:bg-purple-700 active:scale-95"
               >
                 <FiSend />
                 Submit

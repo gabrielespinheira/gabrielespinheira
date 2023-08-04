@@ -105,7 +105,7 @@ export default function Nav() {
 
         <span
           ref={navRef}
-          className="absolute top-[4px] z-[-1] h-[36px] w-4 rounded-3xl  bg-purple-main opacity-0 transition-all delay-75 duration-500 ease-in-out"
+          className="absolute top-[4px] z-[-1] h-[36px] w-4 rounded-3xl  bg-purple opacity-0 transition-all delay-75 duration-500 ease-in-out"
           style={{
             left: position.left,
             width: position.width,
