@@ -16,15 +16,39 @@
   "links": {
     "linkedin": {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/gabrielespinheira"
+      "url": "https://linkedin.com/in/gabrielespinheira",
+      "copies": [
+        "Let's connect",
+        "Connect +",
+        "Let's talk"
+      ]
     },
     "github": {
       "name": "GitHub",
-      "url": "https://github.com/gabrielespinheira"
+      "url": "https://github.com/gabrielespinheira",
+      "copies": [
+        "Follow me",
+        "See projects",
+        "Let's code"
+      ]
+    },
+    "dribbble": {
+      "name": "Dribbble",
+      "url": "https://dribbble.com/gabrielespinheira",
+      "copies": [
+        "Recent Shots",
+        "See more",
+        "\"Design\""
+      ]
     },
     "notion": {
       "name": "Notion",
-      "url": "https://gabrielespinheira.notion.site/gabrielespinheira/Gabriel-Espinheira-867ecaf4a8a14123a112cc5eeaeb12d8"
+      "url": "https://gabrielespinheira.notion.site/gabrielespinheira/Gabriel-Espinheira-867ecaf4a8a14123a112cc5eeaeb12d8",
+      "copies": [
+        "Knowledge Base",
+        "About me",
+        "Other Topics"
+      ]
     },
     "email": {
       "name": "Email",
