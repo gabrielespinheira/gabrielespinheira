@@ -88,8 +88,8 @@ body {
   background: linear-gradient(45deg, rgba(6, 7, 7, 0.8) 0%, rgba(6, 7, 7, 0.7) 40%, rgba(6, 7, 7, 0.3) 100%);
 }
 
-.bg-glass.widget-red {
-  background: linear-gradient(45deg, rgba(254, 68, 68, 1) 0%, rgba(254, 68, 68, 0.8) 50%, rgba(254, 68, 68, 0.5) 100%);
+.bg-glass.widget-pink {
+  background: linear-gradient(45deg, rgb(247, 49, 125, 1) 0%, rgba(247, 49, 125, 0.9) 50%, rgba(247, 49, 125, 0.6) 100%);
 }
 
 .bg-glass.widget-purple {

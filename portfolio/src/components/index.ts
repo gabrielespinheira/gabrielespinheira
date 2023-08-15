@@ -5,8 +5,9 @@ import AppIsometric from './atoms/AppIsometric'
 import Widget from './atoms/Widget'
 import Heading from './atoms/Heading'
 import TechLogo from './atoms/TechLogo'
+import CompanyLogo from './atoms/CompanyLogo'
 
-export { Shape, Glass, AppIsometric, Widget, Heading, TechLogo }
+export { Shape, Glass, AppIsometric, Widget, Heading, TechLogo, CompanyLogo }
 
 // sections
 import Nav from './sections/Nav'

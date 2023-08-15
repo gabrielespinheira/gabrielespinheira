@@ -1,6 +1,6 @@
-import { RxNotionLogo } from 'react-icons/rx'
+import { FiAward } from 'react-icons/fi'
 
-import { Heading, Reveal, Slide, Widget } from '@/components'
+import { CompanyLogo, Heading, Reveal, Slide, Widget } from '@/components'
 import Shapes from '@/components/atoms/Shape'
 
 const colors: any = {
@@ -22,6 +22,7 @@ export default function Experience() {
           <span className="gradient-timeline absolute left-1/2 top-0 h-full w-[1px]"></span>
 
           <Company
+            company="mollie"
             title="Mollie"
             color="blue"
             role="Senior Software Engineer"
@@ -31,11 +32,11 @@ export default function Experience() {
               'Experience building a consistent and reusable design system',
               'Using Gutenberg Blocks from WordPress to build components',
             ]}
-            icon={<RxNotionLogo size={32} />}
           />
 
           <Company
             right
+            company="lovelystay"
             color="green"
             title="LovelyStay"
             role="Senior Software Engineer"
@@ -45,10 +46,10 @@ export default function Experience() {
               'Specializes in building and maintaining a property management solution',
               'Experience integrating with external services such as Airbnb and Booking',
             ]}
-            icon={<RxNotionLogo size={32} />}
           />
 
           <Company
+            company="art2act"
             color="cyan"
             title="Art2Act"
             role="Senior Software Engineer"
@@ -58,10 +59,10 @@ export default function Experience() {
               'Implemented GraphQL to improve flexibility, type-safe system, and better efficiency in fetching data',
               'Development experience with concepts like Web3, MetaMask, and Blockchain',
             ]}
-            icon={<RxNotionLogo size={32} />}
           />
 
           <Company
+            company="xp"
             right
             color="orange"
             title="XP Inc."
@@ -73,10 +74,10 @@ export default function Experience() {
               'Implemented serverless functions and plugins to optimize user experience, scalability and performance',
               'Analyzing data for Business Intelligence (BI) purposes',
             ]}
-            icon={<RxNotionLogo size={32} />}
           />
 
           <Company
+            company="setta"
             title="Setta"
             color="green"
             role="Software Engineer II"
@@ -87,10 +88,10 @@ export default function Experience() {
               'Worked on building a positive technology team culture',
               'Working with different teams to build a productivity and self-improvement application for web, android and iOS',
             ]}
-            icon={<RxNotionLogo size={32} />}
           />
 
           <Company
+            company="shosp"
             right
             color="blue"
             title="Shosp"
@@ -101,7 +102,6 @@ export default function Experience() {
               'Contributed to the selection of new technologies (ReactJS) to improve the user experience with more dynamic and concise interfaces',
               'Working with the design team to build better and more intuitive user experiences',
             ]}
-            icon={<RxNotionLogo size={32} />}
           />
 
           <Company
@@ -114,10 +114,11 @@ export default function Experience() {
               'Specializes in building websites, portfolios, e-commerce sites, APIs, and management systems',
               'Focus on understanding client goals and deadlines and translating them into good quality code and better KPI results',
             ]}
-            icon={<RxNotionLogo size={32} />}
+            icon={<FiAward strokeWidth="1" size={56} />}
           />
 
           <Company
+            company="trii"
             right
             color="cyan"
             title="Agência Trii"
@@ -128,7 +129,6 @@ export default function Experience() {
               'Experience with API integrations to connect with external services',
               'Utilizes best practices in HTML and CSS to optimize for SEO and ensure responsive layout across different devices',
             ]}
-            icon={<RxNotionLogo size={32} />}
           />
         </div>
       </Reveal>
@@ -139,6 +139,7 @@ export default function Experience() {
 const Company = ({
   title,
   role,
+  company,
   icon,
   time = '',
   bullets = [],
@@ -147,7 +148,8 @@ const Company = ({
 }: {
   title: string
   role: string
-  icon: React.ReactElement
+  company?: string
+  icon?: React.ReactElement
   time?: string
   bullets?: string[]
   right?: boolean
@@ -163,7 +165,13 @@ const Company = ({
     >
       <Slide direction={right ? 'right' : 'left'} delay="0s">
         <Widget dots={true} size="sidebox">
-          {icon}
+          {company && !icon && (
+            <div className="relative flex h-14 justify-start">
+              <CompanyLogo company={company} title={title} />
+            </div>
+          )}
+
+          {icon && icon}
 
           <Heading tag="h4" className="mt-2">
             {title}

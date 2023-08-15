@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 import data from '@/data.json'
@@ -9,6 +9,7 @@ import {
   HeroCorner,
   AppIsometric,
   Reveal,
+  Widget,
 } from '@/components'
 
 const Content = () => {

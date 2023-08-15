@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { FiBook, FiClipboard, FiFile, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi'
-import { RxNotionLogo } from 'react-icons/rx'
+import { FiClipboard, FiDribbble, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi'
 
-import { Shape, Glass, Reveal, Widget, Heading, Slide } from '@/components'
+import { Glass, Reveal, Widget, Heading, Slide } from '@/components'
 import data from '@/data.json'
 
 export default function Contact() {
@@ -128,31 +127,43 @@ export default function Contact() {
                   <FiLinkedin size={30} />
 
                   <p className="mt-2 text-2xl font-semibold">LinkedIn</p>
-                  <span className="mt-auto text-xl font-medium">Planning</span>
+                  <span className="mt-auto text-base font-medium">
+                    {
+                      data.links.linkedin.copies[
+                        (Math.random() * data.links.linkedin.copies.length) | 0
+                      ]
+                    }
+                  </span>
                 </Widget>
               </Slide>
 
               <Slide direction="top" delay="0.3s" distance="50px">
-                <Widget
-                  color="dark"
-                  shadow
-                  size="module"
-                  href={data.links.github.url}
-                  target="_blank"
-                >
+                <Widget shadow size="module" href={data.links.github.url} target="_blank">
                   <FiGithub size={30} />
 
                   <p className="mt-2 text-2xl font-semibold">GitHub</p>
-                  <span className="mt-auto text-xl font-medium">Planning</span>
+                  <span className="mt-auto text-base font-medium">
+                    {
+                      data.links.github.copies[
+                        (Math.random() * data.links.github.copies.length) | 0
+                      ]
+                    }
+                  </span>
                 </Widget>
               </Slide>
 
               <Slide direction="top" delay="0.6s" distance="50px">
-                <Widget shadow size="module" href={data.links.notion.url} target="_blank">
-                  <RxNotionLogo size={30} />
+                <Widget color="pink" href={data.links.dribbble.url} target="_blank">
+                  <FiDribbble size={30} />
 
-                  <p className="mt-2 text-2xl font-semibold">Notion</p>
-                  <span className="mt-auto text-xl font-medium">Planning</span>
+                  <p className="mt-2 text-2xl font-medium">Dribbble</p>
+                  <span className="mt-auto text-base font-medium">
+                    {
+                      data.links.dribbble.copies[
+                        (Math.random() * data.links.dribbble.copies.length) | 0
+                      ]
+                    }
+                  </span>
                 </Widget>
               </Slide>
 
@@ -167,7 +178,7 @@ export default function Contact() {
                   <FiClipboard size={30} />
 
                   <p className="mt-2 text-2xl font-semibold">Resume</p>
-                  <span className="mt-auto text-xl font-medium">pdf</span>
+                  <span className="mt-auto text-base font-medium">pdf</span>
                 </Widget>
               </Slide>
             </div>

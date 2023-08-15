@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 import Glass from '../Glass'
 
-type ISize = 'module' | 'horizontalLine' | 'sidebox'
-type IColor = 'glass' | 'white' | 'blue' | 'dark' | 'gray' | 'red' | 'purple' | 'app'
+type ISize = 'module' | 'horizontalLine' | 'sidebox' | 'line'
+type IColor = 'glass' | 'white' | 'blue' | 'dark' | 'gray' | 'pink' | 'purple' | 'app'
 
 const BaseWidget = ({
   size = 'module',
@@ -32,6 +32,10 @@ const BaseWidget = ({
     sizeClass = 'min-w-[290px] h-[64px] items-center gap-4 px-6 py-3 rounded-2xl'
   }
 
+  if (size === 'line') {
+    sizeClass = 'h-[64px] items-center gap-4 px-6 py-3 rounded-2xl'
+  }
+
   if (size === 'sidebox') {
     sizeClass = 'max-w-[500px] w-full flex flex-col p-6 rounded-2xl'
   }
@@ -52,8 +56,8 @@ const BaseWidget = ({
     colorClass = 'widget-gray text-neutral-light'
   }
 
-  if (color === 'red') {
-    colorClass = 'widget-red text-neutral-light'
+  if (color === 'pink') {
+    colorClass = 'widget-pink text-neutral-light'
   }
 
   if (color === 'purple') {

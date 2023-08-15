@@ -90,7 +90,7 @@ export default function About() {
             solutions to complex problems.
           </p>
 
-          <p className="text-lg font-semibold leading-[170%]">
+          <p className="mb-4 text-lg font-semibold leading-[170%]">
             I&apos;m looking to build aesthetic software interfaces with focus on user
             experience with scalable architecture and design patterns.
           </p>

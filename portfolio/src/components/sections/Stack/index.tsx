@@ -14,7 +14,6 @@ export default function Stack() {
       <FrontEnd />
       <BackEnd />
       <Database />
-      <Product />
     </Reveal>
   )
 }
@@ -28,7 +27,7 @@ const LogoShowcase = ({
   className?: string
 }) => {
   return (
-    <div className="relative h-[500px] w-[600px]">
+    <div className="relative h-[456px] w-[600px]">
       <div
         className={`absolute left-1/2 top-12 z-[5] grid w-full -translate-x-1/2 grid-cols-3	grid-rows-2 justify-center gap-y-4 pl-12 pr-12 ${className}`}
         {...props}
