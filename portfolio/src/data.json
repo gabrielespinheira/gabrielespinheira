@@ -1,0 +1,258 @@
+{
+  "base_url": "https://gabs.app",
+  "name": "Gabriel Espinheira",
+  "title": "Software Engineer",
+  "full_title": "Gabriel Espinheira - Software Engineer",
+  "description": "A software engineer with a passion to turn good ideas into aesthetic products.",
+  "thumb": "https://gabs.app/_next/image?url=%2Favatar.jpg&w=640&q=90",
+  "thumb_alt": "https://gabs.app/_next/image?url=%2Fsetup.jpg&w=640&q=90",
+  "keywords": "software engineer, senior software engineer, developer, front-end, back-end, full stack, ux/ui design, javascript, typescript, nodejs, reactjs, nextjs, tailwindcss",
+  "home": {
+    "title": "Hi, my name is",
+    "subtitle": "I'm a Creative Software Engineer",
+    "description": "I’m a senior software engineer with a passion for technology and digital products. I first discovered my love for development while playing around with HTML and CSS when I was 16yo. I am dedicated to continuously improving my development skills, and am committed to producing high-quality, efficient and user-centric digital products. I take pride in my ability to understand business objectives and translate them into a seamless and intuitive user experience.",
+    "quote": "If you have a project that would be a good fit for my skills and experience, I would love to hear from you!"
+  },
+  "links": {
+    "linkedin": {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/gabrielespinheira",
+      "copies": [
+        "Let's connect",
+        "Connect +",
+        "Let's talk"
+      ]
+    },
+    "github": {
+      "name": "GitHub",
+      "url": "https://github.com/gabrielespinheira",
+      "copies": [
+        "Follow me",
+        "See projects",
+        "Let's code"
+      ]
+    },
+    "dribbble": {
+      "name": "Dribbble",
+      "url": "https://dribbble.com/gabrielespinheira",
+      "copies": [
+        "Recent Shots",
+        "See more",
+        "\"Design\""
+      ]
+    },
+    "notion": {
+      "name": "Notion",
+      "url": "https://gabrielespinheira.notion.site/gabrielespinheira/Gabriel-Espinheira-867ecaf4a8a14123a112cc5eeaeb12d8",
+      "copies": [
+        "Knowledge Base",
+        "About me",
+        "Other Topics"
+      ]
+    },
+    "email": {
+      "name": "Email",
+      "url": "mailto:gabriiel66@gmail.com"
+    },
+    "instagram": {
+      "name": "Working Everywhere",
+      "url": "https://www.instagram.com/working__everywhere"
+    },
+    "spotify": {
+      "name": "Spotify",
+      "url": "https://open.spotify.com/user/gabriiel66"
+    },
+    "resume": {
+      "name": "Resume",
+      "url": "/resume.pdf"
+    }
+  },
+  "stack": {
+    "frontEnd": [
+      {
+        "name": "nextjs",
+        "title": "NextJS",
+        "url": "https://nextjs.org"
+      },
+      {
+        "name": "reactjs",
+        "title": "ReactJS",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "tailwindcss",
+        "title": "TailwindCSS",
+        "url": "https://tailwindcss.com"
+      },
+      {
+        "name": "storybook",
+        "title": "Storybook",
+        "url": "https://storybook.js.org"
+      },
+      {
+        "name": "electron",
+        "title": "Electron",
+        "url": "https://www.electronjs.org"
+      },
+      {
+        "name": "expo",
+        "title": "Expo",
+        "url": "https://expo.dev"
+      }
+    ],
+    "backEnd": [
+      {
+        "name": "typescript",
+        "title": "Typescript",
+        "url": "https://www.typescriptlang.org"
+      },
+      {
+        "name": "express",
+        "title": "Express",
+        "url": "https://expressjs.com"
+      },
+      {
+        "name": "graphql",
+        "title": "GraphQL",
+        "url": "https://graphql.org"
+      },
+      {
+        "name": "prisma",
+        "title": "Prisma",
+        "url": "https://www.prisma.io"
+      },
+      {
+        "name": "serverless",
+        "title": "Serverless",
+        "url": "https://www.serverless.com"
+      },
+      {
+        "name": "php",
+        "title": "PHP",
+        "url": "https://www.php.net"
+      }
+    ],
+    "database": [
+      {
+        "name": "planetscale",
+        "title": "Planetscale",
+        "url": "https://planetscale.com"
+      },
+      {
+        "name": "upstash",
+        "title": "Upstash",
+        "url": "https://upstash.com"
+      },
+      {
+        "name": "mysql",
+        "title": "MySQL",
+        "url": "https://www.mysql.com"
+      },
+      {
+        "name": "postgresql",
+        "title": "PostgreSQL",
+        "url": "https://www.postgresql.org"
+      },
+      {
+        "name": "redis",
+        "title": "Redis",
+        "url": "https://redis.io"
+      },
+      {
+        "name": "mongodb",
+        "title": "MongoDB",
+        "url": "https://www.mongodb.com"
+      }
+    ],
+    "product": [
+      {
+        "name": "figma",
+        "title": "Figma",
+        "url": "https://www.figma.com"
+      },
+      {
+        "name": "notion",
+        "title": "Notion",
+        "url": "https://www.notion.so"
+      },
+      {
+        "name": "aws",
+        "title": "Amazon Web services",
+        "url": "https://aws.amazon.com"
+      },
+      {
+        "name": "github",
+        "title": "GitHub",
+        "url": "https://github.com"
+      },
+      {
+        "name": "firebase",
+        "title": "Google Firebase",
+        "url": "https://firebase.google.com"
+      },
+      {
+        "name": "webflow",
+        "title": "Webflow",
+        "url": "https://webflow.com"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Mollie",
+      "obs": "",
+      "role": "Software Engineer - Senior | Mar 2023 - current",
+      "location": "Remote / Lisbon",
+      "description": "We are Mollie, a finance industry pioneer and one of Europe’s fastest-growing fintechs. We believe that every business has the right to grow, and that drives us to create products that simplify financial services – effortless payments, flexible financing, powerful integrations, and more."
+    },
+    {
+      "company": "LovelyStay",
+      "obs": "",
+      "role": "Software Engineer - Senior | Aug 2022 - Fev 2023",
+      "location": "Remote / Lisbon",
+      "description": "Working for a real estate investment fund focused on building and maintaining a property management solution, connecting with various external services such as Airbnb and Booking, using mainly NodeJs with Typescript and PostgreSQL."
+    },
+    {
+      "company": "Art2Act",
+      "obs": "",
+      "role": "Software Engineer - Senior | May 2022 - Jul 2022",
+      "location": "Remote",
+      "description": "Building an NFT collaborative subscription platform to connect Artists around the world and Customers using mainly NodeJs, GraphQL, Web3 and AWS Services."
+    },
+    {
+      "company": "XP Inc",
+      "obs": "(NASDAQ: XP, B3: XPBR31)",
+      "role": "Software Engineer - Senior | Sep 2020 - Mar 2022",
+      "location": "Remote / São Paulo, Brazil",
+      "description": "Working as a Software Engineer, in the most recognized investment firms in Brazil. Mainly building solutions like Back-end API architecture and building a scalable and reusable front-end with NextJS, using methodologies like Atomic Design. Using ReactJS, NextJS, Typescript, Serverless, PHP and WordPress."
+    },
+    {
+      "company": "Setta",
+      "obs": "",
+      "role": "Software Engineer - Mid | Nov 2019 - Aug 2020",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "My work was mainly focused on building Proofs of Concept and web services, creating new features, performing A/B tests and user research, in addition to building a technology team culture. Using technologies like ReactJS, NodeJS, React Native, MySQL and WordPress."
+    },
+    {
+      "company": "Shosp",
+      "obs": "",
+      "role": "Software Engineer - Junior | Feb 2019 - Oct 2019",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Building and maintenance of features for a management system for medical clinics, serving clients throughout Brazil. Some of the important results were: implementation of unit and integration tests, participation in the creation of layouts with the design team and suggestion of new technologies and design patterns."
+    },
+    {
+      "company": "Freelancer",
+      "obs": "",
+      "role": "Software Engineer | Oct 2017 - Jan 2019",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Working with clients of different sizes, mainly building websites, portfolios, e-commerces, APIs, management systems and integrations with external services. Working most of my time with Javascript and PHP."
+    },
+    {
+      "company": "Agência Trii",
+      "obs": "",
+      "role": "Software Engineer - Intern | Nov 2015 - Sep 2017",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Digital Marketing Agency, working as a Developer, focused on website construction and sales landing pages, as well as integrations with external services through APIs. Using the best practices of HTML and CSS to ensure the SEO and responsive layout, working in different devices."
+    }
+  ]
+}
