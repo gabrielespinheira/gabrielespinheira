@@ -1,12 +1,15 @@
+# [💯 Gabriel Espinheira](https://gabs.app)
 
+Yoo! My name is **Gabriel Espinheira** and I'm a 27yo, **Carioca** (from Rio de Janeiro, Brazil) who swapped Cristo Redentor for Pastéis de Nata, now **living in Lisbon**.
 
-## 👋  [Hey, I'm Gabriel Espinheira](https://gabs.app)
+Fell in love with coding at 18yo and turned it into a career. Now, with **9 years of experience** under my belt as a **Senior Software Engineer**, I've crafted my skills in both **back-end** and **front-end**, always aiming for that perfect blend of form and function.
 
-Hi there!
+I believe in **creating digital products** that are not just functional, but visually appealing - because let's face it, **aesthetics** and **performance** go hand in hand!
 
-I’m a senior software engineer with a passion for technology and digital products. I first discovered my love for development while playing around with HTML and CSS when I was 16yo. I am dedicated to continuously improving my development skills, and am committed to producing high-quality, efficient and user-centric digital products. I take pride in my ability to understand business objectives and translate them into a seamless and intuitive user experience.
+Away from the keyboard, I dive into non-fiction books about design, finances, productivity, architecture, photography and geopolitics. With my camera as my constant companion, I love capturing the essence of my daily life and the adventures that travel brings.
 
-**I'm looking to build aesthetic software interfaces with focus on user experience with scalable architecture and design patterns. If you have a project that would be a good fit for my skills and experience, I would love to hear from you!**
+### building aesthetic interfaces through scalable software
+
 
   - 🎉 27 yo
   - 💥 Developer since 2014
@@ -15,28 +18,12 @@ I’m a senior software engineer with a passion for technology and digital produ
   - 🚀 Working as Senior Software Engineer
   - 👨🏻‍🎓 Bachelor's degree, Computer Science
   - 👨🏻‍💼 Post Graduation, Digital Technologies for Management
-  - 💫 UX/UI Design Enthusiast
+  - 💫 Design Enthusiast
   - 💙 Clean Code Lover
   - 🔥 Early Adopter
   - 🔫 Self-taught
-  - 📚 Reader
+  - 🏃🏻‍♂️ Agile Methods
+  - 📚 Non-fiction book reader
+  - 🇪🇸 Learning Spanish
 
-### Skills
-
-**Back-end:** Typescript, NodeJS, Serverless, ExpressJS, NestJS, PHP, WordPress
-
-**Front-end:** ReactJS and NextJS
-
-**Databases:** PostgreSQL, MySQL, MongoDB, Redis, DynamoDB
-
-**Cloud/DevOps:** Docker, AWS, CI/CD, Firebase, Digital Ocean
-
-**Tests:** Unit, Integration and E2E with Jest
-
-**Others:** UX/UI Design Enthusiast, Clean Code and Agile Methodologies
-
-### Get in touch
-
-- [Portfolio](https://gabs.app)
-- [LinkedIn](https://www.linkedin.com/in/gabrielespinheira/)
-- [Email](mailto:gabriiel66@gmail.com)
+### [Get in touch](https://gabs.app)
