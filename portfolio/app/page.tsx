@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button'
 import CopyInput from '@/components/ui/copy-input'
 import { Github, Linkedin, Sparkles } from 'lucide-react'
 import { motion } from 'motion/react'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -20,13 +19,12 @@ export default function Home() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
         >
-          <Image
-            src="/avatar.png"
+          <img
+            src="/avatar.jpeg"
             alt="Gabriel Espinheira - Creative Software Engineer"
             width={160}
             height={160}
             className="rounded-3xl shadow-lg border border-border"
-            priority
           />
         </motion.div>
         <motion.div
