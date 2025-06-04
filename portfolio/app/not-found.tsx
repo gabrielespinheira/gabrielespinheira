@@ -2,6 +2,6 @@
 
 import Hero from '@/components/blocks/Hero'
 
-export default function Home() {
+export default function NotFound() {
   return <Hero />
 }
