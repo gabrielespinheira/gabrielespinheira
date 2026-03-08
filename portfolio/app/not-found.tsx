@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import Hero from '@/components/blocks/Hero'
+import Hero from "@/components/blocks/Hero"
 
 export default function NotFound() {
-  return <Hero />
+	return <Hero />
 }

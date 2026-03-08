@@ -1,33 +1,35 @@
-import { PostHogProvider } from '@/components/providers/PostHogProvider'
-import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
+import { PostHogProvider } from "@/components/providers/PostHogProvider"
+import "./globals.css"
 
 const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+	variable: "--font-geist-sans",
+	subsets: ["latin"],
 })
 
 const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+	variable: "--font-geist-mono",
+	subsets: ["latin"],
 })
 
 export const metadata: Metadata = {
-  title: 'Gabriel Espinheira - Creative Software Engineer',
-  description: 'Building aesthetic interfaces through scalable software.',
+	title: "Gabriel Espinheira - Creative Software Engineer",
+	description: "Building aesthetic interfaces through scalable software.",
 }
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode
+	children: React.ReactNode
 }>) {
-  return (
-    <html lang="en" className="dark">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <PostHogProvider>{children}</PostHogProvider>
-      </body>
-    </html>
-  )
+	return (
+		<html lang="en" className="dark">
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+			>
+				<PostHogProvider>{children}</PostHogProvider>
+			</body>
+		</html>
+	)
 }
