@@ -21,9 +21,6 @@ const dockApps = [
 	{ key: "framer", name: "Framer", src: "/icons/macos/framer.png" },
 	{ key: "lmstudio", name: "LM Studio", src: "/icons/macos/lmstudio.png" },
 	{ key: "ollama", name: "Ollama", src: "/icons/macos/ollama.png" },
-	{ key: "github", name: "GitHub", src: "/icons/macos/github.png" },
-	{ key: "spline", name: "Spline", src: "/icons/macos/spline.png" },
-	{ key: "warp2", name: "Warp 2", src: "/icons/macos/warp2.png" },
 ] as const
 
 export default function AppDock() {
