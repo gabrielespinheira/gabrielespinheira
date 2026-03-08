@@ -6,7 +6,19 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": false,
+		"includes": [
+			"**",
+			"!**/.next",
+			"!**/dist",
+			"!**/.turbo",
+			"!**/.vercel",
+			"!**/.claude",
+			"!**/skills",
+			"!**/next-env.d.ts",
+			"!components/ui",
+			"!app/globals.css"
+		]
 	},
 	"formatter": {
 		"enabled": true,
