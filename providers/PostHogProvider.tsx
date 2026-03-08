@@ -5,13 +5,18 @@ import posthog from "posthog-js"
 import { PostHogProvider as Provider } from "posthog-js/react"
 import { Suspense, useEffect } from "react"
 
-if (typeof window !== "undefined") {
-	posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY || "", {
-		api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://app.posthog.com",
+const posthogKey = process.env.NEXT_PUBLIC_POSTHOG_KEY
+const posthogHost =
+	process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://app.posthog.com"
+const hasPostHog = Boolean(posthogKey)
+
+if (typeof window !== "undefined" && posthogKey) {
+	posthog.init(posthogKey, {
+		api_host: posthogHost,
 		loaded: (posthog) => {
 			if (process.env.NODE_ENV === "development") posthog.debug()
 		},
-		capture_pageview: true,
+		capture_pageview: false,
 		capture_pageleave: true,
 		autocapture: true,
 		session_recording: {
@@ -31,6 +36,8 @@ function PostHogPageview() {
 	const searchParams = useSearchParams()
 
 	useEffect(() => {
+		if (!hasPostHog) return
+
 		if (pathname) {
 			let url = window.origin + pathname
 			if (searchParams?.toString()) {
@@ -46,6 +53,10 @@ function PostHogPageview() {
 }
 
 export function PostHogProvider({ children }: { children: React.ReactNode }) {
+	if (!hasPostHog) {
+		return <>{children}</>
+	}
+
 	return (
 		<Provider client={posthog}>
 			{children}

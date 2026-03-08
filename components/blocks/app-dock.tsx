@@ -4,59 +4,46 @@ import { useEffect, useState } from "react"
 import { Dock, DockCard, DockCardInner } from "@/components/ui/dock"
 
 const dockApps = [
-	{ id: 1, key: "zen", name: "Zen Browser", src: "/icons/macos/zen.png" },
-	{ id: 2, key: "notion", name: "Notion", src: "/icons/macos/notion.png" },
+	{ key: "zen", name: "Zen Browser", src: "/icons/macos/zen.png" },
+	{ key: "notion", name: "Notion", src: "/icons/macos/notion.png" },
+	{ key: "obsidian", name: "Obsidian", src: "/icons/macos/obsidian.png" },
+	{ key: "warp", name: "Warp", src: "/icons/macos/warp.png" },
+	{ key: "raycast", name: "Raycast", src: "/icons/macos/raycast.png" },
 	{
-		id: 3,
-		key: "obsidian",
-		name: "Obsidian",
-		src: "/icons/macos/obsidian.png",
-	},
-	{ id: 4, key: "warp", name: "Warp", src: "/icons/macos/warp.png" },
-	{ id: 5, key: "raycast", name: "Raycast", src: "/icons/macos/raycast.png" },
-	{
-		id: 6,
 		key: "antigravity",
 		name: "Antigravity",
 		src: "/icons/macos/antigravity.png",
 	},
-	{ id: 7, key: "claude", name: "Claude Code", src: "/icons/macos/claude.png" },
-	{ id: 8, key: "codex", name: "Codex", src: "/icons/macos/codex.png" },
-	{ id: 9, key: "cursor", name: "Cursor", src: "/icons/macos/cursor.png" },
-	{ id: 10, key: "figma", name: "Figma", src: "/icons/macos/figma.png" },
-	{ id: 11, key: "framer", name: "Framer", src: "/icons/macos/framer.png" },
-	{
-		id: 12,
-		key: "lmstudio",
-		name: "LM Studio",
-		src: "/icons/macos/lmstudio.png",
-	},
-	{ id: 13, key: "ollama", name: "Ollama", src: "/icons/macos/ollama.png" },
-]
+	{ key: "claude", name: "Claude Code", src: "/icons/macos/claude.png" },
+	{ key: "codex", name: "Codex", src: "/icons/macos/codex.png" },
+	{ key: "cursor", name: "Cursor", src: "/icons/macos/cursor.png" },
+	{ key: "figma", name: "Figma", src: "/icons/macos/figma.png" },
+	{ key: "framer", name: "Framer", src: "/icons/macos/framer.png" },
+	{ key: "lmstudio", name: "LM Studio", src: "/icons/macos/lmstudio.png" },
+	{ key: "ollama", name: "Ollama", src: "/icons/macos/ollama.png" },
+	{ key: "github", name: "GitHub", src: "/icons/macos/github.png" },
+	{ key: "spline", name: "Spline", src: "/icons/macos/spline.png" },
+	{ key: "warp2", name: "Warp 2", src: "/icons/macos/warp2.png" },
+] as const
 
 export default function AppDock() {
-	const [isMobile, setIsMobile] = useState(false)
+	const [isDesktop, setIsDesktop] = useState<boolean | null>(null)
 
 	useEffect(() => {
 		const media = window.matchMedia("(max-width: 820px)")
-		const onChange = () => setIsMobile(media.matches)
+		const onChange = () => setIsDesktop(!media.matches)
 		onChange()
 		media.addEventListener("change", onChange)
 		return () => media.removeEventListener("change", onChange)
 	}, [])
 
-	if (isMobile) return null
+	if (!isDesktop) return null
 
 	return (
 		<Dock>
 			{dockApps.map((app) => (
-				<DockCard key={app.key} id={`${app.id}`} label={app.name}>
-					<DockCardInner src={app.src} id={`${app.id}`}>
-						<span
-							className="h-full w-full bg-center bg-contain bg-no-repeat"
-							style={{ backgroundImage: `url(${app.src})` }}
-						/>
-					</DockCardInner>
+				<DockCard key={app.key} label={app.name}>
+					<DockCardInner src={app.src} />
 				</DockCard>
 			))}
 		</Dock>

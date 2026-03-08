@@ -4,22 +4,7 @@ import { AnimatePresence, motion } from "motion/react"
 import Image from "next/image"
 import { useState } from "react"
 import { cn } from "@/lib/utils"
-
-const item = {
-	hidden: { opacity: 0, y: 16, filter: "blur(8px)" },
-	show: {
-		opacity: 1,
-		y: 0,
-		filter: "blur(0px)",
-		transition: {
-			duration: 1.2,
-			ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
-		},
-	},
-}
-
-const cardClass =
-	"rounded-2xl border border-white/[0.06] bg-white/[0.03] backdrop-blur-sm overflow-hidden"
+import { cardClass, itemVariant } from "./shared"
 
 const stack = [
 	{ label: "React", icon: "/icons/stack/react.svg", color: "#61DAFB" },
@@ -93,7 +78,7 @@ function StackIcon({
 export default function StackCard() {
 	return (
 		<motion.div
-			variants={item}
+			variants={itemVariant}
 			className={cn(cardClass, "col-span-2 md:col-span-3 flex flex-col")}
 		>
 			<div className="flex items-center gap-2 border-white/[0.04] border-b px-4 py-2.5">
