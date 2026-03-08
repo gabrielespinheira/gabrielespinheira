@@ -10,6 +10,7 @@ import {
   useRef,
   useState,
 } from "react"
+import { createPortal } from "react-dom"
 import {
   animate,
   AnimatePresence,
@@ -100,7 +101,7 @@ function Dock({ className, children }: DockProps) {
         transition={{ type: "spring", stiffness: 260, damping: 24 }}
         // className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-end h-14 p-2 gap-3 bg-neutral-50 dark:bg-black bg-opacity-90 rounded-xl"
         className={cn(
-          "fixed bottom-4 left-1/2 z-50 inline-flex w-max -translate-x-1/2 items-end justify-center h-[72px] p-2 gap-1.5 sm:gap-1 md:gap-1 bg-opacity-90 rounded-xl overflow-visible",
+          "fixed bottom-4 left-1/2 z-50 inline-flex w-max -translate-x-1/2 items-end justify-start md:justify-center h-[72px] p-2 gap-1.5 sm:gap-1 md:gap-1 bg-opacity-90 rounded-xl overflow-visible max-[820px]:relative max-[820px]:bottom-auto max-[820px]:left-auto max-[820px]:z-50 max-[820px]:mx-auto max-[820px]:mt-4 max-[820px]:h-[104px] max-[820px]:py-3 max-[820px]:-translate-x-0 max-[820px]:max-w-[calc(100vw-1rem)] max-[820px]:overflow-x-auto max-[820px]:overflow-y-visible max-[820px]:[scrollbar-width:none] max-[820px]:[-ms-overflow-style:none] max-[820px]:[&::-webkit-scrollbar]:hidden",
           " dark:bg-neutral-900 bg-neutral-50 p-2 no-underline shadow-sm transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-800/80 ",
           "shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05),0px_1px_1px_0px_rgba(255,252,240,0.5)_inset,0px_0px_0px_1px_hsla(0,0%,100%,0.1)_inset,0px_0px_1px_0px_rgba(28,27,26,0.5)]",
           "shadow-[rgba(17,24,28,0.08)_0_0_0_1px,rgba(17,24,28,0.08)_0_1px_2px_-1px,rgba(17,24,28,0.04)_0_2px_4px]",
@@ -197,6 +198,10 @@ function DockCard({ children, id, label }: DockCardProps) {
   const cardRef = useRef<HTMLButtonElement>(null) // Reference to the card button element for direct DOM manipulation and measurement
   const [elCenterX, setElCenterX] = useState(0) // State to store the center X position of the card for accurate mouse interaction calculations
   const [isHovered, setIsHovered] = useState(false)
+  const [tooltipPosition, setTooltipPosition] = useState<{
+    x: number
+    y: number
+  } | null>(null)
   const dock = useDock() // Access the Dock context to get shared state and control functions
 
   // Spring animation for the size of the card, providing a smooth and responsive scaling effect
@@ -240,6 +245,15 @@ function DockCard({ children, id, label }: DockCardProps) {
     const { x } = cardRef.current?.getBoundingClientRect() || { x: 0 }
     setElCenterX(x + INITIAL_WIDTH / 2) // Center point based on the current base icon width
   })
+
+  const updateTooltipPosition = useCallback(() => {
+    if (!cardRef.current) return
+    const rect = cardRef.current.getBoundingClientRect()
+    setTooltipPosition({
+      x: rect.left + rect.width / 2,
+      y: rect.top - 8,
+    })
+  }, [])
 
   const isAnimating = useRef(false) // Reference to track if the card is currently animating to avoid conflicting animations
   const controls = useAnimation() // Animation controls for managing card's Y position during the animation loop
@@ -289,35 +303,54 @@ function DockCard({ children, id, label }: DockCardProps) {
   })
 
   // Transform the calculated distance into a responsive width for the card
-  let widthSync = useTransform(distance, [-150, 0, 150], [56, 92, 56])
+  let widthSync = useTransform(distance, [-150, 0, 150], [56, 84, 56])
   let width = useSpring(widthSync, { mass: 0.1, stiffness: 150, damping: 12 })
 
   return (
     <div className="relative flex flex-col items-center gap-1" key={id}>
-      <AnimatePresence>
-        {label && isHovered ? (
-          <motion.div
-            className="absolute -top-8 px-2 py-1 text-[11px] leading-none whitespace-nowrap rounded-md border border-black/10 dark:border-white/10 bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 shadow-md pointer-events-none"
-            initial={{ opacity: 0, y: 4 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 4 }}
-            transition={{ duration: 0.14 }}
-          >
-            {label}
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
+      {typeof document !== "undefined" &&
+        createPortal(
+          <AnimatePresence>
+            {label && isHovered && tooltipPosition ? (
+              <motion.div
+                className="fixed z-[90] -translate-x-1/2 -translate-y-full px-2 py-1 text-[11px] leading-none whitespace-nowrap rounded-md border border-black/10 dark:border-white/10 bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 shadow-md pointer-events-none"
+                style={{ left: tooltipPosition.x, top: tooltipPosition.y }}
+                initial={{ opacity: 0, y: 4 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 4 }}
+                transition={{ duration: 0.14 }}
+              >
+                {label}
+              </motion.div>
+            ) : null}
+          </AnimatePresence>,
+          document.body
+        )}
 
       {/* Motion button for the card, handling click events and animations */}
       <motion.button
         ref={cardRef} // Reference to the button element
         className="aspect-square bg-transparent border-none shadow-none"
         aria-label={label}
-        title={label}
-        onHoverStart={() => setIsHovered(true)}
-        onHoverEnd={() => setIsHovered(false)}
-        onFocus={() => setIsHovered(true)}
-        onBlur={() => setIsHovered(false)}
+        onHoverStart={() => {
+          setIsHovered(true)
+          updateTooltipPosition()
+        }}
+        onHoverEnd={() => {
+          setIsHovered(false)
+          setTooltipPosition(null)
+        }}
+        onMouseMove={() => {
+          if (isHovered) updateTooltipPosition()
+        }}
+        onFocus={() => {
+          setIsHovered(true)
+          updateTooltipPosition()
+        }}
+        onBlur={() => {
+          setIsHovered(false)
+          setTooltipPosition(null)
+        }}
         // onClick={handleClick} // Click handler to start/stop animation
         style={{
           width: width, // Responsive width based on mouse distance

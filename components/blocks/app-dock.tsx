@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { Dock, DockCard, DockCardInner } from "@/components/ui/dock"
 
 const dockApps = [
@@ -34,6 +35,18 @@ const dockApps = [
 ]
 
 export default function AppDock() {
+	const [isMobile, setIsMobile] = useState(false)
+
+	useEffect(() => {
+		const media = window.matchMedia("(max-width: 820px)")
+		const onChange = () => setIsMobile(media.matches)
+		onChange()
+		media.addEventListener("change", onChange)
+		return () => media.removeEventListener("change", onChange)
+	}, [])
+
+	if (isMobile) return null
+
 	return (
 		<Dock>
 			{dockApps.map((app) => (
