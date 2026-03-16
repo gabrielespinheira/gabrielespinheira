@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+	title: "Page Not Found — Gabriel Espinheira",
+	description: "This page could not be found.",
+	robots: { index: false, follow: true },
+}
 
 export default function NotFound() {
 	return (

@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Gabriel Espinheira
+Role: Senior Software Engineer
+Location: Lisbon, Portugal
+GitHub: https://github.com/gabrielespinheira
+LinkedIn: https://linkedin.com/in/gabrielespinheira
+X: https://x.com/gabs_app
+
+/* SITE */
+Last update: 2026/03/07
+Language: English
+Standards: HTML5, CSS3, ES2024
+Framework: Next.js 16
+Hosting: Vercel

@@ -1,9 +1,9 @@
 "use client"
 
+import { cn } from "@/lib/utils"
 import { Mail } from "lucide-react"
 import { motion } from "motion/react"
 import type { ReactNode } from "react"
-import { cn } from "@/lib/utils"
 import { cardClass, itemVariant } from "./shared"
 
 interface ContactLink {
@@ -82,9 +82,10 @@ function ContactItem({ label, href, handle, icon, isExternal }: ContactLink) {
 
 export default function ConnectCard() {
 	return (
-		<motion.div
+		<motion.nav
 			variants={itemVariant}
 			className={cn(cardClass, "col-span-2 md:col-span-2")}
+			aria-label="Contact links"
 		>
 			<div className="flex items-center gap-2 border-white/[0.04] border-b px-4 py-2.5">
 				<span className="font-mono text-[13px] text-muted-foreground/40">
@@ -96,6 +97,6 @@ export default function ConnectCard() {
 					<ContactItem key={link.label} {...link} />
 				))}
 			</div>
-		</motion.div>
+		</motion.nav>
 	)
 }

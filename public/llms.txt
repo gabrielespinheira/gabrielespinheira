@@ -1,0 +1,38 @@
+# Gabriel Espinheira
+
+> Senior Software Engineer based in Lisbon, Portugal. Originally from Rio de Janeiro, Brazil. 11 years of experience building scalable, aesthetic digital products.
+
+## About
+
+Gabriel Espinheira is a Senior Software Engineer with 11 years of professional experience (since 2014). He specializes in full-stack development with a strong focus on building digital products that are both functional and visually appealing. He holds a BSc in Computer Science and a post-graduate degree in Digital Tech Management.
+
+He is originally from Rio de Janeiro, Brazil, and currently lives in Lisbon, Portugal.
+
+He is currently available for new opportunities and collaborations.
+
+## Skills & Expertise
+
+- Full-stack Software Engineering (11 years)
+- Frontend: React, Next.js, TypeScript, Tailwind CSS, Vite
+- Backend: Node.js, PHP
+- Databases: PostgreSQL, MySQL, Convex
+- Cloud & Infrastructure: AWS, Docker
+- Design Enthusiast & Clean Code advocate
+- AI-Augmented Coding & Prompt Engineering
+- Early adopter of emerging technologies
+
+## Tech Stack
+
+React, Next.js, Node.js, TypeScript, PHP, AWS, PostgreSQL, MySQL, Convex, Vite, Docker, Tailwind CSS
+
+## Tools & Workflow
+
+Zen Browser, Notion, Obsidian, Warp Terminal, Raycast, Claude Code, Codex, Cursor, Figma, Framer, LM Studio, Ollama
+
+## Contact
+
+- Website: https://gabs.app
+- GitHub: https://github.com/gabrielespinheira
+- LinkedIn: https://linkedin.com/in/gabrielespinheira
+- X/Twitter: https://x.com/gabs_app
+- Email: gabriiel66@gmail.com

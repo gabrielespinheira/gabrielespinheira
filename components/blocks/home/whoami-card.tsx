@@ -1,13 +1,13 @@
 "use client"
 
+import { cn } from "@/lib/utils"
 import { motion } from "motion/react"
 import Image from "next/image"
-import { cn } from "@/lib/utils"
 import { cardClass, itemVariant } from "./shared"
 
 export default function WhoAmICard() {
 	return (
-		<motion.div variants={itemVariant} className={cn(cardClass, "col-span-2")}>
+		<motion.article variants={itemVariant} className={cn(cardClass, "col-span-2")}>
 			<div className="flex items-center gap-2 border-white/[0.04] border-b px-4 py-2.5">
 				<div className="flex gap-1.5">
 					<div className="h-2.5 w-2.5 rounded-full bg-red-500/70" />
@@ -22,15 +22,16 @@ export default function WhoAmICard() {
 				<div className="flex items-center gap-4">
 					<Image
 						src="/avatar.jpg"
-						alt="Gabriel Espinheira"
+						alt="Gabriel Espinheira — Senior Software Engineer"
 						width={80}
 						height={80}
+						priority
 						className="h-14 w-14 rounded-xl border border-border/50 object-cover shadow-sm md:h-[72px] md:w-[72px]"
 					/>
 					<div className="flex flex-col gap-1">
-						<h1 className="font-semibold text-foreground text-xl tracking-tight md:text-3xl">
+						<h2 className="font-semibold text-foreground text-xl tracking-tight md:text-3xl">
 							Gabriel Espinheira
-						</h1>
+						</h2>
 						<p className="mt-1 font-mono text-muted-foreground text-sm">
 							Senior Software Engineer
 						</p>
@@ -65,6 +66,6 @@ export default function WhoAmICard() {
 					</span>
 				</div>
 			</div>
-		</motion.div>
+		</motion.article>
 	)
 }

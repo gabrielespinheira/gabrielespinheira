@@ -24,15 +24,17 @@ export default function HomeGrid() {
 			initial="hidden"
 			animate="show"
 			className="flex w-full flex-col gap-3"
+			role="region"
+			aria-label="Portfolio"
 		>
-			<div className="grid w-full grid-cols-2 gap-3 md:grid-cols-4">
+			<section className="grid w-full grid-cols-2 gap-3 md:grid-cols-4" aria-label="About me">
 				<WhoAmICard />
 				<AboutCard />
-			</div>
-			<div className="grid w-full grid-cols-2 gap-3 md:grid-cols-5">
+			</section>
+			<section className="grid w-full grid-cols-2 gap-3 md:grid-cols-5" aria-label="Tech stack and contact">
 				<StackCard />
 				<ConnectCard />
-			</div>
+			</section>
 		</motion.div>
 	)
 }
