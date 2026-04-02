@@ -27,11 +27,17 @@ export default function HomeGrid() {
 			role="region"
 			aria-label="Portfolio"
 		>
-			<section className="grid w-full grid-cols-2 gap-3 md:grid-cols-4" aria-label="About me">
+			<section
+				className="grid w-full grid-cols-2 gap-3 md:grid-cols-4"
+				aria-label="About me"
+			>
 				<WhoAmICard />
 				<AboutCard />
 			</section>
-			<section className="grid w-full grid-cols-2 gap-3 md:grid-cols-5" aria-label="Tech stack and contact">
+			<section
+				className="grid w-full grid-cols-2 gap-3 md:grid-cols-5"
+				aria-label="Tech stack and contact"
+			>
 				<StackCard />
 				<ConnectCard />
 			</section>

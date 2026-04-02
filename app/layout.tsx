@@ -1,8 +1,9 @@
-import { PostHogProvider } from "@/providers/PostHogProvider"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
+import { siteLinks, siteProfile, siteUrl } from "@/lib/site"
+import { PostHogProvider } from "@/providers/PostHogProvider"
 import "./globals.css"
 
 const geistSans = Geist({
@@ -15,16 +16,14 @@ const geistMono = Geist_Mono({
 	subsets: ["latin"],
 })
 
-const siteUrl = "https://gabs.app"
-
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
-	title: "Gabriel Espinheira — Senior Software Engineer | Lisbon, Portugal",
-	description:
-		"Gabriel Espinheira is a Senior Software Engineer with 11 years of experience building scalable, aesthetic digital products. Full-stack expertise in React, Next.js, TypeScript, Node.js, and AWS. Based in Lisbon, originally from Rio de Janeiro.",
+	title: `${siteProfile.name} — ${siteProfile.jobTitle} | ${siteProfile.location}`,
+	description: siteProfile.description,
+	manifest: "/manifest.webmanifest",
 	keywords: [
-		"Gabriel Espinheira",
-		"Senior Software Engineer",
+		siteProfile.name,
+		siteProfile.jobTitle,
 		"Full Stack Developer",
 		"React Developer",
 		"Next.js Developer",
@@ -35,25 +34,27 @@ export const metadata: Metadata = {
 		"Portugal",
 		"Software Engineer Portfolio",
 	],
-	authors: [{ name: "Gabriel Espinheira", url: siteUrl }],
-	creator: "Gabriel Espinheira",
+	authors: [{ name: siteProfile.name, url: siteUrl }],
+	creator: siteProfile.name,
 	alternates: {
 		canonical: siteUrl,
+	},
+	other: {
+		"msapplication-config": "/browserconfig.xml",
 	},
 	openGraph: {
 		type: "website",
 		locale: "en_US",
 		url: siteUrl,
-		siteName: "Gabriel Espinheira",
-		title: "Gabriel Espinheira — Senior Software Engineer",
-		description:
-			"Senior Software Engineer with 11 years of experience building scalable, aesthetic digital products. React, Next.js, TypeScript, Node.js, AWS.",
+		siteName: siteProfile.name,
+		title: `${siteProfile.name} — ${siteProfile.jobTitle}`,
+		description: `${siteProfile.shortDescription} React, Next.js, TypeScript, Node.js, AWS.`,
 		images: [
 			{
 				url: "/og-image.png",
 				width: 1200,
 				height: 630,
-				alt: "Gabriel Espinheira — Senior Software Engineer",
+				alt: `${siteProfile.name} — ${siteProfile.jobTitle}`,
 			},
 		],
 	},
@@ -61,9 +62,8 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		site: "@gabs_app",
 		creator: "@gabs_app",
-		title: "Gabriel Espinheira — Senior Software Engineer",
-		description:
-			"Senior Software Engineer with 11 years of experience building scalable, aesthetic digital products.",
+		title: `${siteProfile.name} — ${siteProfile.jobTitle}`,
+		description: siteProfile.shortDescription,
 		images: ["/og-image.png"],
 	},
 	robots: {
@@ -82,13 +82,12 @@ export const metadata: Metadata = {
 const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "Person",
-	name: "Gabriel Espinheira",
+	name: siteProfile.name,
 	url: siteUrl,
 	image: `${siteUrl}/avatar.jpg`,
-	jobTitle: "Senior Software Engineer",
-	description:
-		"Senior Software Engineer with 11 years of experience building scalable, aesthetic digital products. Full-stack expertise in React, Next.js, TypeScript, Node.js, and AWS.",
-	email: "gabriiel66@gmail.com",
+	jobTitle: siteProfile.jobTitle,
+	description: siteProfile.description,
+	email: siteProfile.email,
 	address: {
 		"@type": "PostalAddress",
 		addressLocality: "Lisbon",
@@ -120,11 +119,7 @@ const jsonLd = {
 		"AI-Augmented Coding",
 		"Prompt Engineering",
 	],
-	sameAs: [
-		"https://github.com/gabrielespinheira",
-		"https://linkedin.com/in/gabrielespinheira",
-		"https://x.com/gabs_app",
-	],
+	sameAs: [siteLinks.github, siteLinks.linkedin, siteLinks.x],
 }
 
 export default function RootLayout({
@@ -138,10 +133,7 @@ export default function RootLayout({
 			className={`${geistSans.variable} ${geistMono.variable} dark`}
 		>
 			<body className="antialiased">
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-				/>
+				<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 				<PostHogProvider>{children}</PostHogProvider>
 				<Analytics />
 				<SpeedInsights />

@@ -1,9 +1,9 @@
 "use client"
 
-import { cn } from "@/lib/utils"
 import { Mail } from "lucide-react"
 import { motion } from "motion/react"
 import type { ReactNode } from "react"
+import { cn } from "@/lib/utils"
 import { cardClass, itemVariant } from "./shared"
 
 interface ContactLink {

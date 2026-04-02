@@ -1,13 +1,16 @@
 "use client"
 
-import { cn } from "@/lib/utils"
 import { motion } from "motion/react"
 import Image from "next/image"
+import { cn } from "@/lib/utils"
 import { cardClass, itemVariant } from "./shared"
 
 export default function WhoAmICard() {
 	return (
-		<motion.article variants={itemVariant} className={cn(cardClass, "col-span-2")}>
+		<motion.article
+			variants={itemVariant}
+			className={cn(cardClass, "col-span-2")}
+		>
 			<div className="flex items-center gap-2 border-white/[0.04] border-b px-4 py-2.5">
 				<div className="flex gap-1.5">
 					<div className="h-2.5 w-2.5 rounded-full bg-red-500/70" />
@@ -45,7 +48,7 @@ export default function WhoAmICard() {
 					</p>
 					<p>
 						With{" "}
-						<span className="text-foreground/80">11 years of experience</span>{" "}
+						<span className="text-foreground/80">12 years of experience</span>{" "}
 						as a Senior Software Engineer, crafting skills in both back-end and
 						front-end — always aiming for that perfect blend of form and
 						function.

@@ -10,7 +10,7 @@ const terminalLines = [
 	{ id: "name", text: "name: Gabriel Espinheira" },
 	{ id: "age", text: "age: 30" },
 	{ id: "role", text: "role: Senior Software Engineer" },
-	{ id: "exp", text: "experience: 11 years (since 2014)" },
+	{ id: "exp", text: "experience: 12 years (since 2014)" },
 	{ id: "location", text: "location: Lisbon, Portugal" },
 	{ id: "from", text: "from: Rio de Janeiro, Brazil" },
 	{ id: "edu", text: "education: BSc Computer Science" },
