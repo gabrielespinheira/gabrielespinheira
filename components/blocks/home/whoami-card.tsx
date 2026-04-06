@@ -8,7 +8,9 @@ import { cardClass, itemVariant } from "./shared"
 export default function WhoAmICard() {
 	return (
 		<motion.article
-			variants={itemVariant}
+			initial={{ opacity: 1, y: 12 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
 			className={cn(cardClass, "col-span-2")}
 		>
 			<div className="flex items-center gap-2 border-white/[0.04] border-b px-4 py-2.5">
