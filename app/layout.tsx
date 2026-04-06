@@ -143,17 +143,19 @@ const jsonLd = {
 			isPartOf: { "@id": `${siteUrl}/#website` },
 			about: { "@id": `${siteUrl}/#person` },
 			mainEntity: { "@id": `${siteUrl}/#person` },
-			breadcrumb: {
-				"@type": "BreadcrumbList",
-				itemListElement: [
-					{
-						"@type": "ListItem",
-						position: 1,
-						name: "Home",
-						item: siteUrl,
-					},
-				],
-			},
+			breadcrumb: { "@id": `${siteUrl}/#breadcrumb` },
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": `${siteUrl}/#breadcrumb`,
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Home",
+					item: siteUrl,
+				},
+			],
 		},
 		{
 			"@type": "Organization",
