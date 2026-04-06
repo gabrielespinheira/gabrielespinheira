@@ -86,8 +86,17 @@ const jsonLd = {
 			"@type": "Person",
 			"@id": `${siteUrl}/#person`,
 			name: siteProfile.name,
+			givenName: "Gabriel",
+			familyName: "Espinheira",
 			url: siteUrl,
-			image: `${siteUrl}/avatar.jpg`,
+			image: {
+				"@type": "ImageObject",
+				"@id": `${siteUrl}/#avatar`,
+				url: `${siteUrl}/avatar.jpg`,
+				width: 400,
+				height: 400,
+				caption: siteProfile.name,
+			},
 			jobTitle: siteProfile.jobTitle,
 			description: siteProfile.description,
 			email: siteProfile.email,
@@ -100,9 +109,25 @@ const jsonLd = {
 				"@type": "Country",
 				name: "Brazil",
 			},
-			alumniOf: {
-				"@type": "EducationalOrganization",
-				name: "Computer Science (BSc)",
+			alumniOf: [
+				{
+					"@type": "EducationalOrganization",
+					name: "BSc Computer Science",
+				},
+				{
+					"@type": "EducationalOrganization",
+					name: "Digital Tech Management (Post-grad)",
+				},
+			],
+			hasOccupation: {
+				"@type": "Occupation",
+				name: siteProfile.jobTitle,
+				description: "Designs and builds scalable full-stack web applications.",
+				occupationLocation: {
+					"@type": "Country",
+					name: "Portugal",
+				},
+				skills: "React, Next.js, TypeScript, Node.js, AWS, PostgreSQL",
 			},
 			knowsAbout: [
 				"React",
@@ -122,6 +147,11 @@ const jsonLd = {
 				"AI-Augmented Coding",
 				"Prompt Engineering",
 			],
+			knowsLanguage: [
+				{ "@type": "Language", name: "Portuguese" },
+				{ "@type": "Language", name: "English" },
+			],
+			worksFor: { "@id": `${siteUrl}/#organization` },
 			sameAs: [siteLinks.github, siteLinks.linkedin, siteLinks.x],
 		},
 		{
@@ -130,7 +160,16 @@ const jsonLd = {
 			url: siteUrl,
 			name: siteProfile.name,
 			description: siteProfile.shortDescription,
+			inLanguage: "en",
 			publisher: { "@id": `${siteUrl}/#person` },
+			potentialAction: {
+				"@type": "SearchAction",
+				target: {
+					"@type": "EntryPoint",
+					urlTemplate: `${siteUrl}/?q={search_term_string}`,
+				},
+				"query-input": "required name=search_term_string",
+			},
 		},
 		{
 			"@type": "ProfilePage",
@@ -138,12 +177,14 @@ const jsonLd = {
 			url: siteUrl,
 			name: `${siteProfile.name} — ${siteProfile.jobTitle}`,
 			description: siteProfile.description,
+			inLanguage: "en",
 			datePublished: "2024-01-01T00:00:00Z",
 			dateModified: new Date().toISOString(),
 			isPartOf: { "@id": `${siteUrl}/#website` },
 			about: { "@id": `${siteUrl}/#person` },
 			mainEntity: { "@id": `${siteUrl}/#person` },
 			breadcrumb: { "@id": `${siteUrl}/#breadcrumb` },
+			primaryImageOfPage: { "@id": `${siteUrl}/#avatar` },
 		},
 		{
 			"@type": "BreadcrumbList",
@@ -165,6 +206,8 @@ const jsonLd = {
 			logo: {
 				"@type": "ImageObject",
 				url: `${siteUrl}/avatar.jpg`,
+				width: 400,
+				height: 400,
 			},
 			contactPoint: {
 				"@type": "ContactPoint",
@@ -188,6 +231,7 @@ export default function RootLayout({
 			className={`${geistSans.variable} ${geistMono.variable} dark`}
 		>
 			<head>
+				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
