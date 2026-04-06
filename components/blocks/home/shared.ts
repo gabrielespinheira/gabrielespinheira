@@ -1,11 +1,10 @@
 export const itemVariant = {
-	hidden: { opacity: 0, y: 16, filter: "blur(8px)" },
+	hidden: { opacity: 0, y: 12 },
 	show: {
 		opacity: 1,
 		y: 0,
-		filter: "blur(0px)",
 		transition: {
-			duration: 1.2,
+			duration: 0.7,
 			ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
 		},
 	},

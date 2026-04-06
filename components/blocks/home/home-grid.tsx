@@ -7,12 +7,10 @@ import StackCard from "./stack-card"
 import WhoAmICard from "./whoami-card"
 
 const container = {
-	hidden: { opacity: 0 },
+	hidden: {},
 	show: {
-		opacity: 1,
 		transition: {
-			staggerChildren: 0.15,
-			delayChildren: 0.1,
+			staggerChildren: 0.12,
 		},
 	},
 }
