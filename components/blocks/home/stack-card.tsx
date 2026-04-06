@@ -82,15 +82,13 @@ export default function StackCard() {
 			className={cn(cardClass, "col-span-2 md:col-span-3 flex flex-col")}
 		>
 			<div className="flex items-center gap-2 border-white/[0.04] border-b px-4 py-2.5">
-				<span className="font-mono text-[13px] text-muted-foreground/40">
-					<span className="text-purple-400/60">import</span>{" "}
-					<span className="text-muted-foreground/30">{"{"}</span>{" "}
-					<span className="text-amber-300/60">stack</span>{" "}
-					<span className="text-muted-foreground/30">{"}"}</span>{" "}
-					<span className="text-purple-400/60">from</span>{" "}
-					<span className="text-emerald-400/50">
-						&quot;@gabriel/skills&quot;
-					</span>
+				<span className="font-mono text-[13px] text-muted-foreground">
+					<span className="text-purple-400">import</span>{" "}
+					<span className="text-muted-foreground">{"{"}</span>{" "}
+					<span className="text-amber-300">stack</span>{" "}
+					<span className="text-muted-foreground">{"}"}</span>{" "}
+					<span className="text-purple-400">from</span>{" "}
+					<span className="text-emerald-400">&quot;@gabriel/skills&quot;</span>
 				</span>
 			</div>
 			<div className="flex flex-1 items-center justify-center p-4">

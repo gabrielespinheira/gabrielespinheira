@@ -27,7 +27,7 @@ const Terminal = React.forwardRef<HTMLDivElement, TerminalProps>(
 						<div className="h-2.5 w-2.5 rounded-full bg-green-500/70" />
 					</div>
 					{title && (
-						<span className="ml-2 font-mono text-[13px] text-muted-foreground/40">
+						<span className="ml-2 font-mono text-[13px] text-muted-foreground">
 							{title}
 						</span>
 					)}

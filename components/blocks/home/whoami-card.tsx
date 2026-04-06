@@ -17,7 +17,7 @@ export default function WhoAmICard() {
 					<div className="h-2.5 w-2.5 rounded-full bg-yellow-500/70" />
 					<div className="h-2.5 w-2.5 rounded-full bg-green-500/70" />
 				</div>
-				<span className="ml-2 font-mono text-[13px] text-muted-foreground/40">
+				<span className="ml-2 font-mono text-[13px] text-muted-foreground">
 					$ whoami
 				</span>
 			</div>

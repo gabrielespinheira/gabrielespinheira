@@ -88,8 +88,8 @@ export default function ConnectCard() {
 			aria-label="Contact links"
 		>
 			<div className="flex items-center gap-2 border-white/[0.04] border-b px-4 py-2.5">
-				<span className="font-mono text-[13px] text-muted-foreground/40">
-					<span className="text-emerald-400/60">$</span> git remote -v
+				<span className="font-mono text-[13px] text-muted-foreground">
+					<span className="text-emerald-400/90">$</span> git remote -v
 				</span>
 			</div>
 			<div className="flex flex-col justify-center gap-4 p-5 md:p-4">
