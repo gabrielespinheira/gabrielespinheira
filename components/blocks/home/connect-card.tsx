@@ -2,7 +2,7 @@
 
 import { Mail } from "lucide-react"
 import { motion } from "motion/react"
-import type { ReactNode } from "react"
+import { type ReactNode, useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 import { cardClass, itemVariant } from "./shared"
 
@@ -14,7 +14,7 @@ interface ContactLink {
 	isExternal?: boolean
 }
 
-const contactLinks: ContactLink[] = [
+const staticLinks: ContactLink[] = [
 	{
 		label: "GitHub",
 		href: "https://github.com/gabrielespinheira",
@@ -51,12 +51,6 @@ const contactLinks: ContactLink[] = [
 		),
 		isExternal: true,
 	},
-	{
-		label: "Email",
-		href: "mailto:gabriiel66@gmail.com",
-		handle: "gabriiel66@gmail.com",
-		icon: <Mail size={20} />,
-	},
 ]
 
 function ContactItem({ label, href, handle, icon, isExternal }: ContactLink) {
@@ -81,6 +75,21 @@ function ContactItem({ label, href, handle, icon, isExternal }: ContactLink) {
 }
 
 export default function ConnectCard() {
+	const [contactLinks, setContactLinks] = useState<ContactLink[]>(staticLinks)
+
+	useEffect(() => {
+		const e = ["gabriiel66", "gmail.com"].join("@")
+		setContactLinks([
+			...staticLinks,
+			{
+				label: "Email",
+				href: `mailto:${e}`,
+				handle: e,
+				icon: <Mail size={20} />,
+			},
+		])
+	}, [])
+
 	return (
 		<motion.nav
 			variants={itemVariant}

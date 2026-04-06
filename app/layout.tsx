@@ -106,7 +106,6 @@ const jsonLd = {
 			},
 			jobTitle: siteProfile.jobTitle,
 			description: siteProfile.description,
-			email: siteProfile.email,
 			address: {
 				"@type": "PostalAddress",
 				addressLocality: "Lisbon",
@@ -218,7 +217,6 @@ const jsonLd = {
 			},
 			contactPoint: {
 				"@type": "ContactPoint",
-				email: siteProfile.email,
 				contactType: "professional",
 			},
 			founder: { "@id": `${siteUrl}/#person` },
@@ -238,9 +236,7 @@ export default function RootLayout({
 			className={`${geistSans.variable} ${geistMono.variable} dark`}
 		>
 			<head>
-				<link rel="preconnect" href="https://eu-assets.i.posthog.com" />
-				<link rel="dns-prefetch" href="https://eu-assets.i.posthog.com" />
-				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
