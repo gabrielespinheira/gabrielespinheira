@@ -187,8 +187,13 @@ export default function RootLayout({
 			lang="en"
 			className={`${geistSans.variable} ${geistMono.variable} dark`}
 		>
+			<head>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+				/>
+			</head>
 			<body className="antialiased">
-				<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 				<PostHogProvider>{children}</PostHogProvider>
 				<Analytics />
 				<SpeedInsights />
