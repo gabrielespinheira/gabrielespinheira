@@ -40,7 +40,7 @@ export default function AppDock() {
 		<Dock>
 			{dockApps.map((app) => (
 				<DockCard key={app.key} label={app.name}>
-					<DockCardInner src={app.src} />
+					<DockCardInner src={app.src} alt={app.name} />
 				</DockCard>
 			))}
 		</Dock>

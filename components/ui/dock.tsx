@@ -60,16 +60,17 @@ function Dock({ className, children }: DockProps) {
 
 interface DockCardInnerProps {
 	src: string
+	alt?: string
 	children?: ReactNode
 }
 
-function DockCardInner({ src, children }: DockCardInnerProps) {
+function DockCardInner({ src, alt = "", children }: DockCardInnerProps) {
 	return (
 		<span className="relative z-0 flex h-full w-full items-center justify-center overflow-hidden">
 			<img
 				className="relative z-0 h-full w-full object-contain"
 				src={src}
-				alt=""
+				alt={alt}
 				loading="eager"
 				decoding="async"
 				draggable={false}
