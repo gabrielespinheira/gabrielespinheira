@@ -73,7 +73,7 @@ function DockCardInner({ src, alt = "", children }: DockCardInnerProps) {
 				alt={alt}
 				fill
 				sizes="84px"
-				loading="lazy"
+				fetchPriority="low"
 				style={{ objectFit: "contain" }}
 				draggable={false}
 			/>
