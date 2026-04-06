@@ -21,6 +21,13 @@ export const metadata: Metadata = {
 	title: `${siteProfile.name} — ${siteProfile.jobTitle} | ${siteProfile.location}`,
 	description: siteProfile.description,
 	manifest: "/manifest.webmanifest",
+	icons: {
+		icon: [
+			{ url: "/binary.svg", type: "image/svg+xml" },
+			{ url: "/favicon.ico", sizes: "32x32 16x16", type: "image/x-icon" },
+		],
+		apple: "/apple-touch-icon.png",
+	},
 	keywords: [
 		siteProfile.name,
 		siteProfile.jobTitle,
