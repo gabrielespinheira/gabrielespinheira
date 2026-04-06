@@ -3,6 +3,7 @@
 import { createContext, type ReactNode, useCallback, useContext, useRef, useState } from "react"
 import { createPortal } from "react-dom"
 import { motion, type MotionValue, useMotionValue, useSpring, useTransform } from "motion/react"
+import Image from "next/image"
 
 import { cn } from "@/lib/utils"
 
@@ -67,12 +68,13 @@ interface DockCardInnerProps {
 function DockCardInner({ src, alt = "", children }: DockCardInnerProps) {
 	return (
 		<span className="relative z-0 flex h-full w-full items-center justify-center overflow-hidden">
-			<img
-				className="relative z-0 h-full w-full object-contain"
+			<Image
 				src={src}
 				alt={alt}
-				loading="eager"
-				decoding="async"
+				fill
+				sizes="84px"
+				loading="lazy"
+				style={{ objectFit: "contain" }}
 				draggable={false}
 			/>
 			{children ? (

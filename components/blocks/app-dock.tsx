@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { Dock, DockCard, DockCardInner } from "@/components/ui/dock"
 
+// https://macosicons.com/
 const dockApps = [
 	{ key: "zen", name: "Zen Browser", src: "/icons/macos/zen.png" },
 	{ key: "notion", name: "Notion", src: "/icons/macos/notion.png" },

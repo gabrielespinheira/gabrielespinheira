@@ -231,6 +231,8 @@ export default function RootLayout({
 			className={`${geistSans.variable} ${geistMono.variable} dark`}
 		>
 			<head>
+				<link rel="preconnect" href="https://eu-assets.i.posthog.com" />
+				<link rel="dns-prefetch" href="https://eu-assets.i.posthog.com" />
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 				<script
 					type="application/ld+json"
